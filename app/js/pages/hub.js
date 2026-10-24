@@ -605,6 +605,7 @@
       if (ph && pa) why.appendChild(h("p.small", `متوقع بنهاية الموسم: ${H.ar} ${Math.round(ph.exp_pts)} نقطة · ${A.ar} ${Math.round(pa.exp_pts)} نقطة`));
     }
     view.appendChild(ui().section("ليش هالتوقع؟", why));
+    if (ZS.history) ZS.history.section(f).then((s) => view.appendChild(s)).catch(() => {});
     if (cid === "ENG1" && (D.freeFiles || []).includes("fpl_availability.json")) {
       try {
         const av = await ZS.getJSON("free/fpl_availability.json");
@@ -680,7 +681,7 @@
     view.appendChild(h("div.profile",
       h("span.avatar", { "aria-hidden": "true" }, (name || "ز").trim().charAt(0)),
       h("div", h("strong", name || "حاسوب زهراء الكروي"), h("small", { dir: "ltr" }, "@zahraatalksfootball94"), h("small", `${mode} · آخر تحديث ${ZS.ago(D.meta.generated_utc)}`))));
-    const pills = [["studio", "الاستوديو", "studio"], ["challenge", "تحدي الجمهور", "challenge"], ["players", "اللاعبين", "teams"], ["archive", "الأرشيف العميق", "matches"], ["today", "ملخص اليوم", "today"], ["teams", "فرق الليغا", "teams"], ["season", "موسم الليغا", "season"], ["alerts", "التنبيهات", "bell"]];
+    const pills = [["studio", "الاستوديو", "studio"], ["lab", "مختبر التحقق", "lab"], ["challenge", "تحدي الجمهور", "challenge"], ["players", "اللاعبين", "teams"], ["archive", "الأرشيف العميق", "matches"], ["today", "ملخص اليوم", "today"], ["teams", "فرق الليغا", "teams"], ["season", "موسم الليغا", "season"], ["alerts", "التنبيهات", "bell"]];
     view.appendChild(h("div.pill-grid", pills.map(([k, lab, ic]) => h("a.pill-link", { href: ZS.href(k) }, ui().icon(ic), h("span", lab)))));
     const themeAr = { dark: "ليلي", light: "نهاري", system: "حسب الجهاز" }[p.theme || "dark"];
     const fsAr = { s: "صغير", m: "متوسط", l: "كبير" }[p.font_size || "m"];

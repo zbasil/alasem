@@ -773,7 +773,8 @@ def stored_files() -> dict:
     (outputs/free -> free/) and the live file (outputs/live -> live/), added to every app snapshot by zsc.export so a La Liga update never drops them."""
     out = {}
     for folder, prefix in ((MULTI_OUT, ""), (os.path.join(ROOT, "outputs", "free"), "free/"),
-                           (os.path.join(ROOT, "outputs", "live"), "live/")):
+                           (os.path.join(ROOT, "outputs", "live"), "live/"),
+                           (os.path.join(ROOT, "outputs", "history"), "history/")):
         for base, _, names in os.walk(folder):
             for n in names:
                 # the raw ESPN dump stays out of the app: live/now.json is its normalised form

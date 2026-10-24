@@ -6,6 +6,7 @@
 
   // ------------------------------------------------------------------ icons (drawn for this app)
   const P = {
+    lab: '<path d="M9 3h6"/><path d="M10 3v6l-5 9a2 2 0 0 0 1.7 3h10.6a2 2 0 0 0 1.7-3l-5-9V3"/><path d="M7.5 15h9"/>',
     today: '<path d="M4 9h16M8 3v4M16 3v4"/><rect x="4" y="5" width="16" height="15" rx="2.5"/><circle cx="12" cy="14" r="2.6"/>',
     matches: '<rect x="3.5" y="5" width="17" height="14" rx="2"/><path d="M12 5v14M3.5 10h3v4h-3M20.5 10h-3v4h3"/><circle cx="12" cy="12" r="2.2"/>',
     teams: '<path d="M12 3l7 2.2v6.3c0 4.6-3 7.8-7 9.5-4-1.7-7-4.9-7-9.5V5.2z"/><path d="M9 11.5l2 2 4-4"/>',

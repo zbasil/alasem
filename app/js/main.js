@@ -6,8 +6,8 @@
   const ui = () => ZS.ui;
 
   const NAV = [["matches", "المباريات"], ["news", "الأخبار"], ["comps", "البطولات"], ["standings", "الترتيب"], ["more", "المزيد"]];
-  const MORE = [["studio", "الاستوديو"], ["today", "ملخص اليوم (لاليغا)"], ["season", "موسم الليغا"], ["teams", "فرق الليغا"], ["method", "المنهجية والدقة"], ["data", "البيانات والمصادر"], ["challenge", "تحدي الجمهور"], ["archive", "أرشيف التحليل العميق"], ["players", "اللاعبين (أرشيف)"], ["prefs", "الإعدادات"]];
-  const SECTION_OF = { match: "matches", xmatch: "matches", round: "matches", team: "comps", xteam: "comps", comp: "comps", archive: "more", challenge: "more", alerts: "more", players: "more", today: "more", season: "comps", teams: "comps", studio: "more", method: "more", data: "more", prefs: "more" };
+  const MORE = [["studio", "الاستوديو"], ["lab", "مختبر التحقق"], ["today", "ملخص اليوم (لاليغا)"], ["season", "موسم الليغا"], ["teams", "فرق الليغا"], ["method", "المنهجية والدقة"], ["data", "البيانات والمصادر"], ["challenge", "تحدي الجمهور"], ["archive", "أرشيف التحليل العميق"], ["players", "اللاعبين (أرشيف)"], ["prefs", "الإعدادات"]];
+  const SECTION_OF = { lab: "more", match: "matches", xmatch: "matches", round: "matches", team: "comps", xteam: "comps", comp: "comps", archive: "more", challenge: "more", alerts: "more", players: "more", today: "more", season: "comps", teams: "comps", studio: "more", method: "more", data: "more", prefs: "more" };
   const NAV_ICON = { matches: "matches", news: "news", comps: "comps", standings: "standings", more: "more" };
 
   function applyTheme() {

@@ -75,6 +75,7 @@ jobs:
           python scripts/free_update.py
           python -m zsc update
           python -m zsc multi --fetch
+          python -m zsc.history
 
       - name: Tests (daily, on code changes and manual runs)
         if: env.FULL == 'true' || github.event_name != 'schedule'

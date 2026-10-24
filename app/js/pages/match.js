@@ -501,6 +501,8 @@
     }
 
     drawTab();
+    if (ZS.history) ZS.history.section({ ...(f || {}), match_id: mid, comp: "ESP1", home: mf.home, away: mf.away, kickoff_utc: mf.kickoff_utc })
+      .then((s) => view.appendChild(s)).catch(() => {});
     return offLive;
   }
 

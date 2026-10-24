@@ -776,3 +776,29 @@ section.stack > .cgroup-rows { background: var(--card); border: 1px solid var(--
 .lu-list.bench { opacity: .85; }
 .lu-list .in { color: var(--good); }
 .lu-list .out { color: var(--bad); }
+
+/* ---- version 3.1: head-to-head and the claim lab ---- */
+.h2h-bar { display: flex; gap: 3px; height: 8px; }
+.h2h-bar i { display: block; border-radius: 4px; min-width: 3px; }
+.h2h-nums { display: flex; justify-content: space-between; gap: 8px; font-size: .84rem; color: var(--fg-2); }
+.h2h-nums strong { color: var(--fg); margin-inline-end: 4px; font-family: var(--font-display); }
+.h2h-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.h2h-list li { display: grid; grid-template-columns: 86px minmax(0, 1fr) 52px minmax(0, 1fr) auto; gap: 8px; align-items: center; padding: 7px 2px; border-bottom: 1px solid var(--line); font-size: .86rem; }
+.h2h-list li:last-child { border-bottom: 0; }
+.h2h-list li > span:nth-child(2) { text-align: end; }
+.h2h-list strong { text-align: center; font-family: var(--font-display); }
+.h2h-list.full { max-height: 480px; overflow-y: auto; }
+.lab-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; }
+.field { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.field select { width: 100%; min-height: 40px; border-radius: var(--r-sm); border: 1px solid var(--line-strong); background: var(--card-2); color: var(--fg); padding: 6px 8px; font: inherit; }
+.verdict { border-inline-start: 4px solid var(--fg-3); }
+.verdict.supported { border-inline-start-color: var(--good); }
+.verdict.contradicted { border-inline-start-color: var(--bad); }
+.verdict.insufficient { border-inline-start-color: var(--led); }
+.verdict-claim { margin: 0; font-size: 1.1rem; line-height: 1.5; }
+.verdict-tag { align-self: flex-start; font: 800 .95rem/1 var(--font-display); padding: 7px 12px; border-radius: 999px; background: var(--card-2); }
+.verdict.supported .verdict-tag { background: rgba(69, 207, 123, .15); color: var(--good); }
+.verdict.contradicted .verdict-tag { background: var(--bad-soft); color: var(--bad); }
+.verdict.insufficient .verdict-tag { background: var(--led-soft); color: var(--led); }
+.script-box { white-space: pre-wrap; font: inherit; font-size: .92rem; line-height: 1.8; background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 14px; margin: 0; }
+@media (max-width: 520px) { .h2h-list li { grid-template-columns: 74px minmax(0, 1fr) 44px minmax(0, 1fr); } .h2h-list li > small { display: none; } }
