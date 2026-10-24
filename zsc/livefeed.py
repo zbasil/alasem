@@ -250,6 +250,11 @@ def build_live(games_by_comp: dict, stamp: str | None = None, fixtures: dict | N
     doc = {"generated_utc": stamp, "source": "ESPN public site API (unofficial, personal non-commercial use)",
            "n_live": sum(1 for e in matches.values() if e["state"] in ("live", "ht") and not e.get("stale")),
            "matches": matches, "unmatched": unmatched, "sources": source_report or {}}
+    # the in-play model (zsc/inplay.py, fitted and tested on LaLiga + StatsBomb red cards) travels with the live
+    # file, so the app can turn a verified live score into live win probabilities for every competition
+    inplay = _load(os.path.join(ROOT, "outputs", "models", "inplay.json"), None)
+    if inplay:
+        doc["inplay"] = inplay
     proxy = os.environ.get("LIVE_PROXY", "").strip()
     if proxy.startswith("https://"):
         doc["proxy"] = proxy.rstrip("/")   # the app reads live scores from this shared edge cache between runs

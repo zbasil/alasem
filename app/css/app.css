@@ -804,3 +804,8 @@ section.stack > .cgroup-rows { background: var(--card); border: 1px solid var(--
 @media (max-width: 520px) { .h2h-list li { grid-template-columns: 74px minmax(0, 1fr) 44px minmax(0, 1fr); } .h2h-list li > small { display: none; } }
 /* English (left-to-right): direction-bearing icons point the other way */
 [dir="ltr"] .ico-chevron, [dir="ltr"] .ico-back { transform: scaleX(-1); }
+.insight { display: flex; flex-direction: column; gap: 4px; padding: 10px 12px; border-radius: var(--r); background: var(--card-2); border-inline-start: 3px solid var(--fg-3); font-size: .92rem; line-height: 1.6; }
+.insight.obs { border-inline-start-color: var(--teal); }
+.insight.infer { border-inline-start-color: var(--led); }
+.insight.model { border-inline-start-color: var(--pitch); }
+.insight-tag { font-size: .72rem; font-weight: 800; color: var(--fg-3); text-transform: none; }

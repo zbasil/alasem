@@ -250,6 +250,67 @@
     const via = e && e.via_proxy_utc ? ` · مباشر ${ZS.ago(e.via_proxy_utc)}` : "";
     return h("span.fresh." + fr.kind, { role: "status" }, h("i.fresh-dot"), fr.text + via);
   }
+  // ------------------------------------------------------------------ live win probabilities and grounded insights
+  const L = (ar, en) => (ZS.lang === "en" ? en : ar);
+  /** in-play probabilities from the verified live state: pre-match expected goals + score + minute + red cards */
+  function liveProbs(f, e) {
+    if (!doc || !doc.inplay || !ZS.models || !f.xg || !e.score || !["live", "ht"].includes(e.state)) return null;
+    const minute = e.state === "ht" ? 45 : e.minute;
+    if (minute == null) return null;
+    const period = e.state === "ht" ? 1 : (e.period || (minute <= 45 ? 1 : 2));
+    const reds = (side) => (e.events || []).filter((x) => (x.kind === "red" || x.kind === "second_yellow") && x.side === side).length;
+    try {
+      const m = new ZS.models.InPlay(doc.inplay);
+      return { p: m.probs(f.xg[0], f.xg[1], minute, e.score[0], e.score[1], reds("home"), reds("away"), period, 0), minute, version: m.version, rh: reds("home"), ra: reds("away") };
+    } catch (err) { return null; }
+  }
+  /** short explanations, each tagged with what backs it: an observation from the source, an inference from those
+      numbers, or a model estimate. Nothing about movement or tactics that the data cannot show. */
+  function insights(f, e, lp) {
+    const out = [];
+    const H = ZS.team(f.home).ar, A = ZS.team(f.away).ar;
+    const st = e.stats || {}, hs = st.home || {}, as = st.away || {};
+    const num = (v) => (v == null ? null : Number(v));
+    const pos = [num(hs.possessionPct), num(as.possessionPct)], sot = [num(hs.shotsOnTarget), num(as.shotsOnTarget)], sh = [num(hs.totalShots), num(as.totalShots)];
+    const name = [H, A];
+    if (pos[0] != null && pos[1] != null && sot[0] != null && sot[1] != null) {
+      const k = pos[0] >= pos[1] ? 0 : 1, o = 1 - k;
+      if (pos[k] - pos[o] >= 15 && sot[k] <= sot[o])
+        out.push({ tag: "infer", text: L(`${name[k]} عنده الكرة ${Math.round(pos[k])}% بس تسديداته على المرمى ${sot[k]} مقابل ${sot[o]}: الاستحواذ لحد هسه ما تحوّل لخطورة أكثر.`,
+          `${name[k]} has ${Math.round(pos[k])}% of the ball but ${sot[k]} shots on target to ${sot[o]}: possession has not turned into more danger so far.`) });
+    }
+    if (e.score && sot[0] != null && sot[1] != null && e.score[0] !== e.score[1]) {
+      const lead = e.score[0] > e.score[1] ? 0 : 1, o = 1 - lead;
+      if (sot[o] - sot[lead] >= 2)
+        out.push({ tag: "infer", text: L(`${name[lead]} متقدم بس ${name[o]} سدد على المرمى أكثر (${sot[o]} مقابل ${sot[lead]}): النتيجة ممكن ما تعكس الفرص بالكامل.`,
+          `${name[lead]} lead, but ${name[o]} have more shots on target (${sot[o]} to ${sot[lead]}): the score may not fully reflect the chances.`) });
+    }
+    if (sh[0] != null && sh[1] != null && Math.max(...sh) >= 8) {
+      const k = sh[0] >= sh[1] ? 0 : 1, o = 1 - k;
+      if (sh[k] >= 2 * Math.max(1, sh[o]))
+        out.push({ tag: "obs", text: L(`${name[k]} يسدد أكثر بوضوح: ${sh[k]} تسديدة مقابل ${sh[o]}.`, `${name[k]} are out-shooting their opponents: ${sh[k]} shots to ${sh[o]}.`) });
+    }
+    if (lp && (lp.rh || lp.ra))
+      out.push({ tag: "model", text: L(`الطرد بالموديل: الفريق الناقص يسجل بالمعدل ×${doc.inplay.red_own} من معدله والخصم ×${doc.inplay.red_opp} (مقدّر من مباريات بيها طرد، StatsBomb).`,
+        `Red card in the model: the side down a man scores ×${doc.inplay.red_own} of its rate and the opponent ×${doc.inplay.red_opp} (estimated from matches with a red card, StatsBomb).`) });
+    if (lp && f.p) {
+      const i = [0, 1, 2].sort((a, b) => Math.abs(lp.p[b] - f.p[b]) - Math.abs(lp.p[a] - f.p[a]))[0];
+      const d = lp.p[i] - f.p[i];
+      if (Math.abs(d) >= 0.2) {
+        const what = [L(`فوز ${H}`, `a ${H} win`), L("التعادل", "a draw"), L(`فوز ${A}`, `an ${A} win`.replace(/^an (?![AEIOU])/, "a "))][i];
+        out.push({ tag: "model", text: L(`احتمال ${what} صار ${Math.round(100 * lp.p[i])}% بعد ما كان ${Math.round(100 * f.p[i])}% قبل المباراة.`,
+          `The chance of ${what} is now ${Math.round(100 * lp.p[i])}%, from ${Math.round(100 * f.p[i])}% before kick-off.`) });
+      }
+    }
+    return out;
+  }
+  const TAG = { obs: ["ملاحظة من الأرقام", "Observed"], infer: ["استنتاج إحصائي", "Inference"], model: ["تقدير الموديل", "Model estimate"] };
+  function insightBox(items) {
+    return h("div.stack", items.map((x) => h("div.insight." + x.tag, h("span.insight-tag", L(...TAG[x.tag])), h("span", x.text))),
+      h("p.tiny.faint", L("التحليل من الأحداث والأرقام المنشورة بس. ماكو بيانات تتبع، فما نحكي عن تحركات أو ضغط ما تبينه الأرقام.",
+        "Analysis uses published events and stats only. There is no tracking data, so nothing is said about movement or pressing the numbers cannot show.")));
+  }
+
   /** everything the live file knows about one match; null when it knows nothing */
   function panel(f) {
     const e = f.live;
@@ -261,6 +322,13 @@
     if (["postponed", "cancelled", "suspended", "abandoned", "delayed"].includes(e.state)) box.appendChild(h("div.notice.led", ui().icon("warn"), h("span", e.detail || e.state)));
     const corr = (e.score_history || []).filter((x) => x.correction);
     if (corr.length) box.appendChild(h("div.notice.led", ui().icon("warn"), h("span", `المصدر صحّح النتيجة ${corr.length === 1 ? "مرة" : corr.length + " مرات"}؛ آخر نتيجة معروضة هي الرسمية من المصدر.`)));
+    const lp = liveProbs(f, e);
+    if (lp) box.appendChild(ui().section(L("الاحتمالات المباشرة", "Live probabilities"), h("div.stack",
+      ui().probBar(f.home, f.away, lp.p, { prev: f.p || null, label: L("الاحتمالات المباشرة", "Live probabilities") }),
+      h("p.tiny.faint", L(`الدقيقة ${lp.minute}، النتيجة والطرد من المصدر، والأهداف المتوقعة قبل المباراة من الحاسوب. الموديل ${lp.version} انضبط على الليغا؛ تحت كل رقم الفرق عن توقع ما قبل المباراة.`,
+        `Minute ${lp.minute}; score and red cards from the source, pre-match expected goals from the model. Model ${lp.version}, fitted on LaLiga; the change under each number is against the pre-match forecast.`)))));
+    const ins = insights(f, e, lp);
+    if (ins.length) box.appendChild(ui().section(L("قراءة المباراة", "Reading the match"), insightBox(ins)));
     box.appendChild(ui().section("الأحداث", timeline(e, f)));
     if (e.stats && (e.stats.home || e.stats.away)) {
       const rows = statRows(e.stats, f);
@@ -278,6 +346,6 @@
     return box;
   }
 
-  ZS.live = { refresh, freshness, panel, freshTag, enableNotifications, doc: () => doc, KIND_AR, lastOk: () => lastOk };
+  ZS.live = { refresh, freshness, panel, freshTag, enableNotifications, doc: () => doc, KIND_AR, lastOk: () => lastOk, liveProbs, insights };
   ZS.on("core", () => { apply(); });
 })();

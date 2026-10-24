@@ -392,6 +392,7 @@
     ["الملعب: {1}", "Venue: {1}"], ["الحكم: {1}", "Referee: {1}"], ["الحضور: {1}", "Attendance: {1}"],
     ["النتيجة المباشرة: {1}", "Live score: {1}"], ["مباراة بدأت", "Match started"],
     ["قارني {1}", "Compare {1}"],
+    ["{1} ن.م", "{1} pp"],
     ["{1}، {2} مباريات", "{1}, {2} matches"], ["{1}، ماكو مباريات", "{1}, no matches"], ["{1}: شوطين بوجهين ({2})", "{1}: two different halves ({2})"],
     ["المتوقع من جودة الفرص مقابل الحصيلة الفعلية · الليغا {1}", "Expected from chance quality vs actual output · LaLiga {1}"],
     ["ماكو هدف دقة تسويقي (مثل «{1}»): كرة القدم بيها صدفة كبيرة، وحتى السوق يختار صح بحدود {2}. أي تحسين ينضاف بس إذا الاختبار أثبته.", "No marketing accuracy target (like “{1}”): football is full of chance, and even the market is right only about {2} of the time. An improvement is added only when the test proves it."],
