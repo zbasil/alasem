@@ -1,0 +1,42 @@
+# Free automatic updates and hosting (GitHub Actions + GitHub Pages; free for public repositories).
+# 1. Push this project to a GitHub repository.  2. Settings > Pages > Source: GitHub Actions.
+# 3. Optional: Settings > Secrets > Actions > NTFY_TOPIC (a long random name) for phone notifications.
+name: update
+on:
+  schedule:
+    - cron: "15 6 * * *"          # every morning (UTC): results, forecasts, season simulations
+    - cron: "*/10 12-23 * * 6,0"  # weekends, every 10 minutes in match hours: live scores, lineups, alerts
+    - cron: "*/10 17-22 * * 2,3"  # Champions League nights
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency: { group: update, cancel-in-progress: false }
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Free live sources (ESPN, FPL, Understat, RSS) + notifications
+        env: { NTFY_TOPIC: "${{ secrets.NTFY_TOPIC }}" }
+        run: python scripts/free_update.py --notify
+      - name: Full update once a day (La Liga data + model + Premier League + Champions League)
+        if: github.event.schedule == '15 6 * * *' || github.event_name == 'workflow_dispatch'
+        run: |
+          python -m zsc update
+          python -m zsc multi --fetch
+      - run: python scripts/build_app.py
+      - name: Keep the data history in the repository
+        run: |
+          git config user.name "zsc-bot"; git config user.email "zsc-bot@users.noreply.github.com"
+          git add -A data outputs app/data || true
+          git commit -m "data update $(date -u +%FT%TZ)" || echo "nothing new"
+          git push || true
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: dist/web }
+      - uses: actions/deploy-pages@v4

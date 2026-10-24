@@ -1,0 +1,70 @@
+{
+  "platform": {
+    "name": "Zahraa Football Supercomputer",
+    "name_ar": "حاسوب زهراء الكروي الخارق",
+    "version": "3.0.0",
+    "languages": ["ar"],
+    "language_planned": ["en"]
+  },
+  "timezone": "Asia/Baghdad",
+  "competition": {
+    "id": "ESP1",
+    "name_en": "LaLiga",
+    "name_ar": "الدوري الإسباني",
+    "season": 2026,
+    "season_label": "2026/27",
+    "local_timezone": "Europe/Madrid",
+    "rules_file": "config/competitions/ESP1.json"
+  },
+  "model": {
+    "displayed_track": "market",
+    "season_sims": 10000,
+    "impact_sims": 10000,
+    "importance_sims": 4000,
+    "history_from_season": 2000
+  },
+  "sources": {
+    "openfootball": {
+      "url": "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/es.1.json",
+      "trusted_results_until": "2026-09-20",
+      "provides": ["fixtures", "kick-off times (Madrid)", "results", "half-time scores"],
+      "key_required": false
+    },
+    "football_data": {
+      "url": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
+      "provides": ["results", "half-time scores", "shots on target", "Bet365 odds"],
+      "key_required": false
+    },
+    "football_data_history": {
+      "url": "https://raw.githubusercontent.com/datasets/football-datasets/main/datasets/la-liga/season-{code}.csv",
+      "provides": ["results 1993/94-2025/26"],
+      "key_required": false
+    },
+    "statsbomb_open": {
+      "url": "https://raw.githubusercontent.com/statsbomb/open-data/master/data",
+      "provides": ["event data with coordinates for selected archive matches"],
+      "key_required": false,
+      "attribution": "Data: StatsBomb"
+    },
+    "sportradar_via_claude": {
+      "provides": ["live score, team stats, key events, published win probabilities, kick-off times"],
+      "key_required": false,
+      "note": "available only inside Claude sessions through the sports-data tool; files are saved to data/raw/sportradar"
+    },
+    "api_football": {
+      "url": "https://v3.football.api-sports.io",
+      "provides": ["lineups", "injuries", "player stats", "live events for 1,000+ competitions"],
+      "key_required": true,
+      "env": "API_FOOTBALL_KEY",
+      "enabled": false
+    }
+  },
+  "update": {
+    "retries": 3,
+    "backoff_seconds": 4,
+    "timeout_seconds": 60,
+    "cache_minutes": 30,
+    "keep_snapshots": 20
+  },
+  "server": {"host": "127.0.0.1", "port": 8000}
+}

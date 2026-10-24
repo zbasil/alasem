@@ -1,0 +1,80 @@
+match_id,side,player,name_ar,minutes,rating,goals,assists,xg,xa,shots,key_passes,progressive,passes,pass_pct,dribbles,tackles_int,pressures,recoveries,lost,touches,row_id,group,group_ar
+sb69299,home,Lionel Andrés Messi Cuccittini,ميسي,94,7.7,0,2,0.1,0.51,3,2,12,61,89.0,10,5,12,5,3,266,sb69299|Lionel Andrés Messi Cuccittini,FW,مهاجم
+sb69299,home,Pedro Eliezer Rodríguez Ledesma,بيدرو,87,7.5,1,0,0.93,0.11,2,1,3,46,80.0,3,3,13,7,6,191,sb69299|Pedro Eliezer Rodríguez Ledesma,AM,صانع لعب / جناح
+sb69299,home,David Villa Sánchez,دافيد فيا,76,7.1,2,0,0.59,0.0,3,0,3,32,81.0,1,1,8,4,4,137,sb69299|David Villa Sánchez,AM,صانع لعب / جناح
+sb69299,home,Andrés Iniesta Luján,إنييستا,94,6.9,0,1,0.0,0.43,0,1,6,80,89.0,3,2,9,5,4,265,sb69299|Andrés Iniesta Luján,CM,وسط
+sb69299,home,Xavier Hernández Creus,تشافي,87,6.4,1,0,0.77,0.0,2,0,3,118,96.0,0,2,8,8,2,355,sb69299|Xavier Hernández Creus,CM,وسط
+sb69299,home,Bojan Krkíc Pérez,بويان,18,7.2,0,1,0.11,0.27,1,1,2,4,100.0,0,1,0,1,3,26,sb69299|Bojan Krkíc Pérez,AM,صانع لعب / جناح
+sb69299,home,Daniel Alves da Silva,داني ألفيش,94,6.4,0,0,0.01,0.0,1,0,4,73,79.0,0,5,15,8,2,230,sb69299|Daniel Alves da Silva,FB,ظهير
+sb69299,home,Sergio Busquets i Burgos,بوسكيتس,94,5.0,0,0,0.01,0.02,1,1,0,99,91.0,1,2,12,4,1,290,sb69299|Sergio Busquets i Burgos,DM,وسط دفاعي
+sb69299,home,Eric-Sylvain Bilal Abidal,أبيدال,94,4.6,0,0,0.0,0.01,0,1,5,63,92.0,1,1,4,5,2,174,sb69299|Eric-Sylvain Bilal Abidal,FB,ظهير
+sb69299,home,Jeffren Isaac Suárez Bermúdez,جيفرين,7,6.9,1,0,0.27,0.0,1,0,0,3,67.0,0,1,3,0,0,12,sb69299|Jeffren Isaac Suárez Bermúdez,AM,صانع لعب / جناح
+sb69299,home,Carles Puyol i Saforcada,بويول,94,7.0,0,0,0.0,0.01,0,1,0,45,91.0,0,2,4,10,1,129,sb69299|Carles Puyol i Saforcada,CB,قلب دفاع
+sb69299,home,Gerard Piqué Bernabéu,بيكيه,94,5.1,0,0,0.0,0.0,0,0,3,70,89.0,0,0,5,3,0,195,sb69299|Gerard Piqué Bernabéu,CB,قلب دفاع
+sb69299,home,Víctor Valdés Arribas,فالديس,94,7.3,0,0,0.0,0.0,0,0,2,27,70.0,0,0,1,3,0,65,sb69299|Víctor Valdés Arribas,GK,حارس
+sb69299,home,Seydou Kéita,كيتا,8,6.1,0,0,0.0,0.0,0,0,0,2,100.0,0,0,1,0,0,6,sb69299|Seydou Kéita,CM,وسط
+sb69299,away,Xabier Alonso Olano,تشابي ألونسو,94,7.8,0,0,0.0,0.0,0,0,5,51,80.0,0,4,34,6,0,139,sb69299|Xabier Alonso Olano,DM,وسط دفاعي
+sb69299,away,Mesut Özil,أوزيل,45,6.6,0,0,0.0,0.08,0,2,1,21,71.0,1,0,26,3,2,64,sb69299|Mesut Özil,AM,صانع لعب / جناح
+sb69299,away,Lassana Diarra,لاس ديارا,49,3.7,0,0,0.0,0.0,0,0,0,14,64.0,0,5,31,5,4,60,sb69299|Lassana Diarra,AM,صانع لعب / جناح
+sb69299,away,Marcelo Vieira da Silva Júnior,مارسيلو,60,6.1,0,0,0.0,0.0,0,0,1,30,73.0,1,4,12,6,1,89,sb69299|Marcelo Vieira da Silva Júnior,FB,ظهير
+sb69299,away,Kléper Laveran Lima Ferreira,بيبي,94,6.7,0,0,0.0,0.0,0,0,1,36,78.0,0,7,16,5,1,100,sb69299|Kléper Laveran Lima Ferreira,CB,قلب دفاع
+sb69299,away,Ángel Fabián Di María Hernández,دي ماريا,94,5.1,0,0,0.04,0.0,1,0,5,25,64.0,1,3,24,3,5,113,sb69299|Ángel Fabián Di María Hernández,AM,صانع لعب / جناح
+sb69299,away,Sami Khedira,خضيرة,94,4.8,0,0,0.0,0.0,0,0,1,22,64.0,0,3,36,3,2,80,sb69299|Sami Khedira,DM,وسط دفاعي
+sb69299,away,Ricardo Alberto Silveira de Carvalho,كارفاليو,94,5.8,0,0,0.0,0.0,0,0,2,29,86.0,0,5,7,3,0,77,sb69299|Ricardo Alberto Silveira de Carvalho,CB,قلب دفاع
+sb69299,away,Iker Casillas Fernández,كاسياس,94,4.0,0,0,0.0,0.0,0,0,9,32,50.0,0,0,1,6,0,78,sb69299|Iker Casillas Fernández,GK,حارس
+sb69299,away,Karim Benzema,بنزيما,94,4.5,0,0,0.0,0.0,0,0,2,27,85.0,1,1,18,3,5,110,sb69299|Karim Benzema,FW,مهاجم
+sb69299,away,Cristiano Ronaldo dos Santos Aveiro,رونالدو,94,5.8,0,0,0.04,0.0,3,0,6,33,64.0,4,1,7,4,6,146,sb69299|Cristiano Ronaldo dos Santos Aveiro,AM,صانع لعب / جناح
+sb69299,away,Álvaro Arbeloa Coca,أربيلوا,35,5.9,0,0,0.0,0.0,0,0,1,14,86.0,0,1,8,1,1,37,sb69299|Álvaro Arbeloa Coca,FB,ظهير
+sb69299,away,Sergio Ramos García,راموس,91,5.8,0,0,0.04,0.0,1,0,4,37,86.0,1,0,20,10,1,102,sb69299|Sergio Ramos García,FB,ظهير
+sb266424,home,Luka Modrić,مودريتش,92,7.4,0,0,0.05,0.05,1,2,6,63,86.0,0,5,14,7,1,182,sb266424|Luka Modrić,DM,وسط دفاعي
+sb266424,home,Gareth Frank Bale,بيل,92,6.9,0,0,0.02,0.49,2,3,4,33,61.0,0,0,19,0,1,103,sb266424|Gareth Frank Bale,AM,صانع لعب / جناح
+sb266424,home,Sergio Ramos García,راموس,92,5.3,0,0,0.0,0.49,0,2,3,39,85.0,0,4,11,0,0,112,sb266424|Sergio Ramos García,CB,قلب دفاع
+sb266424,home,Raphaël Varane,فاران,92,7.1,0,0,0.39,0.0,1,0,4,45,76.0,0,4,7,2,0,121,sb266424|Raphaël Varane,CB,قلب دفاع
+sb266424,home,Danilo Luiz da Silva,دانيلو,92,6.1,0,0,0.0,0.0,0,0,7,44,75.0,0,5,12,2,0,119,sb266424|Danilo Luiz da Silva,FB,ظهير
+sb266424,home,Cristiano Ronaldo dos Santos Aveiro,رونالدو,92,6.0,0,0,0.45,0.04,2,1,4,31,87.0,1,1,7,2,2,115,sb266424|Cristiano Ronaldo dos Santos Aveiro,AM,صانع لعب / جناح
+sb266424,home,Toni Kroos,كروس,92,6.5,0,0,0.0,0.0,0,0,3,74,91.0,0,5,29,1,2,198,sb266424|Toni Kroos,DM,وسط دفاعي
+sb266424,home,Karim Benzema,بنزيما,92,5.9,0,0,0.17,0.06,2,2,3,20,85.0,0,0,17,3,2,78,sb266424|Karim Benzema,FW,مهاجم
+sb266424,home,Marcelo Vieira da Silva Júnior,مارسيلو,58,6.6,0,0,0.1,0.0,1,0,4,36,72.0,1,1,10,5,0,92,sb266424|Marcelo Vieira da Silva Júnior,FB,ظهير
+sb266424,home,Keylor Navas Gamboa,نافاس,92,4.2,0,0,0.0,0.0,0,0,7,32,69.0,0,0,0,8,0,89,sb266424|Keylor Navas Gamboa,GK,حارس
+sb266424,home,Daniel Carvajal Ramos,كارفاخال,33,7.1,0,0,0.05,0.13,1,1,1,17,82.0,1,1,6,1,0,48,sb266424|Daniel Carvajal Ramos,FB,ظهير
+sb266424,home,James David Rodríguez Rubio,خاميس,55,5.2,0,0,0.09,0.0,2,0,0,29,72.0,1,0,19,4,3,100,sb266424|James David Rodríguez Rubio,AM,صانع لعب / جناح
+sb266424,home,Francisco Román Alarcón Suárez,إيسكو,28,7.5,0,0,0.04,0.0,1,0,6,23,65.0,5,0,5,2,1,86,sb266424|Francisco Román Alarcón Suárez,AM,صانع لعب / جناح
+sb266424,away,Luis Alberto Suárez Díaz,سواريز,92,8.8,2,0,1.2,0.25,4,2,3,33,61.0,2,1,13,4,2,139,sb266424|Luis Alberto Suárez Díaz,FW,مهاجم
+sb266424,away,Neymar da Silva Santos Junior,نيمار,92,8.8,1,1,0.37,0.89,4,5,13,59,88.0,2,1,8,4,3,222,sb266424|Neymar da Silva Santos Junior,AM,صانع لعب / جناح
+sb266424,away,Andrés Iniesta Luján,إنييستا,77,5.8,1,1,0.12,0.16,1,1,5,70,94.0,2,1,16,1,0,202,sb266424|Andrés Iniesta Luján,CM,وسط
+sb266424,away,Sergi Roberto Carnicer,سيرجي روبرتو,92,6.2,0,1,0.13,0.3,1,2,4,49,86.0,0,1,15,4,1,152,sb266424|Sergi Roberto Carnicer,AM,صانع لعب / جناح
+sb266424,away,Jordi Alba Ramos,جوردي ألبا,92,7.3,0,1,0.0,0.42,0,1,7,85,92.0,1,2,7,4,2,235,sb266424|Jordi Alba Ramos,FB,ظهير
+sb266424,away,Daniel Alves da Silva,داني ألفيش,92,6.8,0,0,0.0,0.02,0,1,7,74,88.0,3,2,11,7,0,216,sb266424|Daniel Alves da Silva,FB,ظهير
+sb266424,away,Ivan Rakitić,راكيتيتش,56,7.2,0,0,0.23,0.13,3,1,4,49,94.0,0,1,8,6,0,143,sb266424|Ivan Rakitić,CM,وسط
+sb266424,away,Lionel Andrés Messi Cuccittini,ميسي,36,7.2,0,0,0.15,0.0,2,0,8,34,82.0,2,0,5,1,0,114,sb266424|Lionel Andrés Messi Cuccittini,AM,صانع لعب / جناح
+sb266424,away,Sergio Busquets i Burgos,بوسكيتس,92,7.0,0,0,0.0,0.0,0,0,0,67,91.0,1,5,20,4,1,191,sb266424|Sergio Busquets i Burgos,DM,وسط دفاعي
+sb266424,away,Munir El Haddadi Mohamed,منير,15,6.4,0,0,0.27,0.0,3,0,0,5,40.0,1,1,1,2,0,28,sb266424|Munir El Haddadi Mohamed,CM,وسط
+sb266424,away,Claudio Andrés Bravo Muñoz,برافو,92,10.0,0,0,0.0,0.0,0,0,6,39,74.0,0,0,0,4,0,107,sb266424|Claudio Andrés Bravo Muñoz,GK,حارس
+sb266424,away,Gerard Piqué Bernabéu,بيكيه,92,7.4,0,0,0.0,0.0,0,0,2,49,96.0,0,2,2,3,1,145,sb266424|Gerard Piqué Bernabéu,CB,قلب دفاع
+sb266424,away,Jérémy Mathieu,ماتيو,65,7.8,0,0,0.0,0.0,0,0,3,38,95.0,0,0,3,2,0,118,sb266424|Jérémy Mathieu,CB,قلب دفاع
+sb266424,away,Javier Alejandro Mascherano,ماسكيرانو,27,6.4,0,0,0.0,0.0,0,0,1,20,95.0,0,0,4,0,0,54,sb266424|Javier Alejandro Mascherano,CB,قلب دفاع
+sb267533,home,Gerard Piqué Bernabéu,بيكيه,92,8.1,1,0,0.11,0.0,1,0,8,82,95.0,0,3,4,5,0,241,sb267533|Gerard Piqué Bernabéu,CB,قلب دفاع
+sb267533,home,Ivan Rakitić,راكيتيتش,74,6.3,0,1,0.08,0.11,2,1,4,49,90.0,0,3,15,3,2,163,sb267533|Ivan Rakitić,CM,وسط
+sb267533,home,Andrés Iniesta Luján,إنييستا,92,5.7,0,0,0.08,0.01,1,1,5,83,88.0,3,2,11,6,0,255,sb267533|Andrés Iniesta Luján,CM,وسط
+sb267533,home,Sergio Busquets i Burgos,بوسكيتس,92,6.1,0,0,0.0,0.02,0,1,3,91,95.0,1,4,11,7,0,276,sb267533|Sergio Busquets i Burgos,DM,وسط دفاعي
+sb267533,home,Daniel Alves da Silva,داني ألفيش,92,5.9,0,0,0.03,0.0,2,0,7,63,92.0,1,3,8,2,2,194,sb267533|Daniel Alves da Silva,FB,ظهير
+sb267533,home,Lionel Andrés Messi Cuccittini,ميسي,92,6.3,0,0,0.14,0.12,3,3,8,83,84.0,2,0,3,1,8,277,sb267533|Lionel Andrés Messi Cuccittini,FW,مهاجم
+sb267533,home,Jordi Alba Ramos,جوردي ألبا,92,4.9,0,0,0.0,0.0,0,0,4,80,94.0,1,0,6,8,0,218,sb267533|Jordi Alba Ramos,FB,ظهير
+sb267533,home,Neymar da Silva Santos Junior,نيمار,92,6.2,0,0,0.05,0.1,1,2,6,43,86.0,1,2,8,4,9,182,sb267533|Neymar da Silva Santos Junior,AM,صانع لعب / جناح
+sb267533,home,Javier Alejandro Mascherano,ماسكيرانو,92,6.6,0,0,0.0,0.0,0,0,5,79,95.0,0,3,7,4,0,227,sb267533|Javier Alejandro Mascherano,CB,قلب دفاع
+sb267533,home,Arda Turan,أردا توران,18,6.8,0,0,0.12,0.0,1,0,2,9,100.0,0,0,3,2,0,33,sb267533|Arda Turan,CM,وسط
+sb267533,home,Claudio Andrés Bravo Muñoz,برافو,92,6.1,0,0,0.0,0.0,0,0,3,24,79.0,0,0,0,4,0,67,sb267533|Claudio Andrés Bravo Muñoz,GK,حارس
+sb267533,home,Luis Alberto Suárez Díaz,سواريز,92,5.4,0,0,0.12,0.11,3,2,0,26,81.0,0,2,5,1,6,127,sb267533|Luis Alberto Suárez Díaz,AM,صانع لعب / جناح
+sb267533,away,Gareth Frank Bale,بيل,90,6.5,0,1,0.42,0.16,4,2,5,28,75.0,0,1,11,3,3,112,sb267533|Gareth Frank Bale,AM,صانع لعب / جناح
+sb267533,away,Cristiano Ronaldo dos Santos Aveiro,رونالدو,92,6.8,1,0,0.24,0.0,5,0,8,18,67.0,4,1,8,5,2,102,sb267533|Cristiano Ronaldo dos Santos Aveiro,AM,صانع لعب / جناح
+sb267533,away,Karim Benzema,بنزيما,78,7.6,1,0,0.63,0.11,4,2,3,25,72.0,0,0,9,1,5,105,sb267533|Karim Benzema,FW,مهاجم
+sb267533,away,Carlos Henrique Casimiro,كاسيميرو,92,8.0,0,0,0.0,0.0,0,0,3,38,87.0,0,9,31,3,0,106,sb267533|Carlos Henrique Casimiro,DM,وسط دفاعي
+sb267533,away,Marcelo Vieira da Silva Júnior,مارسيلو,92,6.7,0,0,0.01,0.14,1,3,9,45,87.0,0,2,11,7,3,132,sb267533|Marcelo Vieira da Silva Júnior,FB,ظهير
+sb267533,away,Toni Kroos,كروس,92,6.8,0,0,0.0,0.0,0,0,8,42,88.0,0,2,38,1,0,121,sb267533|Toni Kroos,CM,وسط
+sb267533,away,Luka Modrić,مودريتش,92,6.8,0,0,0.03,0.06,1,1,5,33,100.0,0,2,17,6,1,112,sb267533|Luka Modrić,CM,وسط
+sb267533,away,Daniel Carvajal Ramos,كارفاخال,92,7.1,0,0,0.0,0.12,0,1,8,36,78.0,1,4,13,1,3,98,sb267533|Daniel Carvajal Ramos,FB,ظهير
+sb267533,away,Kléper Laveran Lima Ferreira,بيبي,92,3.6,0,0,0.0,0.0,0,0,0,30,60.0,0,2,8,5,0,82,sb267533|Kléper Laveran Lima Ferreira,CB,قلب دفاع
+sb267533,away,Keylor Navas Gamboa,نافاس,92,6.2,0,0,0.0,0.0,0,0,6,26,69.0,0,0,0,4,0,56,sb267533|Keylor Navas Gamboa,GK,حارس
+sb267533,away,Jesé Rodríguez Ruiz,خيسي,14,6.4,0,0,0.0,0.03,0,1,2,8,88.0,0,1,5,1,1,27,sb267533|Jesé Rodríguez Ruiz,FW,مهاجم
+sb267533,away,Lucas Vázquez Iglesias,لوكاس فاسكيز,2,6.5,0,0,0.0,0.0,0,0,0,1,100.0,0,0,2,0,0,4,sb267533|Lucas Vázquez Iglesias,AM,صانع لعب / جناح
+sb267533,away,Sergio Ramos García,راموس,82,5.3,0,0,0.0,0.0,0,0,2,20,70.0,0,4,6,2,1,53,sb267533|Sergio Ramos García,CB,قلب دفاع

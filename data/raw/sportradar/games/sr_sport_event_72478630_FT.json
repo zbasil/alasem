@@ -1,0 +1,146 @@
+{
+"fetched_at": "2026-10-24T10:50:00Z",
+"source": "SportRadar via fetch_sports_data (game_stats)",
+"id": "sr:sport_event:72478630",
+"kickoff_utc": "2026-10-16T19:00:00Z",
+"home": "RC Deportivo de A Coruna",
+"away": "Levante UD",
+"status": "final",
+"score": {
+"home": 1,
+"away": 1
+},
+"ht_score": {
+"home": 0,
+"away": 0,
+"derived_from": "score_change events up to minute 45"
+},
+"team_stats": {
+"home": {
+"ball_possession": 47,
+"cards_given": 3,
+"corner_kicks": 3,
+"fouls": 17,
+"free_kicks": 11,
+"goal_kicks": 10,
+"injuries": 0,
+"offsides": 0,
+"red_cards": 0,
+"shots_blocked": 1,
+"shots_off_target": 5,
+"shots_on_target": 5,
+"shots_saved": 3,
+"shots_total": 11,
+"substitutions": 5,
+"throw_ins": 23,
+"yellow_cards": 3,
+"yellow_red_cards": 0
+},
+"away": {
+"ball_possession": 53,
+"cards_given": 2,
+"corner_kicks": 5,
+"fouls": 12,
+"free_kicks": 18,
+"goal_kicks": 5,
+"injuries": 0,
+"offsides": 0,
+"red_cards": 0,
+"shots_blocked": 1,
+"shots_off_target": 4,
+"shots_on_target": 4,
+"shots_saved": 4,
+"shots_total": 9,
+"substitutions": 4,
+"throw_ins": 21,
+"yellow_cards": 2,
+"yellow_red_cards": 0
+}
+},
+"key_events": [
+{
+"type": "yellow_card",
+"time": 33,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 42,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 62,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 62,
+"team": "home"
+},
+{
+"type": "score_change",
+"time": 63,
+"team": "home",
+"home_score": 1,
+"away_score": 0
+},
+{
+"type": "substitution",
+"time": 69,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 69,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 76,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 80,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 80,
+"team": "home"
+},
+{
+"type": "score_change",
+"time": 82,
+"team": "away",
+"home_score": 1,
+"away_score": 1
+},
+{
+"type": "substitution",
+"time": 85,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 89,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 90,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 90,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 90,
+"team": "home"
+}
+]
+}

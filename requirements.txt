@@ -1,0 +1,9 @@
+# Zahraa Football Supercomputer: pinned versions (Python 3.11+; tested on 3.13)
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+# post cards as PNG for the chat reports (python -m playwright install chromium once)
+playwright==1.63.0
+# tests and the Colab notebook
+pytest==9.1.1
+nbformat==5.11.1

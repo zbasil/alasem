@@ -1,0 +1,13 @@
+# secrets
+.env
+*.env.local
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+# local user data written by `python -m zsc serve`
+data/userdata/
+# temp files from atomic writes
+*.tmp
+node_modules/

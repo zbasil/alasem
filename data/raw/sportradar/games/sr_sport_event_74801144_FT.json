@@ -1,0 +1,165 @@
+{
+"fetched_at": "2026-10-24T10:50:00Z",
+"source": "SportRadar via fetch_sports_data (game_stats)",
+"id": "sr:sport_event:74801144",
+"kickoff_utc": "2026-10-21T18:00:00Z",
+"home": "Levante UD",
+"away": "Athletic Bilbao",
+"status": "final",
+"score": {
+"home": 3,
+"away": 1
+},
+"ht_score": {
+"home": 2,
+"away": 0,
+"derived_from": "score_change events up to minute 45"
+},
+"team_stats": {
+"home": {
+"ball_possession": 43,
+"cards_given": 3,
+"corner_kicks": 3,
+"fouls": 12,
+"free_kicks": 12,
+"goal_kicks": 10,
+"injuries": 1,
+"offsides": 0,
+"red_cards": 0,
+"shots_blocked": 3,
+"shots_off_target": 2,
+"shots_on_target": 6,
+"shots_saved": 3,
+"shots_total": 11,
+"substitutions": 5,
+"throw_ins": 11,
+"yellow_cards": 3,
+"yellow_red_cards": 0
+},
+"away": {
+"ball_possession": 57,
+"cards_given": 2,
+"corner_kicks": 9,
+"fouls": 12,
+"free_kicks": 11,
+"goal_kicks": 6,
+"injuries": 0,
+"offsides": 0,
+"red_cards": 1,
+"shots_blocked": 6,
+"shots_off_target": 5,
+"shots_on_target": 4,
+"shots_saved": 3,
+"shots_total": 15,
+"substitutions": 5,
+"throw_ins": 14,
+"yellow_cards": 1,
+"yellow_red_cards": 0
+}
+},
+"key_events": [
+{
+"type": "score_change",
+"time": 20,
+"team": "home",
+"home_score": 1,
+"away_score": 0
+},
+{
+"type": "score_change",
+"time": 22,
+"team": "home",
+"home_score": 2,
+"away_score": 0
+},
+{
+"type": "substitution",
+"time": 47,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 47,
+"team": "away"
+},
+{
+"type": "score_change",
+"time": 67,
+"team": "away",
+"home_score": 2,
+"away_score": 1
+},
+{
+"type": "yellow_card",
+"time": 67,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 72,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 72,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 72,
+"team": "home"
+},
+{
+"type": "red_card",
+"time": 73,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 77,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 80,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 81,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 81,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 81,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 83,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 86,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 90,
+"team": "away"
+},
+{
+"type": "score_change",
+"time": 90,
+"team": "home",
+"home_score": 3,
+"away_score": 1
+}
+]
+}

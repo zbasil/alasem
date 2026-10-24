@@ -1,0 +1,381 @@
+match_id,matchday,date,time_local,home,away,kickoff_utc,kickoff_source,sr_id,sr_status,status,played_date
+ESP1-2026-ALA-GET,1,2026-08-15,19:30,Alaves,Getafe,2026-08-15T17:30:00Z,openfootball,,,played,2026-08-15
+ESP1-2026-SEV-RVC,1,2026-08-15,21:30,Sevilla,Vallecano,2026-08-15T19:30:00Z,openfootball,,,played,2026-08-15
+ESP1-2026-RAC-VIL,1,2026-08-16,17:00,Santander,Villarreal,2026-08-16T15:00:00Z,openfootball,,,played,2026-08-16
+ESP1-2026-ESP-LEV,1,2026-08-16,19:00,Espanol,Levante,2026-08-16T17:00:00Z,openfootball,,,played,2026-08-16
+ESP1-2026-DEP-ELC,1,2026-08-17,21:00,La Coruna,Elche,2026-08-17T19:00:00Z,openfootball,,,played,2026-08-17
+ESP1-2026-ATM-MCF,1,2026-08-19,21:00,Ath Madrid,Malaga,2026-08-19T19:00:00Z,openfootball,,,played,2026-08-19
+ESP1-2026-RVC-ALA,2,2026-08-20,21:00,Vallecano,Alaves,2026-08-20T19:00:00Z,openfootball,,,played,2026-08-20
+ESP1-2026-RBB-RSO,2,2026-08-21,21:00,Betis,Sociedad,2026-08-21T19:00:00Z,openfootball,,,played,2026-08-21
+ESP1-2026-ATH-SEV,2,2026-08-22,17:00,Ath Bilbao,Sevilla,2026-08-22T15:00:00Z,openfootball,,,played,2026-08-22
+ESP1-2026-VCF-RCC,2,2026-08-22,19:30,Valencia,Celta,2026-08-22T17:30:00Z,openfootball,,,played,2026-08-22
+ESP1-2026-ESP-RMA,2,2026-08-22,21:30,Espanol,Real Madrid,2026-08-22T19:30:00Z,openfootball,,,played,2026-08-22
+ESP1-2026-ATM-VIL,2,2026-08-23,17:00,Ath Madrid,Villarreal,2026-08-23T15:00:00Z,openfootball,,,played,2026-08-23
+ESP1-2026-GET-RAC,2,2026-08-23,19:30,Getafe,Santander,2026-08-23T17:30:00Z,openfootball,,,played,2026-08-23
+ESP1-2026-ELC-BAR,2,2026-08-23,21:30,Elche,Barcelona,2026-08-23T19:30:00Z,openfootball,,,played,2026-08-23
+ESP1-2026-OSA-LEV,2,2026-08-24,19:30,Osasuna,Levante,2026-08-24T17:30:00Z,openfootball,,,played,2026-08-24
+ESP1-2026-MCF-DEP,2,2026-08-24,21:30,Malaga,La Coruna,2026-08-24T19:30:00Z,openfootball,,,played,2026-08-24
+ESP1-2026-VCF-RBB,1,2026-08-25,21:00,Valencia,Betis,2026-08-25T19:00:00Z,openfootball,,,played,2026-08-25
+ESP1-2026-RMA-RSO,1,2026-08-26,21:00,Real Madrid,Sociedad,2026-08-26T19:00:00Z,openfootball,,,played,2026-08-26
+ESP1-2026-RCC-OSA,1,2026-08-27,20:30,Celta,Osasuna,2026-08-27T18:30:00Z,openfootball,,,played,2026-08-27
+ESP1-2026-BAR-ATH,1,2026-08-27,21:00,Barcelona,Ath Bilbao,2026-08-27T19:00:00Z,openfootball,,,played,2026-08-27
+ESP1-2026-RAC-ELC,3,2026-08-28,19:00,Santander,Elche,2026-08-28T17:00:00Z,openfootball,,,played,2026-08-28
+ESP1-2026-ALA-VIL,3,2026-08-28,21:30,Alaves,Villarreal,2026-08-28T19:30:00Z,openfootball,,,played,2026-08-28
+ESP1-2026-LEV-RBB,3,2026-08-29,17:00,Levante,Betis,2026-08-29T15:00:00Z,openfootball,,,played,2026-08-29
+ESP1-2026-RSO-ESP,3,2026-08-29,19:00,Sociedad,Espanol,2026-08-29T17:00:00Z,openfootball,,,played,2026-08-29
+ESP1-2026-SEV-ATM,3,2026-08-29,21:30,Sevilla,Ath Madrid,2026-08-29T19:30:00Z,openfootball,,,played,2026-08-29
+ESP1-2026-RMA-MCF,3,2026-08-30,17:00,Real Madrid,Malaga,2026-08-30T15:00:00Z,openfootball,,,played,2026-08-30
+ESP1-2026-DEP-VCF,3,2026-08-30,19:30,La Coruna,Valencia,2026-08-30T17:30:00Z,openfootball,,,played,2026-08-30
+ESP1-2026-RCC-ATH,3,2026-08-30,21:30,Celta,Ath Bilbao,2026-08-30T19:30:00Z,openfootball,,,played,2026-08-30
+ESP1-2026-OSA-GET,3,2026-08-31,19:30,Osasuna,Getafe,2026-08-31T17:30:00Z,openfootball,,,played,2026-08-31
+ESP1-2026-BAR-RVC,3,2026-08-31,21:30,Barcelona,Vallecano,2026-08-31T19:30:00Z,openfootball,,,played,2026-08-31
+ESP1-2026-RSO-RCC,6,2026-09-03,21:00,Sociedad,Celta,2026-09-03T19:00:00Z,openfootball,,,played,2026-09-03
+ESP1-2026-RBB-RMA,4,2026-09-04,21:00,Betis,Real Madrid,2026-09-04T19:00:00Z,openfootball,,,played,2026-09-04
+ESP1-2026-ATH-ATM,4,2026-09-05,16:15,Ath Bilbao,Ath Madrid,2026-09-05T14:15:00Z,openfootball,,,played,2026-09-05
+ESP1-2026-RVC-RAC,4,2026-09-05,18:30,Vallecano,Santander,2026-09-05T16:30:00Z,openfootball,,,played,2026-09-05
+ESP1-2026-VIL-DEP,4,2026-09-05,21:00,Villarreal,La Coruna,2026-09-05T19:00:00Z,openfootball,,,played,2026-09-05
+ESP1-2026-VCF-BAR,4,2026-09-06,16:15,Valencia,Barcelona,2026-09-06T14:15:00Z,openfootball,,,played,2026-09-06
+ESP1-2026-ALA-OSA,4,2026-09-06,18:30,Alaves,Osasuna,2026-09-06T16:30:00Z,openfootball,,,played,2026-09-06
+ESP1-2026-MCF-LEV,4,2026-09-06,18:30,Malaga,Levante,2026-09-06T16:30:00Z,openfootball,,,played,2026-09-06
+ESP1-2026-ESP-SEV,4,2026-09-06,21:00,Espanol,Sevilla,2026-09-06T19:00:00Z,openfootball,,,played,2026-09-06
+ESP1-2026-GET-RCC,4,2026-09-07,19:00,Getafe,Celta,2026-09-07T17:00:00Z,openfootball,,,played,2026-09-07
+ESP1-2026-ELC-RSO,4,2026-09-07,21:30,Elche,Sociedad,2026-09-07T19:30:00Z,openfootball,,,played,2026-09-07
+ESP1-2026-SEV-VCF,5,2026-09-11,21:00,Sevilla,Valencia,2026-09-11T19:00:00Z,openfootball,,,played,2026-09-11
+ESP1-2026-RAC-ALA,5,2026-09-12,14:00,Santander,Alaves,2026-09-12T12:00:00Z,openfootball,,,played,2026-09-12
+ESP1-2026-OSA-ESP,5,2026-09-12,16:15,Osasuna,Espanol,2026-09-12T14:15:00Z,openfootball,,,played,2026-09-12
+ESP1-2026-ATH-ELC,5,2026-09-12,18:30,Ath Bilbao,Elche,2026-09-12T16:30:00Z,openfootball,,,played,2026-09-12
+ESP1-2026-RMA-RVC,5,2026-09-12,21:00,Real Madrid,Vallecano,2026-09-12T19:00:00Z,openfootball,,,played,2026-09-12
+ESP1-2026-RCC-MCF,5,2026-09-13,14:00,Celta,Malaga,2026-09-13T12:00:00Z,openfootball,,,played,2026-09-13
+ESP1-2026-LEV-BAR,5,2026-09-13,16:15,Levante,Barcelona,2026-09-13T14:15:00Z,openfootball,,,played,2026-09-13
+ESP1-2026-GET-DEP,5,2026-09-13,18:30,Getafe,La Coruna,2026-09-13T16:30:00Z,openfootball,,,played,2026-09-13
+ESP1-2026-RSO-ATM,5,2026-09-13,21:00,Sociedad,Ath Madrid,2026-09-13T19:00:00Z,openfootball,,,played,2026-09-13
+ESP1-2026-VIL-RBB,5,2026-09-14,21:00,Villarreal,Betis,2026-09-14T19:00:00Z,openfootball,,,played,2026-09-14
+ESP1-2026-RVC-ESP,6,2026-09-15,19:00,Vallecano,Espanol,2026-09-15T17:00:00Z,openfootball,,,played,2026-09-15
+ESP1-2026-ALA-VCF,6,2026-09-15,20:00,Alaves,Valencia,2026-09-15T18:00:00Z,openfootball,,,played,2026-09-15
+ESP1-2026-ELC-RMA,6,2026-09-15,21:30,Elche,Real Madrid,2026-09-15T19:30:00Z,openfootball,,,played,2026-09-15
+ESP1-2026-DEP-SEV,6,2026-09-16,19:00,La Coruna,Sevilla,2026-09-16T17:00:00Z,openfootball,,,played,2026-09-16
+ESP1-2026-ATM-OSA,6,2026-09-16,19:00,Ath Madrid,Osasuna,2026-09-16T17:00:00Z,openfootball,,,played,2026-09-16
+ESP1-2026-BAR-RAC,6,2026-09-16,21:30,Barcelona,Santander,2026-09-16T19:30:00Z,openfootball,,,played,2026-09-16
+ESP1-2026-RBB-GET,6,2026-09-17,19:00,Betis,Getafe,2026-09-17T17:00:00Z,openfootball,,,played,2026-09-17
+ESP1-2026-MCF-VIL,6,2026-09-17,21:30,Malaga,Villarreal,2026-09-17T19:30:00Z,openfootball,,,played,2026-09-17
+ESP1-2026-ESP-ELC,7,2026-09-18,21:00,Espanol,Elche,2026-09-18T19:00:00Z,openfootball,,,played,2026-09-18
+ESP1-2026-OSA-RVC,7,2026-09-19,14:00,Osasuna,Vallecano,2026-09-19T12:00:00Z,openfootball,,,played,2026-09-19
+ESP1-2026-ATH-ALA,7,2026-09-19,16:15,Ath Bilbao,Alaves,2026-09-19T14:15:00Z,openfootball,,,played,2026-09-19
+ESP1-2026-RCC-RAC,7,2026-09-19,18:30,Celta,Santander,2026-09-19T16:30:00Z,openfootball,,,played,2026-09-19
+ESP1-2026-SEV-BAR,7,2026-09-19,21:00,Sevilla,Barcelona,2026-09-19T19:00:00Z,openfootball,,,played,2026-09-19
+ESP1-2026-GET-MCF,7,2026-09-20,14:00,Getafe,Malaga,2026-09-20T12:00:00Z,openfootball,,,played,2026-09-20
+ESP1-2026-ATM-RMA,7,2026-09-20,16:15,Ath Madrid,Real Madrid,2026-09-20T14:15:00Z,openfootball,,,played,2026-09-20
+ESP1-2026-DEP-RBB,7,2026-09-20,18:30,La Coruna,Betis,2026-09-20T16:30:00Z,openfootball,,,played,2026-09-20
+ESP1-2026-VIL-LEV,7,2026-09-20,18:30,Villarreal,Levante,2026-09-20T16:30:00Z,openfootball,,,played,2026-09-20
+ESP1-2026-VCF-RSO,7,2026-09-20,21:00,Valencia,Sociedad,2026-09-20T19:00:00Z,openfootball,,,played,2026-09-20
+ESP1-2026-MCF-ESP,8,2026-10-09,21:00,Malaga,Espanol,2026-10-09T19:00:00Z,openfootball,,,played,2026-10-09
+ESP1-2026-RVC-ATH,8,2026-10-10,14:00,Vallecano,Ath Bilbao,2026-10-10T12:00:00Z,openfootball,,,abandoned,
+ESP1-2026-ALA-ATM,8,2026-10-10,16:15,Alaves,Ath Madrid,2026-10-10T14:15:00Z,openfootball,,,played,2026-10-10
+ESP1-2026-BAR-GET,8,2026-10-10,18:30,Barcelona,Getafe,2026-10-10T16:30:00Z,openfootball,,,played,2026-10-10
+ESP1-2026-RMA-VIL,8,2026-10-10,21:00,Real Madrid,Villarreal,2026-10-10T19:00:00Z,openfootball,,,played,2026-10-10
+ESP1-2026-ELC-RCC,8,2026-10-11,14:00,Elche,Celta,2026-10-11T12:00:00Z,openfootball,,,played,2026-10-11
+ESP1-2026-RSO-DEP,8,2026-10-11,16:15,Sociedad,La Coruna,2026-10-11T14:15:00Z,sportradar,sr:sport_event:72478624,final,played,2026-10-11
+ESP1-2026-RBB-OSA,8,2026-10-11,18:30,Betis,Osasuna,2026-10-11T16:30:00Z,sportradar,sr:sport_event:72478608,final,played,2026-10-11
+ESP1-2026-RAC-VCF,8,2026-10-11,21:00,Santander,Valencia,2026-10-11T19:00:00Z,sportradar,sr:sport_event:72478618,final,played,2026-10-11
+ESP1-2026-LEV-SEV,8,2026-10-12,21:00,Levante,Sevilla,2026-10-12T19:00:00Z,sportradar,sr:sport_event:72478614,final,played,2026-10-12
+ESP1-2026-DEP-LEV,9,2026-10-16,21:00,La Coruna,Levante,2026-10-16T19:00:00Z,sportradar,sr:sport_event:72478630,final,played,2026-10-16
+ESP1-2026-ESP-ATM,9,2026-10-17,14:00,Espanol,Ath Madrid,2026-10-17T12:00:00Z,sportradar,sr:sport_event:72478632,final,played,2026-10-17
+ESP1-2026-VIL-ELC,9,2026-10-17,16:15,Villarreal,Elche,2026-10-17T14:15:00Z,sportradar,sr:sport_event:72478644,final,played,2026-10-17
+ESP1-2026-RBB-BAR,9,2026-10-17,18:30,Betis,Barcelona,2026-10-17T16:30:00Z,sportradar,sr:sport_event:72478626,final,played,2026-10-17
+ESP1-2026-VCF-ATH,9,2026-10-17,21:00,Valencia,Ath Bilbao,2026-10-17T19:00:00Z,sportradar,sr:sport_event:72478642,final,played,2026-10-17
+ESP1-2026-OSA-RAC,9,2026-10-18,14:00,Osasuna,Santander,2026-10-18T12:00:00Z,sportradar,sr:sport_event:72478638,final,played,2026-10-18
+ESP1-2026-RCC-ALA,9,2026-10-18,16:15,Celta,Alaves,2026-10-18T14:15:00Z,sportradar,sr:sport_event:72478628,final,played,2026-10-18
+ESP1-2026-MCF-RSO,9,2026-10-18,18:30,Malaga,Sociedad,2026-10-18T16:30:00Z,sportradar,sr:sport_event:72478636,final,played,2026-10-18
+ESP1-2026-RMA-SEV,9,2026-10-18,21:00,Real Madrid,Sevilla,2026-10-18T19:00:00Z,sportradar,sr:sport_event:72478640,final,played,2026-10-18
+ESP1-2026-GET-RVC,9,2026-10-19,21:00,Getafe,Vallecano,2026-10-19T19:00:00Z,sportradar,sr:sport_event:72478634,final,played,2026-10-19
+ESP1-2026-LEV-ATH,6,2026-10-21,20:00,Levante,Ath Bilbao,2026-10-21T18:00:00Z,sportradar,sr:sport_event:74801144,final,played,2026-10-21
+ESP1-2026-RVC-ELC,10,2026-10-25,,Vallecano,Elche,2026-10-24T12:00:00Z,sportradar,sr:sport_event:72478658,scheduled,scheduled,
+ESP1-2026-ALA-MCF,10,2026-10-25,,Alaves,Malaga,2026-10-23T19:00:00Z,sportradar,sr:sport_event:72478646,final,played,2026-10-23
+ESP1-2026-ATH-GET,10,2026-10-25,,Ath Bilbao,Getafe,2026-10-25T13:00:00Z,sportradar,sr:sport_event:72478648,scheduled,scheduled,
+ESP1-2026-SEV-OSA,10,2026-10-25,,Sevilla,Osasuna,2026-10-26T20:00:00Z,sportradar,sr:sport_event:72478662,scheduled,scheduled,
+ESP1-2026-VCF-VIL,10,2026-10-25,,Valencia,Villarreal,2026-10-24T16:30:00Z,sportradar,sr:sport_event:72478664,scheduled,scheduled,
+ESP1-2026-BAR-RMA,10,2026-10-25,,Barcelona,Real Madrid,2026-10-25T20:00:00Z,sportradar,sr:sport_event:72478654,scheduled,scheduled,
+ESP1-2026-ATM-DEP,10,2026-10-25,,Ath Madrid,La Coruna,2026-10-24T19:00:00Z,sportradar,sr:sport_event:72478650,scheduled,scheduled,
+ESP1-2026-RCC-RBB,10,2026-10-25,,Celta,Betis,2026-10-25T15:15:00Z,sportradar,sr:sport_event:72478652,scheduled,scheduled,
+ESP1-2026-RSO-LEV,10,2026-10-25,,Sociedad,Levante,2026-10-25T17:30:00Z,sportradar,sr:sport_event:72478660,scheduled,scheduled,
+ESP1-2026-RAC-ESP,10,2026-10-25,,Santander,Espanol,2026-10-24T14:15:00Z,sportradar,sr:sport_event:72478656,scheduled,scheduled,
+ESP1-2026-RBB-MCF,11,2026-11-01,,Betis,Malaga,2026-10-31T17:30:00Z,sportradar,sr:sport_event:72478668,scheduled,scheduled,
+ESP1-2026-VIL-ESP,11,2026-11-01,,Villarreal,Espanol,2026-10-30T20:00:00Z,sportradar,sr:sport_event:72478684,scheduled,scheduled,
+ESP1-2026-ELC-VCF,11,2026-11-01,,Elche,Valencia,2026-11-01T17:30:00Z,sportradar,sr:sport_event:72478672,scheduled,scheduled,
+ESP1-2026-ATH-RSO,11,2026-11-01,,Ath Bilbao,Sociedad,2026-11-01T20:00:00Z,sportradar,sr:sport_event:72478666,scheduled,scheduled,
+ESP1-2026-LEV-ATM,11,2026-11-01,,Levante,Ath Madrid,2026-10-31T13:00:00Z,sportradar,sr:sport_event:72478678,scheduled,scheduled,
+ESP1-2026-DEP-OSA,11,2026-11-01,,La Coruna,Osasuna,,,,,scheduled,
+ESP1-2026-BAR-ALA,11,2026-11-01,,Barcelona,Alaves,,,,,scheduled,
+ESP1-2026-GET-SEV,11,2026-11-01,,Getafe,Sevilla,2026-11-01T13:00:00Z,sportradar,sr:sport_event:72478676,scheduled,scheduled,
+ESP1-2026-RAC-RMA,11,2026-11-01,,Santander,Real Madrid,2026-11-01T15:15:00Z,sportradar,sr:sport_event:72478680,scheduled,scheduled,
+ESP1-2026-RVC-RCC,11,2026-11-01,,Vallecano,Celta,2026-10-31T15:15:00Z,sportradar,sr:sport_event:72478682,scheduled,scheduled,
+ESP1-2026-ELC-RBB,12,2026-11-08,,Elche,Betis,2026-11-08T13:00:00Z,sportradar,sr:sport_event:72478690,scheduled,scheduled,
+ESP1-2026-OSA-ATH,12,2026-11-08,,Osasuna,Ath Bilbao,,,,,scheduled,
+ESP1-2026-SEV-ALA,12,2026-11-08,,Sevilla,Alaves,,,,,scheduled,
+ESP1-2026-VCF-RMA,12,2026-11-08,,Valencia,Real Madrid,2026-11-07T20:00:00Z,sportradar,sr:sport_event:72478702,scheduled,scheduled,
+ESP1-2026-RCC-LEV,12,2026-11-08,,Celta,Levante,2026-11-08T17:30:00Z,sportradar,sr:sport_event:72478688,scheduled,scheduled,
+ESP1-2026-RSO-RVC,12,2026-11-08,,Sociedad,Vallecano,2026-11-08T15:15:00Z,sportradar,sr:sport_event:72478698,scheduled,scheduled,
+ESP1-2026-MCF-RAC,12,2026-11-08,,Malaga,Santander,2026-11-07T13:00:00Z,sportradar,sr:sport_event:72478694,scheduled,scheduled,
+ESP1-2026-ESP-DEP,12,2026-11-08,,Espanol,La Coruna,2026-11-07T15:15:00Z,sportradar,sr:sport_event:72478692,scheduled,scheduled,
+ESP1-2026-ATM-BAR,12,2026-11-08,,Ath Madrid,Barcelona,,,,,scheduled,
+ESP1-2026-VIL-GET,12,2026-11-08,,Villarreal,Getafe,2026-11-08T17:30:00Z,sportradar,sr:sport_event:72478704,scheduled,scheduled,
+ESP1-2026-ATH-ESP,13,2026-11-22,,Ath Bilbao,Espanol,,,,,scheduled,
+ESP1-2026-BAR-VIL,13,2026-11-22,,Barcelona,Villarreal,,,,,scheduled,
+ESP1-2026-RAC-RSO,13,2026-11-22,,Santander,Sociedad,,,,,scheduled,
+ESP1-2026-RVC-VCF,13,2026-11-22,,Vallecano,Valencia,,,,,scheduled,
+ESP1-2026-OSA-MCF,13,2026-11-22,,Osasuna,Malaga,,,,,scheduled,
+ESP1-2026-GET-ATM,13,2026-11-22,,Getafe,Ath Madrid,,,,,scheduled,
+ESP1-2026-RMA-RCC,13,2026-11-22,,Real Madrid,Celta,,,,,scheduled,
+ESP1-2026-ALA-DEP,13,2026-11-22,,Alaves,La Coruna,,,,,scheduled,
+ESP1-2026-SEV-RBB,13,2026-11-22,,Sevilla,Betis,,,,,scheduled,
+ESP1-2026-LEV-ELC,13,2026-11-22,,Levante,Elche,,,,,scheduled,
+ESP1-2026-RCC-VIL,14,2026-11-29,,Celta,Villarreal,,,,,scheduled,
+ESP1-2026-ELC-ATM,14,2026-11-29,,Elche,Ath Madrid,,,,,scheduled,
+ESP1-2026-RBB-RVC,14,2026-11-29,,Betis,Vallecano,,,,,scheduled,
+ESP1-2026-VCF-OSA,14,2026-11-29,,Valencia,Osasuna,,,,,scheduled,
+ESP1-2026-RMA-ALA,14,2026-11-29,,Real Madrid,Alaves,,,,,scheduled,
+ESP1-2026-ESP-GET,14,2026-11-29,,Espanol,Getafe,,,,,scheduled,
+ESP1-2026-RSO-SEV,14,2026-11-29,,Sociedad,Sevilla,,,,,scheduled,
+ESP1-2026-LEV-RAC,14,2026-11-29,,Levante,Santander,,,,,scheduled,
+ESP1-2026-DEP-BAR,14,2026-11-29,,La Coruna,Barcelona,,,,,scheduled,
+ESP1-2026-MCF-ATH,14,2026-11-29,,Malaga,Ath Bilbao,,,,,scheduled,
+ESP1-2026-OSA-ELC,15,2026-12-06,,Osasuna,Elche,,,,,scheduled,
+ESP1-2026-SEV-MCF,15,2026-12-06,,Sevilla,Malaga,,,,,scheduled,
+ESP1-2026-ALA-ESP,15,2026-12-06,,Alaves,Espanol,,,,,scheduled,
+ESP1-2026-ATM-RBB,15,2026-12-06,,Ath Madrid,Betis,,,,,scheduled,
+ESP1-2026-RAC-DEP,15,2026-12-06,,Santander,La Coruna,,,,,scheduled,
+ESP1-2026-BAR-RCC,15,2026-12-06,,Barcelona,Celta,,,,,scheduled,
+ESP1-2026-GET-VCF,15,2026-12-06,,Getafe,Valencia,,,,,scheduled,
+ESP1-2026-ATH-RMA,15,2026-12-06,,Ath Bilbao,Real Madrid,,,,,scheduled,
+ESP1-2026-VIL-RSO,15,2026-12-06,,Villarreal,Sociedad,,,,,scheduled,
+ESP1-2026-RVC-LEV,15,2026-12-06,,Vallecano,Levante,,,,,scheduled,
+ESP1-2026-ESP-RCC,16,2026-12-13,,Espanol,Celta,,,,,scheduled,
+ESP1-2026-MCF-BAR,16,2026-12-13,,Malaga,Barcelona,,,,,scheduled,
+ESP1-2026-RMA-OSA,16,2026-12-13,,Real Madrid,Osasuna,,,,,scheduled,
+ESP1-2026-DEP-ATH,16,2026-12-13,,La Coruna,Ath Bilbao,,,,,scheduled,
+ESP1-2026-LEV-ALA,16,2026-12-13,,Levante,Alaves,,,,,scheduled,
+ESP1-2026-ELC-SEV,16,2026-12-13,,Elche,Sevilla,,,,,scheduled,
+ESP1-2026-VIL-RVC,16,2026-12-13,,Villarreal,Vallecano,,,,,scheduled,
+ESP1-2026-RBB-RAC,16,2026-12-13,,Betis,Santander,,,,,scheduled,
+ESP1-2026-RSO-GET,16,2026-12-13,,Sociedad,Getafe,,,,,scheduled,
+ESP1-2026-ATM-VCF,16,2026-12-13,,Ath Madrid,Valencia,,,,,scheduled,
+ESP1-2026-ATH-RBB,17,2026-12-20,,Ath Bilbao,Betis,,,,,scheduled,
+ESP1-2026-GET-LEV,17,2026-12-20,,Getafe,Levante,,,,,scheduled,
+ESP1-2026-ALA-ELC,17,2026-12-20,,Alaves,Elche,,,,,scheduled,
+ESP1-2026-VCF-ESP,17,2026-12-20,,Valencia,Espanol,,,,,scheduled,
+ESP1-2026-OSA-VIL,17,2026-12-20,,Osasuna,Villarreal,,,,,scheduled,
+ESP1-2026-BAR-RSO,17,2026-12-20,,Barcelona,Sociedad,,,,,scheduled,
+ESP1-2026-RCC-ATM,17,2026-12-20,,Celta,Ath Madrid,,,,,scheduled,
+ESP1-2026-RVC-MCF,17,2026-12-20,,Vallecano,Malaga,,,,,scheduled,
+ESP1-2026-DEP-RMA,17,2026-12-20,,La Coruna,Real Madrid,,,,,scheduled,
+ESP1-2026-SEV-RAC,17,2026-12-20,,Sevilla,Santander,,,,,scheduled,
+ESP1-2026-RMA-GET,18,2027-01-03,,Real Madrid,Getafe,,,,,scheduled,
+ESP1-2026-RSO-OSA,18,2027-01-03,,Sociedad,Osasuna,,,,,scheduled,
+ESP1-2026-LEV-VCF,18,2027-01-03,,Levante,Valencia,,,,,scheduled,
+ESP1-2026-RAC-ATH,18,2027-01-03,,Santander,Ath Bilbao,,,,,scheduled,
+ESP1-2026-MCF-ELC,18,2027-01-03,,Malaga,Elche,,,,,scheduled,
+ESP1-2026-RBB-ALA,18,2027-01-03,,Betis,Alaves,,,,,scheduled,
+ESP1-2026-RCC-DEP,18,2027-01-03,,Celta,La Coruna,,,,,scheduled,
+ESP1-2026-ESP-BAR,18,2027-01-03,,Espanol,Barcelona,,,,,scheduled,
+ESP1-2026-VIL-SEV,18,2027-01-03,,Villarreal,Sevilla,,,,,scheduled,
+ESP1-2026-RVC-ATM,18,2027-01-03,,Vallecano,Ath Madrid,,,,,scheduled,
+ESP1-2026-ATH-VIL,19,2027-01-10,,Ath Bilbao,Villarreal,,,,,scheduled,
+ESP1-2026-ELC-GET,19,2027-01-10,,Elche,Getafe,,,,,scheduled,
+ESP1-2026-RMA-LEV,19,2027-01-10,,Real Madrid,Levante,,,,,scheduled,
+ESP1-2026-OSA-BAR,19,2027-01-10,,Osasuna,Barcelona,,,,,scheduled,
+ESP1-2026-DEP-RVC,19,2027-01-10,,La Coruna,Vallecano,,,,,scheduled,
+ESP1-2026-ATM-RAC,19,2027-01-10,,Ath Madrid,Santander,,,,,scheduled,
+ESP1-2026-ALA-RSO,19,2027-01-10,,Alaves,Sociedad,,,,,scheduled,
+ESP1-2026-SEV-RCC,19,2027-01-10,,Sevilla,Celta,,,,,scheduled,
+ESP1-2026-ESP-RBB,19,2027-01-10,,Espanol,Betis,,,,,scheduled,
+ESP1-2026-VCF-MCF,19,2027-01-10,,Valencia,Malaga,,,,,scheduled,
+ESP1-2026-MCF-RMA,20,2027-01-17,,Malaga,Real Madrid,,,,,scheduled,
+ESP1-2026-BAR-ELC,20,2027-01-17,,Barcelona,Elche,,,,,scheduled,
+ESP1-2026-VIL-ALA,20,2027-01-17,,Villarreal,Alaves,,,,,scheduled,
+ESP1-2026-RAC-OSA,20,2027-01-17,,Santander,Osasuna,,,,,scheduled,
+ESP1-2026-LEV-ESP,20,2027-01-17,,Levante,Espanol,,,,,scheduled,
+ESP1-2026-RCC-VCF,20,2027-01-17,,Celta,Valencia,,,,,scheduled,
+ESP1-2026-GET-ATH,20,2027-01-17,,Getafe,Ath Bilbao,,,,,scheduled,
+ESP1-2026-RVC-SEV,20,2027-01-17,,Vallecano,Sevilla,,,,,scheduled,
+ESP1-2026-RBB-DEP,20,2027-01-17,,Betis,La Coruna,,,,,scheduled,
+ESP1-2026-ATM-RSO,20,2027-01-17,,Ath Madrid,Sociedad,,,,,scheduled,
+ESP1-2026-RMA-RBB,21,2027-01-24,,Real Madrid,Betis,,,,,scheduled,
+ESP1-2026-GET-OSA,21,2027-01-24,,Getafe,Osasuna,,,,,scheduled,
+ESP1-2026-VCF-SEV,21,2027-01-24,,Valencia,Sevilla,,,,,scheduled,
+ESP1-2026-ELC-RVC,21,2027-01-24,,Elche,Vallecano,,,,,scheduled,
+ESP1-2026-ALA-BAR,21,2027-01-24,,Alaves,Barcelona,,,,,scheduled,
+ESP1-2026-RSO-MCF,21,2027-01-24,,Sociedad,Malaga,,,,,scheduled,
+ESP1-2026-RAC-RCC,21,2027-01-24,,Santander,Celta,,,,,scheduled,
+ESP1-2026-ATH-LEV,21,2027-01-24,,Ath Bilbao,Levante,,,,,scheduled,
+ESP1-2026-ESP-VIL,21,2027-01-24,,Espanol,Villarreal,,,,,scheduled,
+ESP1-2026-DEP-ATM,21,2027-01-24,,La Coruna,Ath Madrid,,,,,scheduled,
+ESP1-2026-RBB-ELC,22,2027-01-31,,Betis,Elche,,,,,scheduled,
+ESP1-2026-RVC-RMA,22,2027-01-31,,Vallecano,Real Madrid,,,,,scheduled,
+ESP1-2026-ATM-ESP,22,2027-01-31,,Ath Madrid,Espanol,,,,,scheduled,
+ESP1-2026-RCC-GET,22,2027-01-31,,Celta,Getafe,,,,,scheduled,
+ESP1-2026-VIL-RAC,22,2027-01-31,,Villarreal,Santander,,,,,scheduled,
+ESP1-2026-LEV-RSO,22,2027-01-31,,Levante,Sociedad,,,,,scheduled,
+ESP1-2026-BAR-VCF,22,2027-01-31,,Barcelona,Valencia,,,,,scheduled,
+ESP1-2026-SEV-ATH,22,2027-01-31,,Sevilla,Ath Bilbao,,,,,scheduled,
+ESP1-2026-OSA-DEP,22,2027-01-31,,Osasuna,La Coruna,,,,,scheduled,
+ESP1-2026-MCF-ALA,22,2027-01-31,,Malaga,Alaves,,,,,scheduled,
+ESP1-2026-ATH-OSA,23,2027-02-07,,Ath Bilbao,Osasuna,,,,,scheduled,
+ESP1-2026-ALA-RCC,23,2027-02-07,,Alaves,Celta,,,,,scheduled,
+ESP1-2026-RBB-SEV,23,2027-02-07,,Betis,Sevilla,,,,,scheduled,
+ESP1-2026-ELC-LEV,23,2027-02-07,,Elche,Levante,,,,,scheduled,
+ESP1-2026-ESP-RVC,23,2027-02-07,,Espanol,Vallecano,,,,,scheduled,
+ESP1-2026-GET-VIL,23,2027-02-07,,Getafe,Villarreal,,,,,scheduled,
+ESP1-2026-DEP-MCF,23,2027-02-07,,La Coruna,Malaga,,,,,scheduled,
+ESP1-2026-RSO-RMA,23,2027-02-07,,Sociedad,Real Madrid,,,,,scheduled,
+ESP1-2026-VCF-RAC,23,2027-02-07,,Valencia,Santander,,,,,scheduled,
+ESP1-2026-BAR-ATM,23,2027-02-07,,Barcelona,Ath Madrid,,,,,scheduled,
+ESP1-2026-SEV-ESP,24,2027-02-14,,Sevilla,Espanol,,,,,scheduled,
+ESP1-2026-OSA-ATM,24,2027-02-14,,Osasuna,Ath Madrid,,,,,scheduled,
+ESP1-2026-RCC-RVC,24,2027-02-14,,Celta,Vallecano,,,,,scheduled,
+ESP1-2026-VIL-BAR,24,2027-02-14,,Villarreal,Barcelona,,,,,scheduled,
+ESP1-2026-RSO-RBB,24,2027-02-14,,Sociedad,Betis,,,,,scheduled,
+ESP1-2026-ELC-DEP,24,2027-02-14,,Elche,La Coruna,,,,,scheduled,
+ESP1-2026-VCF-ALA,24,2027-02-14,,Valencia,Alaves,,,,,scheduled,
+ESP1-2026-LEV-MCF,24,2027-02-14,,Levante,Malaga,,,,,scheduled,
+ESP1-2026-RAC-GET,24,2027-02-14,,Santander,Getafe,,,,,scheduled,
+ESP1-2026-RMA-ATH,24,2027-02-14,,Real Madrid,Ath Bilbao,,,,,scheduled,
+ESP1-2026-ALA-RAC,25,2027-02-21,,Alaves,Santander,,,,,scheduled,
+ESP1-2026-MCF-RBB,25,2027-02-21,,Malaga,Betis,,,,,scheduled,
+ESP1-2026-VIL-VCF,25,2027-02-21,,Villarreal,Valencia,,,,,scheduled,
+ESP1-2026-BAR-LEV,25,2027-02-21,,Barcelona,Levante,,,,,scheduled,
+ESP1-2026-ATH-RCC,25,2027-02-21,,Ath Bilbao,Celta,,,,,scheduled,
+ESP1-2026-ESP-OSA,25,2027-02-21,,Espanol,Osasuna,,,,,scheduled,
+ESP1-2026-SEV-RMA,25,2027-02-21,,Sevilla,Real Madrid,,,,,scheduled,
+ESP1-2026-ATM-ELC,25,2027-02-21,,Ath Madrid,Elche,,,,,scheduled,
+ESP1-2026-DEP-RSO,25,2027-02-21,,La Coruna,Sociedad,,,,,scheduled,
+ESP1-2026-RVC-GET,25,2027-02-21,,Vallecano,Getafe,,,,,scheduled,
+ESP1-2026-RCC-ESP,26,2027-02-28,,Celta,Espanol,,,,,scheduled,
+ESP1-2026-LEV-DEP,26,2027-02-28,,Levante,La Coruna,,,,,scheduled,
+ESP1-2026-MCF-ATM,26,2027-02-28,,Malaga,Ath Madrid,,,,,scheduled,
+ESP1-2026-OSA-SEV,26,2027-02-28,,Osasuna,Sevilla,,,,,scheduled,
+ESP1-2026-RMA-VCF,26,2027-02-28,,Real Madrid,Valencia,,,,,scheduled,
+ESP1-2026-GET-ALA,26,2027-02-28,,Getafe,Alaves,,,,,scheduled,
+ESP1-2026-ATH-BAR,26,2027-02-28,,Ath Bilbao,Barcelona,,,,,scheduled,
+ESP1-2026-RAC-RVC,26,2027-02-28,,Santander,Vallecano,,,,,scheduled,
+ESP1-2026-RBB-VIL,26,2027-02-28,,Betis,Villarreal,,,,,scheduled,
+ESP1-2026-RSO-ELC,26,2027-02-28,,Sociedad,Elche,,,,,scheduled,
+ESP1-2026-BAR-RBB,27,2027-03-07,,Barcelona,Betis,,,,,scheduled,
+ESP1-2026-ELC-MCF,27,2027-03-07,,Elche,Malaga,,,,,scheduled,
+ESP1-2026-ALA-ATH,27,2027-03-07,,Alaves,Ath Bilbao,,,,,scheduled,
+ESP1-2026-RVC-OSA,27,2027-03-07,,Vallecano,Osasuna,,,,,scheduled,
+ESP1-2026-SEV-RSO,27,2027-03-07,,Sevilla,Sociedad,,,,,scheduled,
+ESP1-2026-ATM-RCC,27,2027-03-07,,Ath Madrid,Celta,,,,,scheduled,
+ESP1-2026-VIL-RMA,27,2027-03-07,,Villarreal,Real Madrid,,,,,scheduled,
+ESP1-2026-VCF-LEV,27,2027-03-07,,Valencia,Levante,,,,,scheduled,
+ESP1-2026-DEP-GET,27,2027-03-07,,La Coruna,Getafe,,,,,scheduled,
+ESP1-2026-ESP-RAC,27,2027-03-07,,Espanol,Santander,,,,,scheduled,
+ESP1-2026-OSA-RCC,28,2027-03-14,,Osasuna,Celta,,,,,scheduled,
+ESP1-2026-ELC-VIL,28,2027-03-14,,Elche,Villarreal,,,,,scheduled,
+ESP1-2026-ALA-SEV,28,2027-03-14,,Alaves,Sevilla,,,,,scheduled,
+ESP1-2026-ATH-VCF,28,2027-03-14,,Ath Bilbao,Valencia,,,,,scheduled,
+ESP1-2026-RBB-LEV,28,2027-03-14,,Betis,Levante,,,,,scheduled,
+ESP1-2026-RAC-ATM,28,2027-03-14,,Santander,Ath Madrid,,,,,scheduled,
+ESP1-2026-MCF-RVC,28,2027-03-14,,Malaga,Vallecano,,,,,scheduled,
+ESP1-2026-GET-RSO,28,2027-03-14,,Getafe,Sociedad,,,,,scheduled,
+ESP1-2026-BAR-DEP,28,2027-03-14,,Barcelona,La Coruna,,,,,scheduled,
+ESP1-2026-RMA-ESP,28,2027-03-14,,Real Madrid,Espanol,,,,,scheduled,
+ESP1-2026-VIL-MCF,29,2027-03-21,,Villarreal,Malaga,,,,,scheduled,
+ESP1-2026-SEV-ELC,29,2027-03-21,,Sevilla,Elche,,,,,scheduled,
+ESP1-2026-LEV-OSA,29,2027-03-21,,Levante,Osasuna,,,,,scheduled,
+ESP1-2026-RCC-RMA,29,2027-03-21,,Celta,Real Madrid,,,,,scheduled,
+ESP1-2026-RVC-BAR,29,2027-03-21,,Vallecano,Barcelona,,,,,scheduled,
+ESP1-2026-RSO-ALA,29,2027-03-21,,Sociedad,Alaves,,,,,scheduled,
+ESP1-2026-ESP-ATH,29,2027-03-21,,Espanol,Ath Bilbao,,,,,scheduled,
+ESP1-2026-RAC-RBB,29,2027-03-21,,Santander,Betis,,,,,scheduled,
+ESP1-2026-VCF-DEP,29,2027-03-21,,Valencia,La Coruna,,,,,scheduled,
+ESP1-2026-ATM-GET,29,2027-03-21,,Ath Madrid,Getafe,,,,,scheduled,
+ESP1-2026-LEV-RVC,30,2027-04-04,,Levante,Vallecano,,,,,scheduled,
+ESP1-2026-BAR-SEV,30,2027-04-04,,Barcelona,Sevilla,,,,,scheduled,
+ESP1-2026-MCF-OSA,30,2027-04-04,,Malaga,Osasuna,,,,,scheduled,
+ESP1-2026-ATH-RAC,30,2027-04-04,,Ath Bilbao,Santander,,,,,scheduled,
+ESP1-2026-DEP-VIL,30,2027-04-04,,La Coruna,Villarreal,,,,,scheduled,
+ESP1-2026-RSO-VCF,30,2027-04-04,,Sociedad,Valencia,,,,,scheduled,
+ESP1-2026-ELC-ALA,30,2027-04-04,,Elche,Alaves,,,,,scheduled,
+ESP1-2026-RMA-ATM,30,2027-04-04,,Real Madrid,Ath Madrid,,,,,scheduled,
+ESP1-2026-GET-ESP,30,2027-04-04,,Getafe,Espanol,,,,,scheduled,
+ESP1-2026-RBB-RCC,30,2027-04-04,,Betis,Celta,,,,,scheduled,
+ESP1-2026-RVC-RSO,31,2027-04-11,,Vallecano,Sociedad,,,,,scheduled,
+ESP1-2026-ESP-MCF,31,2027-04-11,,Espanol,Malaga,,,,,scheduled,
+ESP1-2026-VIL-ATH,31,2027-04-11,,Villarreal,Ath Bilbao,,,,,scheduled,
+ESP1-2026-ALA-RBB,31,2027-04-11,,Alaves,Betis,,,,,scheduled,
+ESP1-2026-VCF-GET,31,2027-04-11,,Valencia,Getafe,,,,,scheduled,
+ESP1-2026-SEV-DEP,31,2027-04-11,,Sevilla,La Coruna,,,,,scheduled,
+ESP1-2026-RCC-ELC,31,2027-04-11,,Celta,Elche,,,,,scheduled,
+ESP1-2026-RAC-BAR,31,2027-04-11,,Santander,Barcelona,,,,,scheduled,
+ESP1-2026-OSA-RMA,31,2027-04-11,,Osasuna,Real Madrid,,,,,scheduled,
+ESP1-2026-ATM-LEV,31,2027-04-11,,Ath Madrid,Levante,,,,,scheduled,
+ESP1-2026-ATM-SEV,32,2027-04-18,,Ath Madrid,Sevilla,,,,,scheduled,
+ESP1-2026-BAR-ESP,32,2027-04-18,,Barcelona,Espanol,,,,,scheduled,
+ESP1-2026-LEV-VIL,32,2027-04-18,,Levante,Villarreal,,,,,scheduled,
+ESP1-2026-RSO-RAC,32,2027-04-18,,Sociedad,Santander,,,,,scheduled,
+ESP1-2026-MCF-VCF,32,2027-04-18,,Malaga,Valencia,,,,,scheduled,
+ESP1-2026-DEP-RCC,32,2027-04-18,,La Coruna,Celta,,,,,scheduled,
+ESP1-2026-ELC-OSA,32,2027-04-18,,Elche,Osasuna,,,,,scheduled,
+ESP1-2026-ALA-RVC,32,2027-04-18,,Alaves,Vallecano,,,,,scheduled,
+ESP1-2026-RBB-ATH,32,2027-04-18,,Betis,Ath Bilbao,,,,,scheduled,
+ESP1-2026-GET-RMA,32,2027-04-18,,Getafe,Real Madrid,,,,,scheduled,
+ESP1-2026-GET-RBB,33,2027-04-21,,Getafe,Betis,,,,,scheduled,
+ESP1-2026-VCF-RVC,33,2027-04-21,,Valencia,Vallecano,,,,,scheduled,
+ESP1-2026-RCC-BAR,33,2027-04-21,,Celta,Barcelona,,,,,scheduled,
+ESP1-2026-OSA-ALA,33,2027-04-21,,Osasuna,Alaves,,,,,scheduled,
+ESP1-2026-RMA-ELC,33,2027-04-21,,Real Madrid,Elche,,,,,scheduled,
+ESP1-2026-ATH-DEP,33,2027-04-21,,Ath Bilbao,La Coruna,,,,,scheduled,
+ESP1-2026-RAC-MCF,33,2027-04-21,,Santander,Malaga,,,,,scheduled,
+ESP1-2026-VIL-ATM,33,2027-04-21,,Villarreal,Ath Madrid,,,,,scheduled,
+ESP1-2026-SEV-LEV,33,2027-04-21,,Sevilla,Levante,,,,,scheduled,
+ESP1-2026-ESP-RSO,33,2027-04-21,,Espanol,Sociedad,,,,,scheduled,
+ESP1-2026-DEP-RAC,34,2027-05-02,,La Coruna,Santander,,,,,scheduled,
+ESP1-2026-RCC-SEV,34,2027-05-02,,Celta,Sevilla,,,,,scheduled,
+ESP1-2026-RSO-ATH,34,2027-05-02,,Sociedad,Ath Bilbao,,,,,scheduled,
+ESP1-2026-BAR-OSA,34,2027-05-02,,Barcelona,Osasuna,,,,,scheduled,
+ESP1-2026-RVC-VIL,34,2027-05-02,,Vallecano,Villarreal,,,,,scheduled,
+ESP1-2026-MCF-GET,34,2027-05-02,,Malaga,Getafe,,,,,scheduled,
+ESP1-2026-RBB-VCF,34,2027-05-02,,Betis,Valencia,,,,,scheduled,
+ESP1-2026-ELC-ESP,34,2027-05-02,,Elche,Espanol,,,,,scheduled,
+ESP1-2026-LEV-RMA,34,2027-05-02,,Levante,Real Madrid,,,,,scheduled,
+ESP1-2026-ATM-ALA,34,2027-05-02,,Ath Madrid,Alaves,,,,,scheduled,
+ESP1-2026-VCF-ATM,35,2027-05-09,,Valencia,Ath Madrid,,,,,scheduled,
+ESP1-2026-OSA-RSO,35,2027-05-09,,Osasuna,Sociedad,,,,,scheduled,
+ESP1-2026-ALA-LEV,35,2027-05-09,,Alaves,Levante,,,,,scheduled,
+ESP1-2026-ATH-MCF,35,2027-05-09,,Ath Bilbao,Malaga,,,,,scheduled,
+ESP1-2026-RAC-SEV,35,2027-05-09,,Santander,Sevilla,,,,,scheduled,
+ESP1-2026-RVC-DEP,35,2027-05-09,,Vallecano,La Coruna,,,,,scheduled,
+ESP1-2026-RBB-ESP,35,2027-05-09,,Betis,Espanol,,,,,scheduled,
+ESP1-2026-RMA-BAR,35,2027-05-09,,Real Madrid,Barcelona,,,,,scheduled,
+ESP1-2026-GET-ELC,35,2027-05-09,,Getafe,Elche,,,,,scheduled,
+ESP1-2026-VIL-RCC,35,2027-05-09,,Villarreal,Celta,,,,,scheduled,
+ESP1-2026-ATM-RVC,36,2027-05-16,,Ath Madrid,Vallecano,,,,,scheduled,
+ESP1-2026-SEV-VIL,36,2027-05-16,,Sevilla,Villarreal,,,,,scheduled,
+ESP1-2026-RSO-BAR,36,2027-05-16,,Sociedad,Barcelona,,,,,scheduled,
+ESP1-2026-ELC-ATH,36,2027-05-16,,Elche,Ath Bilbao,,,,,scheduled,
+ESP1-2026-MCF-RCC,36,2027-05-16,,Malaga,Celta,,,,,scheduled,
+ESP1-2026-DEP-ALA,36,2027-05-16,,La Coruna,Alaves,,,,,scheduled,
+ESP1-2026-LEV-GET,36,2027-05-16,,Levante,Getafe,,,,,scheduled,
+ESP1-2026-ESP-VCF,36,2027-05-16,,Espanol,Valencia,,,,,scheduled,
+ESP1-2026-RMA-RAC,36,2027-05-16,,Real Madrid,Santander,,,,,scheduled,
+ESP1-2026-OSA-RBB,36,2027-05-16,,Osasuna,Betis,,,,,scheduled,
+ESP1-2026-ATM-ATH,37,2027-05-23,,Ath Madrid,Ath Bilbao,,,,,scheduled,
+ESP1-2026-ALA-RMA,37,2027-05-23,,Alaves,Real Madrid,,,,,scheduled,
+ESP1-2026-SEV-GET,37,2027-05-23,,Sevilla,Getafe,,,,,scheduled,
+ESP1-2026-VIL-OSA,37,2027-05-23,,Villarreal,Osasuna,,,,,scheduled,
+ESP1-2026-RAC-LEV,37,2027-05-23,,Santander,Levante,,,,,scheduled,
+ESP1-2026-DEP-ESP,37,2027-05-23,,La Coruna,Espanol,,,,,scheduled,
+ESP1-2026-RVC-RBB,37,2027-05-23,,Vallecano,Betis,,,,,scheduled,
+ESP1-2026-BAR-MCF,37,2027-05-23,,Barcelona,Malaga,,,,,scheduled,
+ESP1-2026-VCF-ELC,37,2027-05-23,,Valencia,Elche,,,,,scheduled,
+ESP1-2026-RCC-RSO,37,2027-05-23,,Celta,Sociedad,,,,,scheduled,
+ESP1-2026-LEV-RCC,38,2027-05-30,,Levante,Celta,,,,,scheduled,
+ESP1-2026-RMA-DEP,38,2027-05-30,,Real Madrid,La Coruna,,,,,scheduled,
+ESP1-2026-RBB-ATM,38,2027-05-30,,Betis,Ath Madrid,,,,,scheduled,
+ESP1-2026-RSO-VIL,38,2027-05-30,,Sociedad,Villarreal,,,,,scheduled,
+ESP1-2026-MCF-SEV,38,2027-05-30,,Malaga,Sevilla,,,,,scheduled,
+ESP1-2026-ELC-RAC,38,2027-05-30,,Elche,Santander,,,,,scheduled,
+ESP1-2026-ATH-RVC,38,2027-05-30,,Ath Bilbao,Vallecano,,,,,scheduled,
+ESP1-2026-ESP-ALA,38,2027-05-30,,Espanol,Alaves,,,,,scheduled,
+ESP1-2026-GET-BAR,38,2027-05-30,,Getafe,Barcelona,,,,,scheduled,
+ESP1-2026-OSA-VCF,38,2027-05-30,,Osasuna,Valencia,,,,,scheduled,

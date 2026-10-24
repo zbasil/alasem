@@ -1,0 +1,14 @@
+{"fetched_at": "2026-10-24T05:40:00Z", "source": "SportRadar via fetch_sports_data (scores, la_liga)",
+ "games": [
+  {"id": "sr:sport_event:72478646", "status": "final", "start_time": "2026-10-23T19:00:00+00:00", "home": "Deportivo Alaves", "away": "Malaga CF", "score": [1, 1]},
+  {"id": "sr:sport_event:72478658", "status": "scheduled", "start_time": "2026-10-24T12:00:00+00:00", "home": "Rayo Vallecano", "away": "Elche CF", "win_probability": {"home": 54.7, "draw": 24.6, "away": 20.7}},
+  {"id": "sr:sport_event:72478656", "status": "scheduled", "start_time": "2026-10-24T14:15:00+00:00", "home": "Racing Santander", "away": "Espanyol Barcelona", "win_probability": {"home": 40.9, "draw": 26.1, "away": 33.0}},
+  {"id": "sr:sport_event:72478664", "status": "scheduled", "start_time": "2026-10-24T16:30:00+00:00", "home": "Valencia CF", "away": "Villarreal CF", "win_probability": {"home": 28.5, "draw": 26.7, "away": 44.8}},
+  {"id": "sr:sport_event:72478650", "status": "scheduled", "start_time": "2026-10-24T19:00:00+00:00", "home": "Atletico Madrid", "away": "RC Deportivo de A Coruna", "win_probability": {"home": 76.3, "draw": 14.8, "away": 8.9}},
+  {"id": "sr:sport_event:72478648", "status": "scheduled", "start_time": "2026-10-25T13:00:00+00:00", "home": "Athletic Bilbao", "away": "Getafe CF", "win_probability": {"home": 61.1, "draw": 24.0, "away": 14.9}},
+  {"id": "sr:sport_event:72478652", "status": "scheduled", "start_time": "2026-10-25T15:15:00+00:00", "home": "RC Celta de Vigo", "away": "Real Betis Seville", "win_probability": {"home": 31.4, "draw": 27.4, "away": 41.2}},
+  {"id": "sr:sport_event:72478660", "status": "scheduled", "start_time": "2026-10-25T17:30:00+00:00", "home": "Real Sociedad San Sebastian", "away": "Levante UD", "win_probability": {"home": 59.6, "draw": 21.5, "away": 18.9}},
+  {"id": "sr:sport_event:72478654", "status": "scheduled", "start_time": "2026-10-25T20:00:00+00:00", "home": "FC Barcelona", "away": "Real Madrid", "win_probability": {"home": 60.1, "draw": 16.1, "away": 23.8}},
+  {"id": "sr:sport_event:72478662", "status": "scheduled", "start_time": "2026-10-26T20:00:00+00:00", "home": "Sevilla FC", "away": "CA Osasuna", "win_probability": {"home": 49.4, "draw": 28.0, "away": 22.6}},
+  {"id": "sr:sport_event:72478684", "status": "scheduled", "start_time": "2026-10-30T20:00:00+00:00", "home": "Villarreal CF", "away": "Espanyol Barcelona", "win_probability": {"home": 61.2, "draw": 21.4, "away": 17.4}}
+ ]}

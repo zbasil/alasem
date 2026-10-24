@@ -1,0 +1,10 @@
+{"rosters": [
+  {"homeAway": "home", "formation": "4-2-3-1", "team": {"displayName": "Chelsea", "abbreviation": "CHE"},
+   "roster": [{"starter": true, "jersey": "1", "athlete": {"displayName": "Robert Sanchez"}, "position": {"abbreviation": "G"}},
+              {"starter": true, "jersey": "10", "athlete": {"displayName": "Cole Palmer"}, "position": {"abbreviation": "AM"}, "subbedOut": true},
+              {"starter": false, "jersey": "22", "athlete": {"displayName": "Bench Player"}, "position": {"abbreviation": "F"}, "subbedIn": true}]},
+  {"homeAway": "away", "formation": "4-3-3", "team": {"displayName": "Tottenham Hotspur", "abbreviation": "TOT"},
+   "roster": [{"starter": true, "jersey": "1", "athlete": {"displayName": "Keeper Two"}, "position": {"abbreviation": "G"}}]}],
+ "keyEvents": [{"clock": {"displayValue": "23'"}, "type": {"text": "Goal"}, "team": {"displayName": "Chelsea"}, "text": "Goal! Chelsea 1, Tottenham 0."}],
+ "boxscore": {"teams": [{"team": {"abbreviation": "CHE"}, "statistics": [{"name": "possessionPct", "displayValue": "58.2"}, {"name": "shotsOnTarget", "displayValue": "4"}]},
+                        {"team": {"abbreviation": "TOT"}, "statistics": [{"name": "possessionPct", "displayValue": "41.8"}, {"name": "shotsOnTarget", "displayValue": ""}]}]}}

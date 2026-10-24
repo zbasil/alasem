@@ -1,0 +1,11 @@
+{
+  "xi": 0.006,
+  "prior_sd": 0.7,
+  "beta_sot": 0.0,
+  "beta_mkt": 0.9,
+  "promoted_attack": -0.19,
+  "promoted_defence": -0.13,
+  "seasons_back": 2,
+  "sot_k": null,
+  "rating_scale": 1.1
+}

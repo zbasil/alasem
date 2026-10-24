@@ -1,0 +1,184 @@
+{
+"fetched_at": "2026-10-24T10:50:00Z",
+"source": "SportRadar via fetch_sports_data (game_stats)",
+"id": "sr:sport_event:72478614",
+"kickoff_utc": "2026-10-12T19:00:00Z",
+"home": "Levante UD",
+"away": "Sevilla FC",
+"status": "final",
+"score": {
+"home": 3,
+"away": 3
+},
+"ht_score": {
+"home": 0,
+"away": 1,
+"derived_from": "score_change events up to minute 45"
+},
+"team_stats": {
+"home": {
+"ball_possession": 56,
+"cards_given": 2,
+"corner_kicks": 5,
+"fouls": 7,
+"free_kicks": 15,
+"goal_kicks": 8,
+"injuries": 1,
+"offsides": 0,
+"red_cards": 0,
+"shots_blocked": 1,
+"shots_off_target": 0,
+"shots_on_target": 6,
+"shots_saved": 0,
+"shots_total": 7,
+"substitutions": 5,
+"throw_ins": 23,
+"yellow_cards": 2,
+"yellow_red_cards": 0
+},
+"away": {
+"ball_possession": 44,
+"cards_given": 5,
+"corner_kicks": 2,
+"fouls": 17,
+"free_kicks": 6,
+"goal_kicks": 10,
+"injuries": 0,
+"offsides": 0,
+"red_cards": 0,
+"shots_blocked": 2,
+"shots_off_target": 7,
+"shots_on_target": 3,
+"shots_saved": 3,
+"shots_total": 12,
+"substitutions": 4,
+"throw_ins": 12,
+"yellow_cards": 5,
+"yellow_red_cards": 1
+}
+},
+"key_events": [
+{
+"type": "score_change",
+"time": 13,
+"team": "away",
+"home_score": 0,
+"away_score": 1
+},
+{
+"type": "yellow_card",
+"time": 39,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 48,
+"team": "away"
+},
+{
+"type": "score_change",
+"time": 54,
+"team": "away",
+"home_score": 0,
+"away_score": 2
+},
+{
+"type": "substitution",
+"time": 56,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 56,
+"team": "home"
+},
+{
+"type": "score_change",
+"time": 57,
+"team": "home",
+"home_score": 1,
+"away_score": 2
+},
+{
+"type": "yellow_card",
+"time": 63,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 68,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 68,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 68,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 72,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 76,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 85,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 88,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 90,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 90,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 90,
+"team": "away"
+},
+{
+"type": "score_change",
+"time": 90,
+"team": "home",
+"home_score": 2,
+"away_score": 2
+},
+{
+"type": "score_change",
+"time": 90,
+"team": "away",
+"home_score": 2,
+"away_score": 3
+},
+{
+"type": "yellow_card",
+"time": 90,
+"team": "away"
+},
+{
+"type": "score_change",
+"time": 90,
+"team": "home",
+"home_score": 3,
+"away_score": 3
+}
+]
+}

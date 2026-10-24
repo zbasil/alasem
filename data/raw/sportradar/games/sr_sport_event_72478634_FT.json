@@ -1,0 +1,176 @@
+{
+"fetched_at": "2026-10-24T10:50:00Z",
+"source": "SportRadar via fetch_sports_data (game_stats)",
+"id": "sr:sport_event:72478634",
+"kickoff_utc": "2026-10-19T19:00:00Z",
+"home": "Getafe CF",
+"away": "Rayo Vallecano",
+"status": "final",
+"score": {
+"home": 1,
+"away": 1
+},
+"ht_score": {
+"home": 0,
+"away": 1,
+"derived_from": "score_change events up to minute 45"
+},
+"team_stats": {
+"home": {
+"ball_possession": 31,
+"cards_given": 7,
+"corner_kicks": 8,
+"fouls": 12,
+"free_kicks": 8,
+"goal_kicks": 10,
+"injuries": 0,
+"offsides": 0,
+"red_cards": 1,
+"shots_blocked": 4,
+"shots_off_target": 4,
+"shots_on_target": 3,
+"shots_saved": 4,
+"shots_total": 11,
+"substitutions": 5,
+"throw_ins": 13,
+"yellow_cards": 6,
+"yellow_red_cards": 0
+},
+"away": {
+"ball_possession": 69,
+"cards_given": 3,
+"corner_kicks": 8,
+"fouls": 9,
+"free_kicks": 12,
+"goal_kicks": 4,
+"injuries": 1,
+"offsides": 3,
+"red_cards": 0,
+"shots_blocked": 7,
+"shots_off_target": 8,
+"shots_on_target": 5,
+"shots_saved": 2,
+"shots_total": 20,
+"substitutions": 5,
+"throw_ins": 14,
+"yellow_cards": 3,
+"yellow_red_cards": 0
+}
+},
+"key_events": [
+{
+"type": "yellow_card",
+"time": 1,
+"team": "home"
+},
+{
+"type": "score_change",
+"time": 11,
+"team": "away",
+"home_score": 0,
+"away_score": 1
+},
+{
+"type": "yellow_card",
+"time": 16,
+"team": "home"
+},
+{
+"type": "red_card",
+"time": 28,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 32,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 45,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 46,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 46,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 51,
+"team": "home"
+},
+{
+"type": "score_change",
+"time": 56,
+"team": "home",
+"home_score": 1,
+"away_score": 1
+},
+{
+"type": "substitution",
+"time": 59,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 59,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 65,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 69,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 80,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 81,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 81,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 81,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 84,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 87,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 87,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 90,
+"team": "away"
+}
+]
+}

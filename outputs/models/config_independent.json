@@ -1,0 +1,28 @@
+{
+  "track": "independent",
+  "selection_seasons": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "selection_rps": 0.19594852853654388,
+  "config": {
+    "xi": 0.002,
+    "prior_sd": 0.5,
+    "beta_sot": 0.4,
+    "beta_mkt": 0.0,
+    "promoted_attack": -0.19,
+    "promoted_defence": -0.13,
+    "seasons_back": 4,
+    "sot_k": null,
+    "rating_scale": 1.2
+  }
+}

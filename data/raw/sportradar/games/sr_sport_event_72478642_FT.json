@@ -1,0 +1,142 @@
+{
+"fetched_at": "2026-10-24T10:50:00Z",
+"source": "SportRadar via fetch_sports_data (game_stats)",
+"id": "sr:sport_event:72478642",
+"kickoff_utc": "2026-10-17T19:00:00Z",
+"home": "Valencia CF",
+"away": "Athletic Bilbao",
+"status": "final",
+"score": {
+"home": 0,
+"away": 0
+},
+"ht_score": {
+"home": 0,
+"away": 0,
+"derived_from": "score_change events up to minute 45"
+},
+"team_stats": {
+"home": {
+"ball_possession": 37,
+"cards_given": 3,
+"corner_kicks": 2,
+"fouls": 14,
+"free_kicks": 14,
+"goal_kicks": 11,
+"injuries": 0,
+"offsides": 2,
+"red_cards": 0,
+"shots_blocked": 3,
+"shots_off_target": 6,
+"shots_on_target": 4,
+"shots_saved": 2,
+"shots_total": 13,
+"substitutions": 5,
+"throw_ins": 15,
+"yellow_cards": 3,
+"yellow_red_cards": 0
+},
+"away": {
+"ball_possession": 63,
+"cards_given": 3,
+"corner_kicks": 6,
+"fouls": 13,
+"free_kicks": 14,
+"goal_kicks": 10,
+"injuries": 0,
+"offsides": 1,
+"red_cards": 0,
+"shots_blocked": 3,
+"shots_off_target": 6,
+"shots_on_target": 2,
+"shots_saved": 4,
+"shots_total": 11,
+"substitutions": 5,
+"throw_ins": 12,
+"yellow_cards": 3,
+"yellow_red_cards": 0
+}
+},
+"key_events": [
+{
+"type": "yellow_card",
+"time": 19,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 38,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 42,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 46,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 54,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 54,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 57,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 63,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 63,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 63,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 68,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 74,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 85,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 86,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 87,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 90,
+"team": "home"
+}
+]
+}

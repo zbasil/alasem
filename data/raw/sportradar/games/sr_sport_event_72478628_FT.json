@@ -1,0 +1,143 @@
+{
+"fetched_at": "2026-10-24T10:50:00Z",
+"source": "SportRadar via fetch_sports_data (game_stats)",
+"id": "sr:sport_event:72478628",
+"kickoff_utc": "2026-10-18T14:15:00Z",
+"home": "RC Celta de Vigo",
+"away": "Deportivo Alaves",
+"status": "final",
+"score": {
+"home": 2,
+"away": 1
+},
+"ht_score": {
+"home": 0,
+"away": 0,
+"derived_from": "score_change events up to minute 45"
+},
+"team_stats": {
+"home": {
+"ball_possession": 52,
+"cards_given": 1,
+"corner_kicks": 0,
+"fouls": 14,
+"free_kicks": 7,
+"goal_kicks": 9,
+"injuries": 0,
+"offsides": 0,
+"red_cards": 0,
+"shots_blocked": 0,
+"shots_off_target": 2,
+"shots_on_target": 3,
+"shots_saved": 8,
+"shots_total": 5,
+"substitutions": 5,
+"throw_ins": 11,
+"yellow_cards": 1,
+"yellow_red_cards": 0
+},
+"away": {
+"ball_possession": 48,
+"cards_given": 1,
+"corner_kicks": 4,
+"fouls": 17,
+"free_kicks": 5,
+"goal_kicks": 4,
+"injuries": 0,
+"offsides": 0,
+"red_cards": 0,
+"shots_blocked": 3,
+"shots_off_target": 6,
+"shots_on_target": 9,
+"shots_saved": 1,
+"shots_total": 18,
+"substitutions": 5,
+"throw_ins": 22,
+"yellow_cards": 1,
+"yellow_red_cards": 0
+}
+},
+"key_events": [
+{
+"type": "yellow_card",
+"time": 15,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 45,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 46,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 46,
+"team": "home"
+},
+{
+"type": "score_change",
+"time": 53,
+"team": "home",
+"home_score": 1,
+"away_score": 0
+},
+{
+"type": "substitution",
+"time": 62,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 62,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 62,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 70,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 70,
+"team": "home"
+},
+{
+"type": "score_change",
+"time": 71,
+"team": "home",
+"home_score": 2,
+"away_score": 0
+},
+{
+"type": "substitution",
+"time": 77,
+"team": "home"
+},
+{
+"type": "score_change",
+"time": 87,
+"team": "away",
+"home_score": 2,
+"away_score": 1
+},
+{
+"type": "substitution",
+"time": 88,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 88,
+"team": "away"
+}
+]
+}

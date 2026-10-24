@@ -1,0 +1,13 @@
+event_id,part,part_ar,stat,row_id,label_ar,home,away
+sr:sport_event:72478646,full,المباراة,goals,sr:sport_event:72478646|full|goals,الأهداف,1.0,1.0
+sr:sport_event:72478646,full,المباراة,ball_possession,sr:sport_event:72478646|full|ball_possession,الاستحواذ ٪,51.0,49.0
+sr:sport_event:72478646,full,المباراة,shots_total,sr:sport_event:72478646|full|shots_total,التسديدات,10.0,6.0
+sr:sport_event:72478646,full,المباراة,shots_on_target,sr:sport_event:72478646|full|shots_on_target,على المرمى,4.0,4.0
+sr:sport_event:72478646,full,المباراة,shots_off_target,sr:sport_event:72478646|full|shots_off_target,خارج المرمى,3.0,2.0
+sr:sport_event:72478646,full,المباراة,shots_blocked,sr:sport_event:72478646|full|shots_blocked,تسديدات مصدودة,3.0,0.0
+sr:sport_event:72478646,full,المباراة,saves,sr:sport_event:72478646|full|saves,تصديات الحارس,3.0,3.0
+sr:sport_event:72478646,full,المباراة,corner_kicks,sr:sport_event:72478646|full|corner_kicks,الركنيات,7.0,2.0
+sr:sport_event:72478646,full,المباراة,fouls,sr:sport_event:72478646|full|fouls,الأخطاء,14.0,12.0
+sr:sport_event:72478646,full,المباراة,yellow_cards,sr:sport_event:72478646|full|yellow_cards,الإنذارات,2.0,1.0
+sr:sport_event:72478646,full,المباراة,sent_off,sr:sport_event:72478646|full|sent_off,الطرد,0.0,0.0
+sr:sport_event:72478646,full,المباراة,offsides,sr:sport_event:72478646|full|offsides,التسلل,0.0,2.0

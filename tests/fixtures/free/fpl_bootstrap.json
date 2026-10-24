@@ -1,0 +1,11 @@
+{"teams": [{"id": 1, "name": "Arsenal", "short_name": "ARS", "code": 3}, {"id": 7, "name": "Chelsea", "short_name": "CHE", "code": 8}],
+ "elements": [
+  {"id": 1, "web_name": "Raya", "team": 1, "element_type": 1, "status": "a", "news": "", "news_added": null, "chance_of_playing_next_round": null,
+   "minutes": 630, "starts": 7, "goals_scored": 0, "assists": 0, "expected_goals": "0.00", "expected_assists": "0.01", "expected_goal_involvements": "0.01",
+   "yellow_cards": 0, "red_cards": 0, "saves": 15, "clean_sheets": 4},
+  {"id": 2, "web_name": "Saliba", "team": 1, "element_type": 2, "status": "i", "news": "Back injury - Unknown return date", "news_added": "2026-07-23T12:01:23Z",
+   "chance_of_playing_next_round": 0, "minutes": 0, "starts": 0, "goals_scored": 0, "assists": 0, "expected_goals": "0.00", "expected_assists": "0.00"},
+  {"id": 3, "web_name": "Hincapie", "team": 1, "element_type": 2, "status": "d", "news": "Ankle injury - 75% chance of playing", "news_added": "2026-10-12T15:00:07Z",
+   "chance_of_playing_next_round": 75, "minutes": 410, "starts": 5, "goals_scored": 1, "assists": 0, "expected_goals": "0.42", "expected_assists": "0.10"},
+  {"id": 4, "web_name": "Palmer", "team": 7, "element_type": 3, "status": "a", "news": "", "minutes": 700, "starts": 8, "goals_scored": 6, "assists": 3,
+   "expected_goals": "5.10", "expected_assists": "2.40", "expected_goal_involvements": "7.50"}]}

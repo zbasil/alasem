@@ -1,0 +1,145 @@
+match_id,part,part_ar,stat,label_ar,row_id,home,away
+sb69299,h1,الشوط الأول,goals,الأهداف,sb69299|h1|goals,2.0,0.0
+sb69299,h1,الشوط الأول,xg,الأهداف المتوقعة xG,sb69299|h1|xg,1.39,0.12
+sb69299,h1,الشوط الأول,shots,التسديدات,sb69299|h1|shots,6.0,4.0
+sb69299,h1,الشوط الأول,on_target,على المرمى,sb69299|h1|on_target,2.0,2.0
+sb69299,h1,الشوط الأول,big_chances,فرص محققة,sb69299|h1|big_chances,2.0,0.0
+sb69299,h1,الشوط الأول,possession,الاستحواذ ٪,sb69299|h1|possession,67.0,33.0
+sb69299,h1,الشوط الأول,passes,التمريرات,sb69299|h1|passes,355.0,178.0
+sb69299,h1,الشوط الأول,pass_pct,دقة التمرير ٪,sb69299|h1|pass_pct,88.0,72.0
+sb69299,h1,الشوط الأول,progressive,حركات تقدمية,sb69299|h1|progressive,22.0,23.0
+sb69299,h1,الشوط الأول,box_entries,دخول منطقة الجزاء,sb69299|h1|box_entries,8.0,5.0
+sb69299,h1,الشوط الأول,field_tilt,السيطرة الإقليمية ٪,sb69299|h1|field_tilt,68.0,32.0
+sb69299,h1,الشوط الأول,ppda,PPDA (أقل = ضغط أقوى),sb69299|h1|ppda,14.0,18.6
+sb69299,h1,الشوط الأول,high_recoveries,استرجاع بالثلث الأخير,sb69299|h1|high_recoveries,7.0,2.0
+sb69299,h1,الشوط الأول,dribbles,مراوغات ناجحة,sb69299|h1|dribbles,15.0,5.0
+sb69299,h1,الشوط الأول,corners,الركنيات,sb69299|h1|corners,3.0,5.0
+sb69299,h1,الشوط الأول,fouls,الأخطاء,sb69299|h1|fouls,7.0,9.0
+sb69299,h2,الشوط الثاني,goals,الأهداف,sb69299|h2|goals,3.0,0.0
+sb69299,h2,الشوط الثاني,xg,الأهداف المتوقعة xG,sb69299|h2|xg,1.38,0.01
+sb69299,h2,الشوط الثاني,shots,التسديدات,sb69299|h2|shots,8.0,1.0
+sb69299,h2,الشوط الثاني,on_target,على المرمى,sb69299|h2|on_target,4.0,0.0
+sb69299,h2,الشوط الثاني,big_chances,فرص محققة,sb69299|h2|big_chances,2.0,0.0
+sb69299,h2,الشوط الثاني,possession,الاستحواذ ٪,sb69299|h2|possession,66.0,34.0
+sb69299,h2,الشوط الثاني,passes,التمريرات,sb69299|h2|passes,368.0,193.0
+sb69299,h2,الشوط الثاني,pass_pct,دقة التمرير ٪,sb69299|h2|pass_pct,88.0,75.0
+sb69299,h2,الشوط الثاني,progressive,حركات تقدمية,sb69299|h2|progressive,21.0,15.0
+sb69299,h2,الشوط الثاني,box_entries,دخول منطقة الجزاء,sb69299|h2|box_entries,4.0,0.0
+sb69299,h2,الشوط الثاني,field_tilt,السيطرة الإقليمية ٪,sb69299|h2|field_tilt,80.0,20.0
+sb69299,h2,الشوط الثاني,ppda,PPDA (أقل = ضغط أقوى),sb69299|h2|ppda,9.1,8.3
+sb69299,h2,الشوط الثاني,high_recoveries,استرجاع بالثلث الأخير,sb69299|h2|high_recoveries,3.0,3.0
+sb69299,h2,الشوط الثاني,dribbles,مراوغات ناجحة,sb69299|h2|dribbles,4.0,4.0
+sb69299,h2,الشوط الثاني,corners,الركنيات,sb69299|h2|corners,0.0,1.0
+sb69299,h2,الشوط الثاني,fouls,الأخطاء,sb69299|h2|fouls,6.0,26.0
+sb69299,full,المباراة كاملة,goals,الأهداف,sb69299|full|goals,5.0,0.0
+sb69299,full,المباراة كاملة,xg,الأهداف المتوقعة xG,sb69299|full|xg,2.77,0.13
+sb69299,full,المباراة كاملة,shots,التسديدات,sb69299|full|shots,14.0,5.0
+sb69299,full,المباراة كاملة,on_target,على المرمى,sb69299|full|on_target,6.0,2.0
+sb69299,full,المباراة كاملة,big_chances,فرص محققة,sb69299|full|big_chances,4.0,0.0
+sb69299,full,المباراة كاملة,possession,الاستحواذ ٪,sb69299|full|possession,66.0,34.0
+sb69299,full,المباراة كاملة,passes,التمريرات,sb69299|full|passes,723.0,371.0
+sb69299,full,المباراة كاملة,pass_pct,دقة التمرير ٪,sb69299|full|pass_pct,88.0,74.0
+sb69299,full,المباراة كاملة,progressive,حركات تقدمية,sb69299|full|progressive,43.0,38.0
+sb69299,full,المباراة كاملة,box_entries,دخول منطقة الجزاء,sb69299|full|box_entries,12.0,5.0
+sb69299,full,المباراة كاملة,field_tilt,السيطرة الإقليمية ٪,sb69299|full|field_tilt,73.0,27.0
+sb69299,full,المباراة كاملة,ppda,PPDA (أقل = ضغط أقوى),sb69299|full|ppda,10.7,11.3
+sb69299,full,المباراة كاملة,high_recoveries,استرجاع بالثلث الأخير,sb69299|full|high_recoveries,10.0,5.0
+sb69299,full,المباراة كاملة,dribbles,مراوغات ناجحة,sb69299|full|dribbles,19.0,9.0
+sb69299,full,المباراة كاملة,corners,الركنيات,sb69299|full|corners,3.0,6.0
+sb69299,full,المباراة كاملة,fouls,الأخطاء,sb69299|full|fouls,13.0,35.0
+sb266424,h1,الشوط الأول,goals,الأهداف,sb266424|h1|goals,0.0,2.0
+sb266424,h1,الشوط الأول,xg,الأهداف المتوقعة xG,sb266424|h1|xg,0.04,1.31
+sb266424,h1,الشوط الأول,shots,التسديدات,sb266424|h1|shots,1.0,9.0
+sb266424,h1,الشوط الأول,on_target,على المرمى,sb266424|h1|on_target,1.0,3.0
+sb266424,h1,الشوط الأول,big_chances,فرص محققة,sb266424|h1|big_chances,0.0,1.0
+sb266424,h1,الشوط الأول,possession,الاستحواذ ٪,sb266424|h1|possession,38.0,62.0
+sb266424,h1,الشوط الأول,passes,التمريرات,sb266424|h1|passes,243.0,398.0
+sb266424,h1,الشوط الأول,pass_pct,دقة التمرير ٪,sb266424|h1|pass_pct,79.0,90.0
+sb266424,h1,الشوط الأول,progressive,حركات تقدمية,sb266424|h1|progressive,19.0,28.0
+sb266424,h1,الشوط الأول,box_entries,دخول منطقة الجزاء,sb266424|h1|box_entries,4.0,11.0
+sb266424,h1,الشوط الأول,field_tilt,السيطرة الإقليمية ٪,sb266424|h1|field_tilt,43.0,57.0
+sb266424,h1,الشوط الأول,ppda,PPDA (أقل = ضغط أقوى),sb266424|h1|ppda,28.1,17.0
+sb266424,h1,الشوط الأول,high_recoveries,استرجاع بالثلث الأخير,sb266424|h1|high_recoveries,6.0,4.0
+sb266424,h1,الشوط الأول,dribbles,مراوغات ناجحة,sb266424|h1|dribbles,2.0,10.0
+sb266424,h1,الشوط الأول,corners,الركنيات,sb266424|h1|corners,1.0,1.0
+sb266424,h1,الشوط الأول,fouls,الأخطاء,sb266424|h1|fouls,7.0,7.0
+sb266424,h2,الشوط الثاني,goals,الأهداف,sb266424|h2|goals,0.0,2.0
+sb266424,h2,الشوط الثاني,xg,الأهداف المتوقعة xG,sb266424|h2|xg,1.3,1.17
+sb266424,h2,الشوط الثاني,shots,التسديدات,sb266424|h2|shots,12.0,9.0
+sb266424,h2,الشوط الثاني,on_target,على المرمى,sb266424|h2|on_target,6.0,3.0
+sb266424,h2,الشوط الثاني,big_chances,فرص محققة,sb266424|h2|big_chances,2.0,1.0
+sb266424,h2,الشوط الثاني,possession,الاستحواذ ٪,sb266424|h2|possession,47.0,53.0
+sb266424,h2,الشوط الثاني,passes,التمريرات,sb266424|h2|passes,243.0,273.0
+sb266424,h2,الشوط الثاني,pass_pct,دقة التمرير ٪,sb266424|h2|pass_pct,79.0,86.0
+sb266424,h2,الشوط الثاني,progressive,حركات تقدمية,sb266424|h2|progressive,33.0,35.0
+sb266424,h2,الشوط الثاني,box_entries,دخول منطقة الجزاء,sb266424|h2|box_entries,8.0,11.0
+sb266424,h2,الشوط الثاني,field_tilt,السيطرة الإقليمية ٪,sb266424|h2|field_tilt,47.0,53.0
+sb266424,h2,الشوط الثاني,ppda,PPDA (أقل = ضغط أقوى),sb266424|h2|ppda,19.0,25.2
+sb266424,h2,الشوط الثاني,high_recoveries,استرجاع بالثلث الأخير,sb266424|h2|high_recoveries,3.0,4.0
+sb266424,h2,الشوط الثاني,dribbles,مراوغات ناجحة,sb266424|h2|dribbles,7.0,4.0
+sb266424,h2,الشوط الثاني,corners,الركنيات,sb266424|h2|corners,9.0,2.0
+sb266424,h2,الشوط الثاني,fouls,الأخطاء,sb266424|h2|fouls,10.0,5.0
+sb266424,full,المباراة كاملة,goals,الأهداف,sb266424|full|goals,0.0,4.0
+sb266424,full,المباراة كاملة,xg,الأهداف المتوقعة xG,sb266424|full|xg,1.34,2.48
+sb266424,full,المباراة كاملة,shots,التسديدات,sb266424|full|shots,13.0,18.0
+sb266424,full,المباراة كاملة,on_target,على المرمى,sb266424|full|on_target,7.0,6.0
+sb266424,full,المباراة كاملة,big_chances,فرص محققة,sb266424|full|big_chances,2.0,2.0
+sb266424,full,المباراة كاملة,possession,الاستحواذ ٪,sb266424|full|possession,42.0,58.0
+sb266424,full,المباراة كاملة,passes,التمريرات,sb266424|full|passes,486.0,671.0
+sb266424,full,المباراة كاملة,pass_pct,دقة التمرير ٪,sb266424|full|pass_pct,79.0,88.0
+sb266424,full,المباراة كاملة,progressive,حركات تقدمية,sb266424|full|progressive,52.0,63.0
+sb266424,full,المباراة كاملة,box_entries,دخول منطقة الجزاء,sb266424|full|box_entries,12.0,22.0
+sb266424,full,المباراة كاملة,field_tilt,السيطرة الإقليمية ٪,sb266424|full|field_tilt,45.0,55.0
+sb266424,full,المباراة كاملة,ppda,PPDA (أقل = ضغط أقوى),sb266424|full|ppda,24.0,20.1
+sb266424,full,المباراة كاملة,high_recoveries,استرجاع بالثلث الأخير,sb266424|full|high_recoveries,9.0,8.0
+sb266424,full,المباراة كاملة,dribbles,مراوغات ناجحة,sb266424|full|dribbles,9.0,14.0
+sb266424,full,المباراة كاملة,corners,الركنيات,sb266424|full|corners,10.0,3.0
+sb266424,full,المباراة كاملة,fouls,الأخطاء,sb266424|full|fouls,17.0,12.0
+sb267533,h1,الشوط الأول,goals,الأهداف,sb267533|h1|goals,0.0,0.0
+sb267533,h1,الشوط الأول,xg,الأهداف المتوقعة xG,sb267533|h1|xg,0.27,0.33
+sb267533,h1,الشوط الأول,shots,التسديدات,sb267533|h1|shots,6.0,5.0
+sb267533,h1,الشوط الأول,on_target,على المرمى,sb267533|h1|on_target,1.0,1.0
+sb267533,h1,الشوط الأول,big_chances,فرص محققة,sb267533|h1|big_chances,0.0,0.0
+sb267533,h1,الشوط الأول,possession,الاستحواذ ٪,sb267533|h1|possession,67.0,33.0
+sb267533,h1,الشوط الأول,passes,التمريرات,sb267533|h1|passes,351.0,175.0
+sb267533,h1,الشوط الأول,pass_pct,دقة التمرير ٪,sb267533|h1|pass_pct,91.0,78.0
+sb267533,h1,الشوط الأول,progressive,حركات تقدمية,sb267533|h1|progressive,24.0,24.0
+sb267533,h1,الشوط الأول,box_entries,دخول منطقة الجزاء,sb267533|h1|box_entries,6.0,6.0
+sb267533,h1,الشوط الأول,field_tilt,السيطرة الإقليمية ٪,sb267533|h1|field_tilt,78.0,22.0
+sb267533,h1,الشوط الأول,ppda,PPDA (أقل = ضغط أقوى),sb267533|h1|ppda,9.6,25.6
+sb267533,h1,الشوط الأول,high_recoveries,استرجاع بالثلث الأخير,sb267533|h1|high_recoveries,6.0,1.0
+sb267533,h1,الشوط الأول,dribbles,مراوغات ناجحة,sb267533|h1|dribbles,6.0,4.0
+sb267533,h1,الشوط الأول,corners,الركنيات,sb267533|h1|corners,0.0,1.0
+sb267533,h1,الشوط الأول,fouls,الأخطاء,sb267533|h1|fouls,14.0,10.0
+sb267533,h2,الشوط الثاني,goals,الأهداف,sb267533|h2|goals,1.0,2.0
+sb267533,h2,الشوط الثاني,xg,الأهداف المتوقعة xG,sb267533|h2|xg,0.45,0.99
+sb267533,h2,الشوط الثاني,shots,التسديدات,sb267533|h2|shots,8.0,10.0
+sb267533,h2,الشوط الثاني,on_target,على المرمى,sb267533|h2|on_target,2.0,5.0
+sb267533,h2,الشوط الثاني,big_chances,فرص محققة,sb267533|h2|big_chances,0.0,1.0
+sb267533,h2,الشوط الثاني,possession,الاستحواذ ٪,sb267533|h2|possession,67.0,33.0
+sb267533,h2,الشوط الثاني,passes,التمريرات,sb267533|h2|passes,361.0,175.0
+sb267533,h2,الشوط الثاني,pass_pct,دقة التمرير ٪,sb267533|h2|pass_pct,90.0,82.0
+sb267533,h2,الشوط الثاني,progressive,حركات تقدمية,sb267533|h2|progressive,31.0,35.0
+sb267533,h2,الشوط الثاني,box_entries,دخول منطقة الجزاء,sb267533|h2|box_entries,14.0,9.0
+sb267533,h2,الشوط الثاني,field_tilt,السيطرة الإقليمية ٪,sb267533|h2|field_tilt,61.0,39.0
+sb267533,h2,الشوط الثاني,ppda,PPDA (أقل = ضغط أقوى),sb267533|h2|ppda,7.8,19.8
+sb267533,h2,الشوط الثاني,high_recoveries,استرجاع بالثلث الأخير,sb267533|h2|high_recoveries,6.0,3.0
+sb267533,h2,الشوط الثاني,dribbles,مراوغات ناجحة,sb267533|h2|dribbles,3.0,1.0
+sb267533,h2,الشوط الثاني,corners,الركنيات,sb267533|h2|corners,4.0,2.0
+sb267533,h2,الشوط الثاني,fouls,الأخطاء,sb267533|h2|fouls,7.0,13.0
+sb267533,full,المباراة كاملة,goals,الأهداف,sb267533|full|goals,1.0,2.0
+sb267533,full,المباراة كاملة,xg,الأهداف المتوقعة xG,sb267533|full|xg,0.73,1.32
+sb267533,full,المباراة كاملة,shots,التسديدات,sb267533|full|shots,14.0,15.0
+sb267533,full,المباراة كاملة,on_target,على المرمى,sb267533|full|on_target,3.0,6.0
+sb267533,full,المباراة كاملة,big_chances,فرص محققة,sb267533|full|big_chances,0.0,1.0
+sb267533,full,المباراة كاملة,possession,الاستحواذ ٪,sb267533|full|possession,67.0,33.0
+sb267533,full,المباراة كاملة,passes,التمريرات,sb267533|full|passes,712.0,350.0
+sb267533,full,المباراة كاملة,pass_pct,دقة التمرير ٪,sb267533|full|pass_pct,91.0,80.0
+sb267533,full,المباراة كاملة,progressive,حركات تقدمية,sb267533|full|progressive,55.0,59.0
+sb267533,full,المباراة كاملة,box_entries,دخول منطقة الجزاء,sb267533|full|box_entries,20.0,15.0
+sb267533,full,المباراة كاملة,field_tilt,السيطرة الإقليمية ٪,sb267533|full|field_tilt,68.0,32.0
+sb267533,full,المباراة كاملة,ppda,PPDA (أقل = ضغط أقوى),sb267533|full|ppda,8.7,22.4
+sb267533,full,المباراة كاملة,high_recoveries,استرجاع بالثلث الأخير,sb267533|full|high_recoveries,12.0,4.0
+sb267533,full,المباراة كاملة,dribbles,مراوغات ناجحة,sb267533|full|dribbles,9.0,5.0
+sb267533,full,المباراة كاملة,corners,الركنيات,sb267533|full|corners,4.0,3.0
+sb267533,full,المباراة كاملة,fouls,الأخطاء,sb267533|full|fouls,21.0,23.0

@@ -1,0 +1,49 @@
+{
+  "created_utc": "2026-10-24T11:04:43Z",
+  "data_fingerprint": "562e6d11ffb6",
+  "platform_version": "2.0",
+  "prematch_market": {
+    "version": "prematch-market-2.0",
+    "config": {
+      "xi": 0.006,
+      "prior_sd": 0.7,
+      "beta_sot": 0.0,
+      "beta_mkt": 0.9,
+      "promoted_attack": -0.19,
+      "promoted_defence": -0.13,
+      "seasons_back": 2,
+      "sot_k": null,
+      "rating_scale": 1.1
+    },
+    "selection_seasons": "2012/13-2022/23",
+    "test_seasons": "2023/24-2025/26"
+  },
+  "prematch_independent": {
+    "version": "prematch-independent-2.0",
+    "config": {
+      "xi": 0.002,
+      "prior_sd": 0.5,
+      "beta_sot": 0.4,
+      "beta_mkt": 0.0,
+      "promoted_attack": -0.19,
+      "promoted_defence": -0.13,
+      "seasons_back": 4,
+      "sot_k": null,
+      "rating_scale": 1.2
+    },
+    "selection_seasons": "2012/13-2022/23",
+    "test_seasons": "2023/24-2025/26"
+  },
+  "inplay": {
+    "version": "inplay-2.0",
+    "variant": "time profile + score + low-score correction",
+    "inputs": "market track lambda, mu, rho",
+    "trained_seasons": "2018-2025"
+  },
+  "season": {
+    "version": "season-2.0",
+    "drift_sd": 0.025,
+    "cut_after_matches": 100
+  },
+  "displayed_track": "market"
+}

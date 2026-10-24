@@ -1,0 +1,78 @@
+{
+ "season": "La Liga 2015/16 (StatsBomb Open Data)",
+ "matches": 380,
+ "player_matches_60min": 7845,
+ "mean_rating_by_group": [
+  {
+   "group": "AM",
+   "rating_v1": 7.7,
+   "rating_v2": 6.54,
+   "player_matches": 1141
+  },
+  {
+   "group": "CB",
+   "rating_v1": 6.81,
+   "rating_v2": 6.5,
+   "player_matches": 1501
+  },
+  {
+   "group": "CM",
+   "rating_v1": 7.53,
+   "rating_v2": 6.54,
+   "player_matches": 925
+  },
+  {
+   "group": "DM",
+   "rating_v1": 7.3,
+   "rating_v2": 6.52,
+   "player_matches": 1167
+  },
+  {
+   "group": "FB",
+   "rating_v1": 7.27,
+   "rating_v2": 6.51,
+   "player_matches": 1449
+  },
+  {
+   "group": "FW",
+   "rating_v1": 7.49,
+   "rating_v2": 6.56,
+   "player_matches": 906
+  },
+  {
+   "group": "GK",
+   "rating_v1": 6.62,
+   "rating_v2": 6.52,
+   "player_matches": 756
+  }
+ ],
+ "share_of_top200_match_ratings": {
+  "v1": {
+   "AM": 0.48,
+   "FW": 0.295,
+   "CM": 0.14,
+   "DM": 0.04,
+   "FB": 0.035,
+   "CB": 0.01
+  },
+  "v2": {
+   "CB": 0.19,
+   "FB": 0.175,
+   "AM": 0.165,
+   "DM": 0.14,
+   "FW": 0.115,
+   "CM": 0.115,
+   "GK": 0.1
+  },
+  "share_of_all_player_matches": {
+   "CB": 0.191,
+   "FB": 0.185,
+   "DM": 0.149,
+   "AM": 0.145,
+   "CM": 0.118,
+   "FW": 0.115,
+   "GK": 0.096
+  }
+ },
+ "note": "v1 = previous formula (attacking outputs added to 6.0); v2 = position-relative z-scores (zsc/players.py)."
+}

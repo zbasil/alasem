@@ -1,0 +1,154 @@
+{
+"fetched_at": "2026-10-24T10:50:00Z",
+"source": "SportRadar via fetch_sports_data (game_stats)",
+"id": "sr:sport_event:72478632",
+"kickoff_utc": "2026-10-17T12:00:00Z",
+"home": "Espanyol Barcelona",
+"away": "Atletico Madrid",
+"status": "final",
+"score": {
+"home": 0,
+"away": 1
+},
+"ht_score": {
+"home": 0,
+"away": 0,
+"derived_from": "score_change events up to minute 45"
+},
+"team_stats": {
+"home": {
+"ball_possession": 28,
+"cards_given": 2,
+"corner_kicks": 4,
+"fouls": 10,
+"free_kicks": 9,
+"goal_kicks": 11,
+"injuries": 0,
+"offsides": 0,
+"red_cards": 0,
+"shots_blocked": 2,
+"shots_off_target": 3,
+"shots_on_target": 2,
+"shots_saved": 5,
+"shots_total": 7,
+"substitutions": 5,
+"throw_ins": 14,
+"yellow_cards": 2,
+"yellow_red_cards": 0
+},
+"away": {
+"ball_possession": 72,
+"cards_given": 5,
+"corner_kicks": 12,
+"fouls": 9,
+"free_kicks": 9,
+"goal_kicks": 5,
+"injuries": 0,
+"offsides": 4,
+"red_cards": 0,
+"shots_blocked": 1,
+"shots_off_target": 8,
+"shots_on_target": 6,
+"shots_saved": 2,
+"shots_total": 15,
+"substitutions": 5,
+"throw_ins": 12,
+"yellow_cards": 5,
+"yellow_red_cards": 0
+}
+},
+"key_events": [
+{
+"type": "yellow_card",
+"time": 22,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 43,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 46,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 46,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 55,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 62,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 64,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 66,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 67,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 68,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 73,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 73,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 79,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 81,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 82,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 82,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 87,
+"team": "home"
+},
+{
+"type": "score_change",
+"time": 89,
+"team": "away",
+"home_score": 0,
+"away_score": 1
+}
+]
+}

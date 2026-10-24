@@ -1,0 +1,24 @@
+data fingerprint (history to 2025/26): 562e6d11ffb6
+1. pre-match
+  selection 2012/13-2022/23 n=4180: RPS market 0.1941 independent 0.1959 bet365 0.1923 base 0.2268; hit 0.538/0.537/0.539
+  test 2023/24-2025/26 n=1140: RPS market 0.1924 independent 0.1932 bet365 0.1893 base 0.2254; hit 0.537/0.536/0.552
+2. ablations (selection seasons)
+  ablation 'goals only' (13s)
+  ablation 'goals + shots on target' (12s)
+  ablation 'goals + shots + market' (10s)
+  ablation 'independent without promoted-team prior' (13s)
+  ablation 'independent without rating stretch' (12s)
+  ablation 'independent without time decay' (14s)
+  rest days: gamma=+0.0333 per week of difference; test RPS change +0.00019
+3. in-play
+  in-play market: chosen 'time profile + score + low-score correction' (selection RPS 0.1508); test RPS 0.1557 vs pre-match 0.1924, hit 0.607
+  in-play independent: chosen 'time profile + score + low-score correction' (selection RPS 0.1515); test RPS 0.1561 vs pre-match 0.1932, hit 0.613
+  final live model: time profile + score + low-score correction; first-half share 0.4369; red cards own x0.692 opponent x1.503
+4. season
+  season selection drift=0.0: MAE 5.13 coverage 0.823 z_sd 1.030 (41s)
+  season selection drift=0.025: MAE 5.13 coverage 0.818 z_sd 1.021 (46s)
+  season selection drift=0.05: MAE 5.14 coverage 0.832 z_sd 1.001 (43s)
+  season selection drift=0.075: MAE 5.14 coverage 0.855 z_sd 0.970 (45s)
+  season selection drift=0.1: MAE 5.15 coverage 0.868 z_sd 0.929 (43s)
+  season test drift=0.025: MAE 5.18 (naive 7.96), coverage 0.800
+done in 331s
