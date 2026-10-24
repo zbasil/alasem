@@ -4,16 +4,17 @@
    stadium scoreboard) marks live states and changes. Dark is the home theme; light is complete too. */
 
 :root {
-  --bg: #101412;
-  --bg-elev: #151a17;
-  --card: #1a201d;
-  --card-2: #212824;
-  --inset: #0c0f0d;
-  --line: #2a332e;
-  --line-strong: #3a4640;
-  --fg: #e8eee9;
-  --fg-2: #b0bdb4;
-  --fg-3: #84928a;
+  --bg: #0a101c;
+  --bg-elev: #0e1524;
+  --card: #121a2a;
+  --card-2: #182234;
+  --inset: #070b14;
+  --line: #222d41;
+  --line-strong: #314058;
+  --fg: #e7edf6;
+  --fg-2: #aab6c8;
+  --fg-3: #8290a6;
+  --teal: #2fc6b4;
   --pitch: #34b46c;
   --pitch-strong: #4fd389;
   --pitch-ink: #04170c;
@@ -482,7 +483,7 @@ ul.list, ol.list { padding: 0; margin: 0; }
    The ground is a mown pitch: faint stripes and chalk lines behind solid cards, so text never sits on
    the pattern and contrast stays the same as before.
    ===================================================================================================== */
-:root { --turf-a: #0f1612; --turf-b: #121a15; --chalk-line: rgba(232, 238, 233, .05); --cc: var(--pitch); }
+:root { --turf-a: #0a101c; --turf-b: #0c1320; --chalk-line: rgba(120, 200, 150, .045); --cc: var(--pitch); }
 :root[data-theme="light"] { --turf-a: #e9efe6; --turf-b: #e2eade; --chalk-line: rgba(17, 60, 30, .07); }
 @media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) { --turf-a: #e9efe6; --turf-b: #e2eade; --chalk-line: rgba(17, 60, 30, .07); } }
 body {
@@ -728,3 +729,50 @@ section.stack > .cgroup-rows { background: var(--card); border: 1px solid var(--
 .head-item { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; border-bottom: 1px solid var(--line); color: var(--fg); min-height: 48px; }
 .head-item:last-child { border-bottom: 0; }
 .head-item small { color: var(--fg-3); font-size: .76rem; }
+
+/* =====================================================================================================
+   Version 3.1: live layer (freshness, red cards, timeline, stats, formation board, line-ups)
+   ===================================================================================================== */
+.fresh-row { margin: -2px 0 8px; min-height: 22px; }
+.fresh { display: inline-flex; align-items: center; gap: 6px; font-size: .76rem; color: var(--fg-3); font-weight: 700; }
+.fresh .fresh-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--fg-3); flex: 0 0 7px; }
+.fresh.live { color: var(--teal); }
+.fresh.live .fresh-dot { background: var(--teal); box-shadow: 0 0 0 3px rgba(47, 198, 180, .18); }
+.fresh.delayed { color: var(--led); }
+.fresh.delayed .fresh-dot { background: var(--led); }
+.red-tag { display: inline-flex; align-items: center; justify-content: center; min-width: 9px; height: 12px; padding: 0 2px; border-radius: 2px;
+  background: var(--live); color: #fff; font: 800 .6rem/1 var(--font-display); flex: 0 0 auto; }
+.row.wrap { flex-wrap: wrap; gap: 8px 14px; }
+.live-panel { margin-top: 4px; }
+.tl-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.tl-ev { display: grid; grid-template-columns: 52px 26px minmax(0, 1fr); align-items: center; gap: 6px; padding: 8px 4px; border-bottom: 1px solid var(--line); font-size: .9rem; }
+.tl-ev:last-child { border-bottom: 0; }
+.tl-min { color: var(--fg-3); font-weight: 800; font-family: var(--font-display); }
+.tl-ico { text-align: center; font-size: .95rem; }
+.tl-ev.yellow .tl-ico { color: var(--led); }
+.tl-ev.red .tl-ico, .tl-ev.second_yellow .tl-ico { color: var(--live); }
+.tl-ev.sub .tl-ico { color: var(--teal); }
+.tl-ev.goal, .tl-ev.penalty_goal, .tl-ev.own_goal { background: var(--pitch-soft); border-radius: var(--r-sm); }
+.tl-ev.retracted { opacity: .75; }
+.tl-ev.away { direction: rtl; }
+.lstats { display: flex; flex-direction: column; gap: 10px; }
+.lstat { display: grid; grid-template-columns: 56px minmax(0, 1fr) 56px; grid-template-areas: "a l b" "bar bar bar"; align-items: center; gap: 4px 8px; }
+.lstat-v:first-child { grid-area: a; text-align: start; font-weight: 800; }
+.lstat-l { grid-area: l; text-align: center; color: var(--fg-2); font-size: .84rem; }
+.lstat-v:nth-child(3) { grid-area: b; text-align: end; font-weight: 800; }
+.lstat-bar { grid-area: bar; display: flex; gap: 3px; height: 6px; }
+.lstat-bar i { display: block; border-radius: 3px; min-width: 2px; }
+.pitch-wrap { max-width: 420px; margin-inline: auto; width: 100%; }
+.pitch-board { width: 100%; height: auto; display: block; border-radius: var(--r); }
+.pitch-board .pt-grass { fill: #1d6b3f; }
+.pitch-board .pt-line { stroke: rgba(255, 255, 255, .55); stroke-width: .35; }
+.pitch-board .pl-name { fill: #fff; font-family: var(--font-body); font-weight: 700; paint-order: stroke; stroke: rgba(0, 0, 0, .55); stroke-width: .5px; }
+.pitch-board .pl.out { opacity: .55; }
+.lu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.lu-col h4 { margin: 0 0 6px; font-size: .95rem; }
+.lu-list { list-style: none; margin: 0 0 8px; padding: 0; display: flex; flex-direction: column; gap: 3px; font-size: .86rem; }
+.lu-list li { display: flex; gap: 6px; align-items: baseline; }
+.lu-list .jn { min-width: 22px; color: var(--fg-3); font-weight: 800; }
+.lu-list.bench { opacity: .85; }
+.lu-list .in { color: var(--good); }
+.lu-list .out { color: var(--bad); }

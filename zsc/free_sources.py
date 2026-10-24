@@ -85,6 +85,7 @@ def parse_espn_scoreboard(js: dict) -> list[dict]:
         for c in comp.get("competitors", []) or []:
             t = c.get("team") or {}
             sides[c.get("homeAway")] = {"espn_id": t.get("id"), "abbr": t.get("abbreviation"), "name": t.get("displayName"),
+                                        "short": t.get("shortDisplayName"),
                                         "score": None if c.get("score") in (None, "") else int(c["score"])}
         events = []
         for d in comp.get("details", []) or []:
@@ -93,9 +94,11 @@ def parse_espn_scoreboard(js: dict) -> list[dict]:
                            "team_id": (d.get("team") or {}).get("id"),
                            "players": [a.get("displayName") or (a.get("athlete") or {}).get("displayName")
                                        for a in d.get("athletesInvolved", []) or []],
-                           "goal": bool(d.get("scoringPlay")), "red": bool(d.get("redCard")), "yellow": bool(d.get("yellowCard"))})
+                           "goal": bool(d.get("scoringPlay")), "red": bool(d.get("redCard")), "yellow": bool(d.get("yellowCard")),
+                           "penalty": bool(d.get("penaltyKick")), "own_goal": bool(d.get("ownGoal"))})
         out.append({"espn_id": ev.get("id"), "kickoff_utc": ev.get("date"), "state": typ.get("state"),
                     "completed": bool(typ.get("completed")), "detail": typ.get("shortDetail") or typ.get("detail"),
+                    "status_name": typ.get("name"), "period": st.get("period"),
                     "clock": st.get("displayClock"), "home": sides.get("home", {}), "away": sides.get("away", {}),
                     "events": events})
     return out
@@ -116,6 +119,7 @@ def parse_espn_summary(js: dict) -> dict:
             a = p.get("athlete") or {}
             players.append({"name": a.get("displayName"), "jersey": p.get("jersey"),
                             "pos": (p.get("position") or {}).get("abbreviation"), "starter": bool(p.get("starter")),
+                            "place": int(p["formationPlace"]) if str(p.get("formationPlace") or "").isdigit() else None,
                             "subbed_in": bool(p.get("subbedIn")), "subbed_out": bool(p.get("subbedOut"))})
         lineups.append({"side": r.get("homeAway"), "team": t.get("displayName"), "abbr": t.get("abbreviation"),
                         "formation": r.get("formation"), "players": players})
@@ -127,7 +131,12 @@ def parse_espn_summary(js: dict) -> dict:
     for t in (js.get("boxscore") or {}).get("teams", []) or []:
         name = (t.get("team") or {}).get("abbreviation")
         stats[name] = {s.get("name"): _num(s.get("displayValue")) for s in t.get("statistics", []) or []}
-    return {"lineups": lineups, "events": events, "stats": stats,
+    gi = js.get("gameInfo") or {}
+    info = {"venue": (gi.get("venue") or {}).get("fullName"),
+            "attendance": int(gi["attendance"]) if str(gi.get("attendance") or "").isdigit() and int(gi["attendance"]) > 0 else None,
+            "referee": next((o.get("displayName") for o in gi.get("officials", []) or []
+                             if "referee" in str((o.get("position") or {}).get("name", "referee")).lower()), None)}
+    return {"lineups": lineups, "events": events, "stats": stats, "info": info,
             "has_lineups": any(len(l["players"]) for l in lineups)}
 
 

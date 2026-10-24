@@ -103,8 +103,10 @@
       ZS.clear(view).appendChild(ui().errorCard(e, () => location.reload()));
       return;
     }
+    ZS.emit("core");
     drawStatus();
     drawBanner();
+    if (ZS.live) ZS.live.refresh();
     // first visit: remember what was seen so the next visit can show what changed
     if (!ZS.store.prefs().seen) await ZS.alerts.markSeen();
     drawAlertDot();
@@ -116,6 +118,7 @@
         if (m.generated_utc !== D.meta.generated_utc) {
           ZS.invalidate();
           await ZS.loadCore();
+          ZS.emit("core");
           drawStatus(); drawBanner(); drawAlertDot();
           ZS.toast("وصل تحديث جديد للبيانات");
           if (["today", "matches", "match", "season", "news", "standings", "comp"].includes(ZS.current().page)) ZS.render();

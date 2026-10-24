@@ -39,7 +39,16 @@
   }
 
   // ------------------------------------------------------------------ state of a fixture and the live ring
+  const LIVE_WARN = { postponed: "مؤجلة", cancelled: "ملغاة", suspended: "موقوفة مؤقتاً", abandoned: "أُوقفت", delayed: "متأخرة البداية" };
   function stateOf(f, now = Date.now()) {
+    // 1. the live file (ESPN through the update job): verified state, minute and score
+    const L = f.live;
+    if (L && !f.score) {
+      if (L.state === "live") return { kind: "live", minute: L.minute != null ? L.minute : 1, clock: L.clock, label: "مباشر", verified: true };
+      if (L.state === "ht") return { kind: "ht", minute: 45, label: "استراحة", verified: true };
+      if (L.state === "ft" && L.score) return { kind: "ft", label: "انتهت", verified: true };
+      if (LIVE_WARN[L.state]) return { kind: "warn", label: LIVE_WARN[L.state], verified: true };
+    }
     if (f.status === "HT") return { kind: "ht", minute: 45, label: "استراحة" };
     if (f.score) return { kind: "ft", label: "انتهت" };
     if (f.status === "abandoned") return { kind: "warn", label: "أُوقفت" };
@@ -47,14 +56,23 @@
     const ko = f.kickoff_utc ? new Date(f.kickoff_utc).getTime() : null;
     if (ko && now >= ko && now < ko + 115 * 60000) {
       let m = Math.floor((now - ko) / 60000) + 1;
-      if (m > 45 && m <= 60) return { kind: "ht", minute: 45, label: "استراحة" };
+      if (m > 45 && m <= 60) return { kind: "ht", minute: 45, label: "استراحة", estimated: !f.live_score };
       if (m > 60) m -= 15;
-      return { kind: "live", minute: Math.min(m, 90), label: "مباشر", estimated: !f.live_score };
+      return { kind: "live", minute: Math.min(m, 90), label: "مباشر", estimated: !f.live_score && !(L && L.state === "live") };
     }
     if (f.status === "result_pending" || (ko && now >= ko + 115 * 60000)) return { kind: "warn", label: "بانتظار النتيجة" };
     return { kind: "pre", label: ko ? ZS.timeHM(f.kickoff_utc) : "—" };
   }
-  function ring(minute, label, goals = []) {
+  /** final or live score from the snapshot first, then from the live file; null when unknown */
+  function scoreOf(f) {
+    if (f.score) return f.score;
+    if (f.live && f.live.score && ["live", "ht", "ft"].includes(f.live.state)) return f.live.score;
+    return f.live_score || null;
+  }
+  const GOALS = ["goal", "penalty_goal", "own_goal"];
+  function goalMinutes(f) { return ((f.live && f.live.events) || []).filter((e) => GOALS.includes(e.kind) && e.minute != null).map((e) => e.minute); }
+  function reds(f, side) { return ((f.live && f.live.events) || []).filter((e) => (e.kind === "red" || e.kind === "second_yellow") && e.side === side).length; }
+  function ring(minute, label, goals = [], approx = false) {
     const r = 16.5, c = 2 * Math.PI * r, frac = Math.max(0.02, Math.min(1, minute / 90));
     const dots = goals.map((g) => {
       const a = (Math.min(g, 90) / 90) * 2 * Math.PI - Math.PI / 2;
@@ -63,7 +81,7 @@
     return ZS.svgEl(`<svg class="ring" viewBox="0 0 40 40" role="img" aria-label="${ZS.esc(label)}">` +
       `<circle cx="20" cy="20" r="${r}" class="ring-track"/>` +
       `<circle cx="20" cy="20" r="${r}" class="ring-prog" stroke-dasharray="${(frac * c).toFixed(2)} ${c.toFixed(2)}" transform="rotate(-90 20 20)"/>` +
-      dots + `<text x="20" y="23.6" text-anchor="middle" class="ring-text">${minute}'</text></svg>`);
+      dots + `<text x="20" y="23.6" text-anchor="middle" class="ring-text">${approx ? "~" : ""}${minute}'</text></svg>`);
   }
   function miniBar(f) {
     if (!f.p) return null;
@@ -81,29 +99,31 @@
     const p = ZS.store.prefs();
     const fav = p.fav_teams.includes(f.home) || p.fav_teams.includes(f.away);
     let center;
+    const sc = scoreOf(f);
     if (st.kind === "live" || st.kind === "ht") {
-      const sc = f.live_score || null;
       center = h("div.mrow-mid.live",
-        ring(st.minute, st.kind === "ht" ? "استراحة" : `الدقيقة ${st.minute}${st.estimated ? " تقريباً" : ""}`, []),
-        sc ? h("div.mrow-score.num", h("span", sc[0]), h("i", "–"), h("span", sc[1])) : h("span.mrow-sub.live-t", st.kind === "ht" ? "استراحة" : "مباشر"));
-    } else if (st.kind === "ft") {
+        ring(st.minute, st.kind === "ht" ? `استراحة${st.estimated ? " تقديرياً" : ""}` : `الدقيقة ${st.clock || st.minute}${st.estimated ? " تقديرياً، بدون بيانات مباشرة" : ""}`, goalMinutes(f), st.estimated),
+        sc ? h("div.mrow-score.num", { "aria-label": `النتيجة ${H.ar} ${sc[0]}، ${A.ar} ${sc[1]}` }, h("span", sc[0]), h("i", "–"), h("span", sc[1]))
+          : h("span.mrow-sub.live-t", st.estimated ? (st.kind === "ht" ? "استراحة · تقديري" : "بدأت · تقديري") : st.kind === "ht" ? "استراحة" : "مباشر"));
+    } else if (st.kind === "ft" && sc) {
       center = h("div.mrow-mid",
-        h("div.mrow-score.num", { "aria-label": `النتيجة ${H.ar} ${f.score[0]}، ${A.ar} ${f.score[1]}` }, h("span", f.score[0]), h("i", "–"), h("span", f.score[1])),
-        h("span.mrow-sub", f.retro_hit === true ? "انتهت · ✓" : "انتهت"));
+        h("div.mrow-score.num", { "aria-label": `النتيجة ${H.ar} ${sc[0]}، ${A.ar} ${sc[1]}` }, h("span", sc[0]), h("i", "–"), h("span", sc[1])),
+        h("span.mrow-sub", !f.score ? "انتهت · مباشر" : f.retro_hit === true ? "انتهت · ✓" : "انتهت"));
     } else {
       center = h("div.mrow-mid" + (st.kind === "warn" ? ".pending" : ""),
         h("span.mrow-time.num", f.kickoff_utc && f.time_known !== false ? ZS.timeHM(f.kickoff_utc) : "—"),
         h("span.mrow-sub", st.kind === "warn" ? st.label : showDate && f.kickoff_utc ? ZS.dateShort(f.kickoff_utc) : "بتوقيت بغداد"));
     }
-    const won = f.score ? (f.score[0] > f.score[1] ? 0 : f.score[0] < f.score[1] ? 2 : 1) : -1;
+    const won = st.kind === "ft" && sc ? (sc[0] > sc[1] ? 0 : sc[0] < sc[1] ? 2 : 1) : -1;
+    const redTag = (side) => { const n = reds(f, side); return n ? h("span.red-tag", { "aria-label": `${n} طرد` }, n > 1 ? String(n) : "") : null; };
     return h("a.mrow" + (fav ? ".fav" : "") + (st.kind === "live" || st.kind === "ht" ? ".is-live" : ""), { href: matchHref(f) },
-      h("div.mrow-team.home" + (won === 2 ? ".lost" : ""), ui().crest(f.home, "s"), h("span.nm", H.short || H.ar)),
+      h("div.mrow-team.home" + (won === 2 ? ".lost" : ""), ui().crest(f.home, "s"), h("span.nm", H.short || H.ar), redTag("home")),
       center,
-      h("div.mrow-team.away" + (won === 0 ? ".lost" : ""), ui().crest(f.away, "s"), h("span.nm", A.short || A.ar)),
+      h("div.mrow-team.away" + (won === 0 ? ".lost" : ""), ui().crest(f.away, "s"), h("span.nm", A.short || A.ar), redTag("away")),
       showComp ? h("span.mrow-comp", compBadge(fixtureComp(f), "xs"), comp(fixtureComp(f)).short_ar) : null,
       miniBar(f));
   }
-  ZS.hub = { comp, compOrder, compBadge, allFixtures, fixtureById, matchRow, matchHref, teamHref, compSeason, stateOf };
+  ZS.hub = { comp, compOrder, compBadge, allFixtures, fixtureById, matchRow, matchHref, teamHref, compSeason, stateOf, scoreOf, ring, goalMinutes };
 
   // ------------------------------------------------------------------ Matches (home)
   const dayLabel = (key, today) => {
@@ -138,6 +158,8 @@
       h("div.hub-actions", livePill, searchBtn, calBtn)));
     const search = h("input.hub-search", { type: "search", placeholder: "ابحثي عن فريق…", hidden: true, "aria-label": "ابحثي عن فريق" });
     view.appendChild(search);
+    const freshBox = h("div.fresh-row");
+    view.appendChild(freshBox);
     const strip = h("div.datestrip", { role: "tablist", "aria-label": "الأيام" });
     view.appendChild(strip);
     const chips = h("div.chips.scroll", { role: "toolbar", "aria-label": "تصفية" });
@@ -163,6 +185,10 @@
       requestAnimationFrame(() => { const on = strip.querySelector(".on"); if (on && on.scrollIntoView) on.scrollIntoView({ block: "nearest", inline: "center" }); });
     }
     function draw() {
+      if (ZS.live) {
+        const fr = ZS.live.freshness();
+        ZS.clear(freshBox).appendChild(fr.kind === "none" ? h("span.fresh.none", h("i.fresh-dot"), "النتائج المباشرة تنعرض أول ما يشتغل التحديث التلقائي") : ZS.live.freshTag());
+      }
       const ln = liveNow();
       ZS.clear(livePill).append(h("i.live-dot"), h("span", `مباشر ${ln.length}`));
       livePill.setAttribute("aria-pressed", String(filter === "live"));
@@ -235,7 +261,8 @@
     drawStrip();
     draw();
     const t = setInterval(() => { if (liveNow().length) draw(); }, 60000);
-    return () => clearInterval(t);
+    const off = ZS.on("live", () => draw());
+    return () => { clearInterval(t); off(); };
   }
 
   // ------------------------------------------------------------------ stories for News (from the computer's numbers)
@@ -526,17 +553,26 @@
     const cid = fixtureComp(f);
     const c = comp(cid);
     const H = team(f.home), A = team(f.away);
-    const st = stateOf(f);
     view.appendChild(h("a.back-link", { href: ZS.href("matches", f.kickoff_utc ? ZS.dayKey(f.kickoff_utc) : "") }, ui().icon("back"), "المباريات"));
-    const mid = f.score ? h("div.xm-score.num", h("span", f.score[0]), h("i", "–"), h("span", f.score[1]))
-      : st.kind === "live" || st.kind === "ht" ? h("div.xm-mid", ring(st.minute, st.label, []), h("span.mrow-sub", st.label))
-        : h("div.xm-time.num", f.kickoff_utc ? ZS.timeHM(f.kickoff_utc) : "—");
-    view.appendChild(h("div.xm-head", { style: { "--cc": c.color } },
-      h("div.xm-meta", compBadge(cid, "xs"), h("a", { href: ZS.href("comp", cid) }, c.name_ar), h("span", cid === "UCL" ? `مرحلة الدوري · الجولة ${f.matchday}` : `الجولة ${f.matchday}`), h("span", f.kickoff_utc ? ZS.dateLong(f.kickoff_utc) : "")),
-      h("div.xm-teams",
-        h("a.xm-team", { href: teamHref(f.home, cid) }, ui().crest(f.home, "l"), h("strong", H.ar), h("small", "صاحب الأرض")),
-        mid,
-        h("a.xm-team", { href: teamHref(f.away, cid) }, ui().crest(f.away, "l"), h("strong", A.ar), h("small", "الضيف")))));
+    // header and live panel redraw in place when the live file changes (no jump to the top of the page)
+    const top = h("div.stack");
+    const drawTop = () => {
+      const st = stateOf(f);
+      const sc = scoreOf(f);
+      const scoreEl = sc ? h("div.xm-score.num", h("span", sc[0]), h("i", "–"), h("span", sc[1])) : null;
+      const mid = st.kind === "live" || st.kind === "ht" ? h("div.xm-mid", ring(st.minute, st.label, goalMinutes(f), st.estimated), scoreEl, h("span.mrow-sub", st.estimated ? "تقديري، بدون بيانات مباشرة" : (st.clock || st.label)))
+        : scoreEl ? h("div.xm-mid", scoreEl, h("span.mrow-sub", st.label)) : h("div.xm-time.num", f.kickoff_utc ? ZS.timeHM(f.kickoff_utc) : "—");
+      ZS.clear(top).appendChild(h("div.xm-head", { style: { "--cc": c.color } },
+        h("div.xm-meta", compBadge(cid, "xs"), h("a", { href: ZS.href("comp", cid) }, c.name_ar), h("span", cid === "UCL" ? `مرحلة الدوري · الجولة ${f.matchday}` : `الجولة ${f.matchday}`), h("span", f.kickoff_utc ? ZS.dateLong(f.kickoff_utc) : "")),
+        h("div.xm-teams",
+          h("a.xm-team", { href: teamHref(f.home, cid) }, ui().crest(f.home, "l"), h("strong", H.ar), h("small", "صاحب الأرض")),
+          mid,
+          h("a.xm-team", { href: teamHref(f.away, cid) }, ui().crest(f.away, "l"), h("strong", A.ar), h("small", "الضيف")))));
+      const lp = ZS.live && ZS.live.panel(f);
+      top.appendChild(lp || h("p.hub-note", ui().icon("info"), h("span", "الأحداث والتشكيلات والأرقام المباشرة تظهر هنا من ESPN أول ما يجلبها التحديث التلقائي (قبل البداية بساعة وخلال المباراة).")));
+    };
+    drawTop();
+    view.appendChild(top);
     const box = h("div.stack");
     box.appendChild(ui().probBar(f.home, f.away, f.p, { big: true }));
     box.appendChild(h("p.big-line", f.takeaway_ar));
@@ -580,9 +616,7 @@
           : h("p.small", "ماكو غيابات مسجلة للفريقين بآخر جلب")));
       } catch (e) { /* FPL file not fetched in this build */ }
     }
-    view.appendChild(h("p.hub-note", ui().icon("info"), h("span", cid === "ENG1"
-      ? "مركز المباراة الكامل (التشكيلات، الخط الزمني، التحليل المباشر) لحد هسه بالليغا بس؛ البريميرليغ ودوري الأبطال بالنسخة القادمة."
-      : "دوري الأبطال بهالنسخة: توقع قبل المباراة + محاكاة البطولة. التحليل المباشر بالنسخة القادمة.")));
+    return ZS.on("live", drawTop);
   }
 
   // ------------------------------------------------------------------ any team (Premier League / Champions League / La Liga in Europe)

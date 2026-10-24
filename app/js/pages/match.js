@@ -68,6 +68,20 @@
         h("a.sb-team.wide.away", { href: ZS.href("team", mf.away), style: { color: "var(--fg)" } }, ui().crest(mf.away, "l"), h("div.stack", { style: { gap: 0, alignItems: "flex-end" } }, h("span.team-name", { style: { fontSize: "1.25rem", fontFamily: "var(--font-display)" } }, A.ar), h("span.tiny.faint", "الضيف")))));
     const forecastBox = h("div.stack");
     head.appendChild(forecastBox);
+    // version 3.1: ESPN live layer (events, line-ups, stats) for matches the SportRadar session did not cover
+    const espnBox = h("div");
+    view.appendChild(espnBox);
+    const drawEspn = () => {
+      ZS.clear(espnBox);
+      const fx = f || {};
+      if (played || !ZS.live || !fx.live) return;
+      const sc = ZS.hub && ZS.hub.scoreOf(fx);
+      if (sc && !(live && live.score)) espnBox.appendChild(h("div.notice.pitch", ui().icon("info"), h("span", `النتيجة المباشرة: ${H.ar} ${sc[0]} – ${sc[1]} ${A.ar}${fx.live.clock ? " · " + fx.live.clock : ""}`)));
+      const p = ZS.live.panel(fx);
+      if (p) espnBox.appendChild(ui().section("مباشر من ESPN", p));
+    };
+    drawEspn();
+    const offLive = ZS.on("live", drawEspn);
 
     function shownForecast() {
       // live state beats the pre-match forecast once a live report exists
@@ -487,6 +501,7 @@
     }
 
     drawTab();
+    return offLive;
   }
 
   // ------------------------------------------------------------------ audience challenge widget

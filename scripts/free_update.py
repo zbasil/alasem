@@ -10,11 +10,12 @@ import json
 import os
 import shutil
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 from zsc import free_sources as fs  # noqa: E402
+from zsc import livefeed  # noqa: E402
 
 OUT = os.path.join(ROOT, "outputs", "free")
 APP = os.path.join(ROOT, "app", "data", "free")
@@ -43,13 +44,19 @@ def main(argv):
         except Exception as e:
             report["fpl"] = f"failed: {e}"
     if cfg["espn"]["enabled"]:
-        today = datetime.now(timezone.utc).strftime("%Y%m%d")
+        now = datetime.now(timezone.utc)
+        days = [(now - timedelta(days=1)).strftime("%Y%m%d"), now.strftime("%Y%m%d")]
+        prev = {e.get("espn_id"): e for e in livefeed._load(os.path.join(livefeed.LIVE_OUT, "now.json"), {}).get("matches", {}).values()}
         games = {}
         for comp in cfg["espn"]["competitions"]:
             try:
-                rows = fs.espn_scoreboard(comp, today)
+                rows = {}
+                for day in days:   # yesterday too: a match that runs past midnight UTC stays on its start day
+                    for r in fs.espn_scoreboard(comp, day):
+                        rows[r["espn_id"]] = r
+                rows = list(rows.values())
                 for r in rows:
-                    if r["state"] in ("in", "post"):
+                    if wants_summary(r, prev.get(r["espn_id"]), now):
                         try:
                             r["summary"] = fs.espn_summary(comp, r["espn_id"])
                         except Exception as e:
@@ -59,6 +66,9 @@ def main(argv):
             except Exception as e:
                 report[f"espn_{comp}"] = f"failed: {e}"
         save("espn_today.json", {"fetched_utc": stamp, "source": "ESPN public site API (unofficial)", "games": games})
+        if games:
+            doc = livefeed.build_live(games, stamp, source_report={k: v for k, v in report.items() if k.startswith("espn")})
+            report["live"] = f'ok ({len(doc["matches"])} matches, {doc["n_live"]} live, {len(doc["unmatched"])} unmatched)'
         if "--notify" in argv and cfg["ntfy"]["enabled"]:
             report["ntfy"] = notify(cfg, games)
     if cfg["understat"]["enabled"]:
@@ -82,6 +92,17 @@ def main(argv):
     return 0
 
 
+def wants_summary(r, prev, now):
+    """Lineups, key events and stats: during the match, in the 90 minutes before it (confirmed line-ups), and once
+    after the final whistle. A finished match that already has them is not asked again."""
+    if r["state"] == "in":
+        return True
+    if r["state"] == "post":
+        return not (prev and prev.get("state") == "ft" and prev.get("lineups"))
+    ko = livefeed._ts(r.get("kickoff_utc"))
+    return ko is not None and 0 <= ko - now.timestamp() <= 90 * 60
+
+
 def notify(cfg, games):
     """Goals, red cards and full time of favourite teams; a state file stops repeats."""
     topic = os.environ.get(cfg["ntfy"]["topic_env"], "")
@@ -97,12 +118,14 @@ def notify(cfg, games):
             if not abbrs & favs:
                 continue
             score = f'{g["home"].get("name")} {g["home"].get("score")} - {g["away"].get("score")} {g["away"].get("name")}'
-            items = [(f'{g["espn_id"]}:{i}', e) for i, e in enumerate(g.get("events", []))]
-            for key, e in items:
-                kind = "goal" if e["goal"] else ("red_card" if e["red"] else None)
+            # stable event ids (same as the app's live file): a re-ordered or re-sent feed never notifies twice
+            for e in livefeed.normalise_events(g, {}):
+                key = e["id"]
+                kind = "goal" if e["kind"] in ("goal", "penalty_goal", "own_goal") else (
+                    "red_card" if e["kind"] in ("red", "second_yellow") else None)
                 if kind in cfg["ntfy"]["events"] and key not in seen:
                     title = "هدف!" if kind == "goal" else "طرد!"
-                    fs.ntfy_send(topic, title, f'{e["minute"]} {", ".join(p for p in e["players"] if p)} · {score}',
+                    fs.ntfy_send(topic, title, f'{e["clock"] or ""} {", ".join(e["players"])} · {score}',
                                  server=cfg["ntfy"]["server"])
                     seen.add(key)
                     sent += 1
