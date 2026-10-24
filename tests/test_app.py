@@ -92,7 +92,7 @@ def test_meta_has_versions_and_feature_status():
     m = load("meta.json")
     for k in ("platform", "data", "prematch_market", "prematch_independent", "inplay", "season"):
         assert m["versions"][k]
-    assert all(f["status"] in ("active", "partial", "active_local", "needs_key", "needs_source") for f in m["features"])
+    assert all(f["status"] in ("active", "partial", "active_local", "free_adapter", "needs_key", "needs_source") for f in m["features"])
 
 
 @pytest.mark.skipif(shutil.which("node") is None, reason="node not installed")

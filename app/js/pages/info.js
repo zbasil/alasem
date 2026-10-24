@@ -211,7 +211,7 @@
     view.appendChild(h("div.notice", ui().icon("info"), h("span", "خطوات تفعيل كل ميزة (المفاتيح والمصادر) مكتوبة بملف docs/ACTIVATION.md بالمشروع.")));
   }
   function sourceAr(k) { return ({ openfootball: "openfootball (الجدول والنتائج)", football_data: "football-data.co.uk (الأسعار والتسديدات)", history: "أرشيف المواسم السابقة", statsbomb: "StatsBomb Open Data (الأرشيف العميق)", sportradar_via_claude: "SportRadar عبر Claude (المباشر)", api_football: "API-Football (التشكيلات)" })[k] || k; }
-  function featureAr(s) { return ({ active: "شغّالة", partial: "شغّالة جزئياً", active_local: "شغّالة محلياً", free_adapter: "مجانية: تشتغل خارج رابط Claude", needs_key: "تحتاج مفتاح", needs_source: "تحتاج مصدر" })[s] || s; }
+  function featureAr(s) { return ({ active: "شغّالة", partial: "شغّالة جزئياً", active_local: "شغّالة محلياً", free_adapter: "مجانية: تتحدث تلقائياً على GitHub", needs_key: "تحتاج مفتاح", needs_source: "تحتاج مصدر" })[s] || s; }
   function updateButton() {
     const btn = h("button.btn.primary", { type: "button" }, ui().icon("refresh"), "حدّثي البيانات هسه");
     const log = h("pre.small", { style: { whiteSpace: "pre-wrap", maxHeight: "220px", overflow: "auto", background: "var(--inset)", padding: "10px", borderRadius: "8px" }, hidden: true });
