@@ -278,7 +278,8 @@
     "كل مباريات الموسم بتوقيت بغداد. المباريات اللي انتهت تبيّن التوقع الاسترجاعي: نفس الموديل وبيانات ما قبل الأسبوع بس.": "Every match of the season in Baghdad time. Finished matches show the retro forecast: same model, data from before the week only.",
     "بيانات اللاعبين متوفرة بالأرشيف (StatsBomb) بس؛ للاعبي الموسم الحالي تحتاج مصدر تشكيلات وإحصائيات لاعبين (صفحة البيانات والمصادر).": "Player data is archive-only (StatsBomb); current-season players need a line-up and player-stats source (see Data & sources).",
     "تصحيح النتائج القليلة": "Low-score correction",
-    "الهدافين وصناع الأهداف": "Scorers & assists", "الصناعة": "Assists", "الأهداف المتوقعة xG": "Expected goals (xG)", "ملف اللاعبين ما انحمل": "The players file did not load",
+    "فريق، بطولة، أو صفحة…": "Team, competition or page…", "اكتبي اسم فريق بالعربي أو الإنجليزي، أو اسم بطولة أو صفحة.": "Type a team name in Arabic or English, or a competition or page.",
+    "ماكو نتائج": "No results",     "الهدافين وصناع الأهداف": "Scorers & assists", "الصناعة": "Assists", "الأهداف المتوقعة xG": "Expected goals (xG)", "ملف اللاعبين ما انحمل": "The players file did not load",
     "الهدافين وصناع الأهداف ينزلون هنا من Fantasy Premier League أول ما يشتغل التحديث اليومي.": "Scorers and assists appear here from Fantasy Premier League once the daily update runs.",
     "إحصائيات لاعبي هالموسم ما متوفرة مجاناً لهالبطولة. الأرشيف (StatsBomb 2015/16) بصفحة اللاعبين.": "This season's player stats are not freely available for this competition. The archive (StatsBomb 2015/16) is on the Players page.",
   };

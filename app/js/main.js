@@ -30,10 +30,51 @@
     for (const [k, lab] of MORE) more.appendChild(h("a.nav-item", { href: ZS.href(k), "data-nav": k }, ui().icon(k === "archive" ? "matches" : k === "prefs" ? "settings" : k === "players" ? "teams" : k), h("span", lab)));
     const bell = () => h("a.icon-btn.bell", { href: ZS.href("alerts"), "aria-label": "التنبيهات" }, ui().icon("bell"));
     more.prepend(h("a.nav-item", { href: ZS.href("alerts"), "data-nav": "alerts" }, ui().icon("bell"), h("span", "التنبيهات"), h("span.tag.led.alert-count", { hidden: true }, "")));
+    top.prepend(h("button.icon-btn", { type: "button", "aria-label": "بحث", onclick: searchSheet }, ui().icon("search")));
     top.append(bell(),
       h("a.icon-btn", { href: ZS.href("method"), "aria-label": "المنهجية والدقة" }, ui().icon("method")),
       h("button.icon-btn", { type: "button", "aria-label": "المزيد", onclick: moreSheet }, ui().icon("settings")));
   }
+  /** one search box for teams (all competitions, Arabic or English names), competitions, next matches and pages */
+  function searchSheet() {
+    const input = h("input.hub-search", { type: "search", placeholder: "فريق، بطولة، أو صفحة…", "aria-label": "بحث" });
+    const out = h("div.stack.search-out", { role: "list" });
+    const norm = (x) => String(x || "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f\u064b-\u065f\u0670]/g, "").replace(/[أإآ]/g, "ا").replace(/ة/g, "ه").replace(/ى/g, "ي");
+    const teams = new Map();
+    for (const f of ZS.hub ? ZS.hub.allFixtures() : []) for (const id of [f.home, f.away]) { if (!teams.has(id)) teams.set(id, new Set()); teams.get(id).add(f.comp || String(f.match_id).split("-")[0]); }
+    const pages = [...NAV, ...MORE, ["lab", "مختبر التحقق"], ["alerts", "التنبيهات"]];
+    function draw() {
+      const q = norm(input.value.trim());
+      ZS.clear(out);
+      if (!q) { out.appendChild(h("p.small.muted", "اكتبي اسم فريق بالعربي أو الإنجليزي، أو اسم بطولة أو صفحة.")); return; }
+      const hits = [];
+      for (const [id, comps] of teams) {
+        const t = ZS.team(id), raw = (D.teams.teams[id]) || (D.xteams && D.xteams[id]) || {};
+        const names = [t.ar, t.en, t.short, raw.ar, raw.en, id].map(norm);
+        if (names.some((x) => x.includes(q))) {
+          const rank = names.some((x) => x.startsWith(q) || x.split(" ").some((w) => w.startsWith(q))) ? 0 : 1;
+          const cid = comps.has("ESP1") && D.teams.teams[id] ? "ESP1" : [...comps][0];
+          const next = ZS.hub.allFixtures().filter((f) => (f.home === id || f.away === id) && !f.score && f.kickoff_utc && Date.parse(f.kickoff_utc) > Date.now() - 3 * 3600e3).sort((a, b) => a.kickoff_utc.localeCompare(b.kickoff_utc))[0];
+          hits.push(Object.assign(h("div.search-hit", { role: "listitem" },
+            h("a.search-main", { href: ZS.hub.teamHref(id, cid), onclick: () => ui().closeSheet() }, ui().crest(id, "s"), h("span", t.ar), h("small.muted", [...comps].map((c) => ZS.hub.comp(c).short_ar).join(" · "))),
+            next ? h("a.small", { href: ZS.hub.matchHref(next), onclick: () => ui().closeSheet() }, `${ZS.team(next.home).short} × ${ZS.team(next.away).short} · ${ZS.dateShort(next.kickoff_utc)}`) : null), { _rank: rank }));
+        }
+      }
+      hits.sort((x, y) => (x._rank || 0) - (y._rank || 0));
+      for (const c of D.comps || []) if ([c.name_ar, c.short_ar, c.id, c.name_en].some((x) => norm(x).includes(q)))
+        hits.push(h("a.search-main", { href: ZS.href("comp", c.id), onclick: () => ui().closeSheet(), role: "listitem" }, ZS.hub.compBadge(c.id), h("span", c.name_ar)));
+      for (const [k, lab] of pages) if (norm(lab).includes(q) || norm(ZS.i18n ? ZS.i18n.tr(lab) : "").includes(q))
+        hits.push(h("a.search-main", { href: ZS.href(k), onclick: () => ui().closeSheet(), role: "listitem" }, ui().icon(NAV_ICON[k] || "chevron"), h("span", lab)));
+      out.append(...(hits.length ? hits.slice(0, 30) : [h("p.small.muted", "ماكو نتائج")]));
+    }
+    input.addEventListener("input", draw);
+    ui().openSheet("بحث", h("div.stack", input, out));
+    draw();
+    setTimeout(() => input.focus(), 30);
+  }
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "/" && !/^(INPUT|TEXTAREA|SELECT)$/.test((document.activeElement || {}).tagName || "") && !e.metaKey && !e.ctrlKey) { e.preventDefault(); searchSheet(); }
+  });
   function moreSheet() {
     ui().openSheet("المزيد", h("div.stack", MORE.map(([k, lab]) => h("a.nav-item", { href: ZS.href(k), onclick: () => ui().closeSheet() }, ui().icon(k === "archive" ? "matches" : k === "prefs" ? "settings" : k === "players" ? "teams" : k), h("span", lab))),
       h("hr.sep"), sideStatus(true)));
