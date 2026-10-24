@@ -2,9 +2,9 @@
   "platform": {
     "name": "Zahraa Football Supercomputer",
     "name_ar": "حاسوب زهراء الكروي الخارق",
-    "version": "3.0.0",
-    "languages": ["ar"],
-    "language_planned": ["en"]
+    "version": "3.1.0",
+    "languages": ["ar", "en"],
+    "language_planned": []
   },
   "timezone": "Asia/Baghdad",
   "competition": {

@@ -19,7 +19,25 @@ flowchart LR
   SNAP -->|تبديل ذري| APPDATA[app/data]
   APPDATA --> SERVE[python -m zsc serve]
   APPDATA -->|scripts/build_app.py| WEB[dist/web: صفحة وحدة]
+  ESPN[ESPN] -->|كل 5 دقايق: free_update.py --live| LIVE[zsc/livefeed.py → live/now.json]
+  LIVE --> WEB
+  HIST[zsc/history.py → history/ESP1, ENG1] --> APPDATA
+  WEB -->|GitHub Actions → Pages| USERS[المتابعين]
+  CF[workers/live-proxy اختياري] -.30 ثانية.-> USERS
 ```
+
+## النسخة 3.1: المباشر والتشغيل الذاتي
+
+| الجزء | المكان | القاعدة |
+|---|---|---|
+| ملف المباشر | `zsc/livefeed.py` ← `outputs/live/now.json` ← `app/data/live/now.json` | كل مباراة من ESPN تنربط برقمها الثابت عدنا (أسماء + موعد)، وإذا ما انربطت تنكتب بـ`unmatched` بدون تخمين؛ أرقام ثابتة للأحداث؛ إلغاءات الـVAR تنحفظ بـ`retracted`؛ تصحيح النتيجة بـ`score_history`؛ المجهول `null` |
+| التحديث | `.github/workflows/update.yml` | المباشر كل 5 دقايق بأوقات المباريات (مكتبة Python القياسية بس)، والنشر بس إذا الملف تغيّر؛ التحديث الكامل يومياً؛ حالة المباشر بين التشغيلات بكاش Actions |
+| البروكسي (اختياري) | `workers/live-proxy` | كاش مشترك 20 ثانية قدام ESPN لكل المتابعين |
+| الواجهة المباشرة | `app/js/live.js` | يسأل ملف واحد (كل دقيقة وقت المباريات، كل 10 دقايق غيرها، ويوقف بالتبويب المخفي)؛ الاحتمالات المباشرة بموديل inplay-2.0؛ قراءة المباراة بقواعد ثابتة وكل سطر عليه نوع دليله |
+| السجل التاريخي | `zsc/history.py`، `app/js/pages/lab.js` | مباريات الدوري بس؛ المواجهات بصفحة المباراة ومختبر التحقق |
+| اللغات | `app/js/i18n.js` | العربي لغة الكود؛ الإنجليزي: اتجاه وتواريخ وأسماء فرق من المصدر، والنصوص تترجم وقت الرسم |
+| التطبيق المثبت | `app/manifest.webmanifest`، `app/sw.js` | البيانات من الشبكة أول، والنسخة المحفوظة بس بدون إنترنت |
+
 
 ## الطبقات
 

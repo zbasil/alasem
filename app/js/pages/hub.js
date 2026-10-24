@@ -726,7 +726,7 @@
       row("method", "المنهجية والدقة", "", { href: ZS.href("method") }),
       row("data", "البيانات والمصادر المجانية", "", { href: ZS.href("data") }),
       row("settings", "إعدادات أكثر (الفرق المفضلة، بياناتي)", "", { href: ZS.href("prefs") })));
-    view.appendChild(h("p.hub-note", ui().icon("info"), h("span", `النسخة 3.0 · ${D.meta.platform ? D.meta.platform.name : ""}`)));
+    view.appendChild(h("p.hub-note", ui().icon("info"), h("span", `النسخة ${D.meta.platform ? D.meta.platform.version : ""} · ${D.meta.platform ? D.meta.platform.name : ""}`)));
   }
 
   Object.assign(ZS.routes, {
