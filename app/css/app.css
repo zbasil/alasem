@@ -809,3 +809,10 @@ section.stack > .cgroup-rows { background: var(--card); border: 1px solid var(--
 .insight.infer { border-inline-start-color: var(--led); }
 .insight.model { border-inline-start-color: var(--pitch); }
 .insight-tag { font-size: .72rem; font-weight: 800; color: var(--fg-3); text-transform: none; }
+.lead-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+.lead-col h3 { margin: 0 0 6px; color: var(--fg-2); }
+.lead-list { margin: 0; padding: 0; list-style: none; counter-reset: ld; display: flex; flex-direction: column; }
+.lead-list li { counter-increment: ld; display: grid; grid-template-columns: 18px 22px minmax(0, 1fr) auto auto; gap: 6px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--line); font-size: .88rem; }
+.lead-list li::before { content: counter(ld); color: var(--fg-3); font-weight: 800; font-size: .78rem; }
+.lead-list li:last-child { border-bottom: 0; }
+.lead-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 700; }

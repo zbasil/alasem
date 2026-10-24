@@ -478,8 +478,34 @@
     }
     const recent = fx.filter((f) => f.score).sort((a, b) => b.kickoff_utc.localeCompare(a.kickoff_utc)).slice(0, 8);
     if (recent.length) view.appendChild(ui().section("آخر النتائج", h("div.cgroup-rows", recent.map((f) => matchRow(f, { showDate: true })))));
+    const leaders = await leadersSection(cid);
+    view.appendChild(leaders);
     view.appendChild(ui().section("كيف انحسبت", modelNote(cid, ss)));
     if (cid === "ESP1") view.appendChild(h("div.row.wrap", h("a.btn", { href: ZS.href("season") }, "الموسم الكامل وماذا لو؟"), h("a.btn.ghost", { href: ZS.href("teams") }, "الفرق"), h("a.btn.ghost", { href: ZS.href("method") }, "المنهجية والدقة")));
+  }
+
+  /** player leaders: Premier League from the official Fantasy Premier League feed (its xG/xA come from Opta);
+      no free source covers LaLiga or Champions League player stats for this season, and the page says so */
+  async function leadersSection(cid) {
+    const box = h("div.stack");
+    if (cid !== "ENG1" || !(D.freeFiles || []).includes("fpl_players.json")) {
+      box.appendChild(h("p.small.muted", cid === "ENG1"
+        ? "الهدافين وصناع الأهداف ينزلون هنا من Fantasy Premier League أول ما يشتغل التحديث اليومي."
+        : "إحصائيات لاعبي هالموسم ما متوفرة مجاناً لهالبطولة. الأرشيف (StatsBomb 2015/16) بصفحة اللاعبين."));
+      return ui().section("الهدافين وصناع الأهداف", box);
+    }
+    let js;
+    try { js = await ZS.getJSON("free/fpl_players.json"); } catch (e) { box.appendChild(h("p.small.muted", "ملف اللاعبين ما انحمل")); return ui().section("الهدافين وصناع الأهداف", box); }
+    const code = { CHE: "CFC", LIV: "LFC", BHA: "BRI", NFO: "NFO", MCI: "MCI", MUN: "MUN" };
+    const teamOf = (c) => code[c] || c;
+    const list = (key, label, fmt) => {
+      const rows = js.players.filter((x) => x[key] != null && x[key] > 0).sort((a, b) => b[key] - a[key] || a.minutes - b.minutes).slice(0, 10);
+      return h("div.lead-col", h("h3.small", label), h("ol.lead-list", rows.map((x) => h("li",
+        ui().crest(teamOf(x.team), "s"), h("span.lead-name", x.player), h("small.muted", x.pos || ""), h("strong.num", fmt(x[key]))))));
+    };
+    box.appendChild(h("div.lead-grid", list("goals", "الأهداف", (v) => v), list("assists", "الصناعة", (v) => v), list("xg", "الأهداف المتوقعة xG", (v) => v.toFixed(1))));
+    box.appendChild(h("p.tiny.faint", `المصدر: Fantasy Premier League (الرسمي؛ xG وxA من Opta) · آخر جلب ${ZS.ago(js.fetched_utc)}`));
+    return ui().section("الهدافين وصناع الأهداف", box);
   }
 
   function modelNote(cid, ss) {

@@ -278,6 +278,9 @@
     "كل مباريات الموسم بتوقيت بغداد. المباريات اللي انتهت تبيّن التوقع الاسترجاعي: نفس الموديل وبيانات ما قبل الأسبوع بس.": "Every match of the season in Baghdad time. Finished matches show the retro forecast: same model, data from before the week only.",
     "بيانات اللاعبين متوفرة بالأرشيف (StatsBomb) بس؛ للاعبي الموسم الحالي تحتاج مصدر تشكيلات وإحصائيات لاعبين (صفحة البيانات والمصادر).": "Player data is archive-only (StatsBomb); current-season players need a line-up and player-stats source (see Data & sources).",
     "تصحيح النتائج القليلة": "Low-score correction",
+    "الهدافين وصناع الأهداف": "Scorers & assists", "الصناعة": "Assists", "الأهداف المتوقعة xG": "Expected goals (xG)", "ملف اللاعبين ما انحمل": "The players file did not load",
+    "الهدافين وصناع الأهداف ينزلون هنا من Fantasy Premier League أول ما يشتغل التحديث اليومي.": "Scorers and assists appear here from Fantasy Premier League once the daily update runs.",
+    "إحصائيات لاعبي هالموسم ما متوفرة مجاناً لهالبطولة. الأرشيف (StatsBomb 2015/16) بصفحة اللاعبين.": "This season's player stats are not freely available for this competition. The archive (StatsBomb 2015/16) is on the Players page.",
   };
 
   // {1}, {2}...: a number, a team name or a phrase (translated in turn). Arabic left side, English right side.
@@ -393,6 +396,7 @@
     ["النتيجة المباشرة: {1}", "Live score: {1}"], ["مباراة بدأت", "Match started"],
     ["قارني {1}", "Compare {1}"],
     ["{1} ن.م", "{1} pp"],
+    ["المصدر: Fantasy Premier League (الرسمي؛ xG وxA من Opta) · آخر جلب {1}", "Source: Fantasy Premier League (official; xG and xA from Opta) · fetched {1}"],
     ["{1}، {2} مباريات", "{1}, {2} matches"], ["{1}، ماكو مباريات", "{1}, no matches"], ["{1}: شوطين بوجهين ({2})", "{1}: two different halves ({2})"],
     ["المتوقع من جودة الفرص مقابل الحصيلة الفعلية · الليغا {1}", "Expected from chance quality vs actual output · LaLiga {1}"],
     ["ماكو هدف دقة تسويقي (مثل «{1}»): كرة القدم بيها صدفة كبيرة، وحتى السوق يختار صح بحدود {2}. أي تحسين ينضاف بس إذا الاختبار أثبته.", "No marketing accuracy target (like “{1}”): football is full of chance, and even the market is right only about {2} of the time. An improvement is added only when the test proves it."],
