@@ -226,6 +226,7 @@ def serve(host: str | None = None, port: int | None = None):
     port = port or int(config.env("ZSC_PORT", str(s["port"])))
     mimetypes.add_type("application/javascript", ".js")
     mimetypes.add_type("font/woff2", ".woff2")
+    mimetypes.add_type("application/manifest+json", ".webmanifest")
     httpd = ThreadingHTTPServer((host, port), Handler)
     print(f"Zahraa Football Supercomputer: http://{host}:{port}  (Ctrl+C to stop)")
     try:

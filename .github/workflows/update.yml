@@ -1,42 +1,134 @@
-# Free automatic updates and hosting (GitHub Actions + GitHub Pages; free for public repositories).
-# 1. Push this project to a GitHub repository.  2. Settings > Pages > Source: GitHub Actions.
-# 3. Optional: Settings > Secrets > Actions > NTFY_TOPIC (a long random name) for phone notifications.
+# Automatic updates and free hosting (GitHub Actions + GitHub Pages; free for public repositories).
+#
+# One-time setup by the repository owner: Settings > Pages > Build and deployment > Source: "GitHub Actions".
+# Optional: Settings > Secrets and variables > Actions
+#   secret   NTFY_TOPIC   a long random name, for phone notifications through the ntfy app
+#   variable LIVE_PROXY   URL of the optional live edge proxy (workers/live-proxy, docs/LIVE.md)
+#
+# Runs
+#   daily (05:17 UTC)        full update: La Liga data + models, Premier League, Champions League, FPL, Understat, RSS
+#   every 5 min in match windows   live layer only (ESPN, standard library, about 20 seconds); deploys only when the
+#                            live file changed. GitHub may start scheduled runs late under load; the app shows the
+#                            real age of every live number, so a late run is visible, never hidden.
+#   push to main / manual    rebuild and deploy (manual run with "full" = the daily update now)
 name: update
 on:
   schedule:
-    - cron: "15 6 * * *"          # every morning (UTC): results, forecasts, season simulations
-    - cron: "*/10 12-23 * * 6,0"  # weekends, every 10 minutes in match hours: live scores, lineups, alerts
-    - cron: "*/10 17-22 * * 2,3"  # Champions League nights
-  workflow_dispatch: {}
+    - cron: "17 5 * * *"
+    - cron: "*/5 11-23 * * 5,6,0"   # Friday-Sunday, 14:00-02:59 Baghdad
+    - cron: "*/5 16-22 * * 1-4"     # Monday-Thursday evenings (Champions League, midweek rounds)
+  push:
+    branches: [main]
+    paths-ignore: ["docs/**", "**.md", "notebook/**", "reports/**"]
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "Run the full daily update now"
+        type: boolean
+        default: false
 permissions:
   contents: write
   pages: write
   id-token: write
-concurrency: { group: update, cancel-in-progress: false }
+concurrency:
+  group: update-${{ github.ref }}
+  cancel-in-progress: false
+env:
+  FULL: ${{ github.event.schedule == '17 5 * * *' || inputs.full == true }}
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 45
+    outputs:
+      deploy: ${{ steps.need.outputs.deploy }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
-      - run: pip install -r requirements.txt
-      - name: Free live sources (ESPN, FPL, Understat, RSS) + notifications
-        env: { NTFY_TOPIC: "${{ secrets.NTFY_TOPIC }}" }
-        run: python scripts/free_update.py --notify
-      - name: Full update once a day (La Liga data + model + Premier League + Champions League)
-        if: github.event.schedule == '15 6 * * *' || github.event_name == 'workflow_dispatch'
+        with:
+          python-version: "3.12"
+
+      # live state between runs (event history, VAR retractions, notification de-duplication, last deployed
+      # live file) without committing every 5 minutes
+      - name: Restore live state
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            outputs/live
+            outputs/free/_ntfy_state.json
+            .deploy-hash
+          key: live-state-${{ github.run_id }}
+          restore-keys: live-state-
+
+      - name: Live layer (ESPN) and notifications
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          LIVE_PROXY: ${{ vars.LIVE_PROXY }}
+        run: python scripts/free_update.py --live --notify
+
+      - name: Install the model's dependencies
+        if: env.FULL == 'true' || github.event_name != 'schedule'
+        run: pip install -r requirements.txt
+
+      - name: Full update (daily)
+        if: env.FULL == 'true'
         run: |
+          python scripts/free_update.py
           python -m zsc update
           python -m zsc multi --fetch
-      - run: python scripts/build_app.py
-      - name: Keep the data history in the repository
+
+      - name: Tests (daily, on code changes and manual runs)
+        if: env.FULL == 'true' || github.event_name != 'schedule'
+        run: python -m pytest -q
+
+      - name: Build the web app
         run: |
-          git config user.name "zsc-bot"; git config user.email "zsc-bot@users.noreply.github.com"
-          git add -A data outputs app/data || true
-          git commit -m "data update $(date -u +%FT%TZ)" || echo "nothing new"
-          git push || true
+          python scripts/build_app.py
+          mkdir -p dist/web/data/live
+          if [ -f outputs/live/now.json ]; then cp outputs/live/now.json dist/web/data/live/now.json; fi
+
+      - name: Deploy needed?
+        id: need
+        run: |
+          h=$(python scripts/live_hash.py dist/web/data/live/now.json)
+          old=$(cat .deploy-hash 2>/dev/null || true)
+          if [ "$FULL" = "true" ] || [ "${{ github.event_name }}" != "schedule" ] || [ "$h" != "$old" ]; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"; echo "$h" > .deploy-hash
+          else
+            echo "deploy=false" >> "$GITHUB_OUTPUT"; echo "live file unchanged since the last deploy: skipping"
+          fi
+
+      - name: Save live state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            outputs/live
+            outputs/free/_ntfy_state.json
+            .deploy-hash
+          key: live-state-${{ github.run_id }}
+
+      - name: Keep the daily data history in the repository
+        if: env.FULL == 'true'
+        run: |
+          git config user.name "zsc-bot"
+          git config user.email "zsc-bot@users.noreply.github.com"
+          git add -A data outputs app/data
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "data update $(date -u +%FT%TZ)"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+          git push
+
       - uses: actions/upload-pages-artifact@v3
+        if: steps.need.outputs.deploy == 'true'
         with: { path: dist/web }
-      - uses: actions/deploy-pages@v4
+
+  deploy:
+    needs: update
+    if: needs.update.outputs.deploy == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

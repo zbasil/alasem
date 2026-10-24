@@ -652,6 +652,26 @@
   }
 
   // ------------------------------------------------------------------ More
+  function liveNotifyLabel(p) {
+    if (!("Notification" in window)) return "غير مدعومة بهذا المتصفح";
+    if (Notification.permission === "denied") return "مرفوضة من المتصفح";
+    const on = p.live_notify && p.live_notify.enabled && Notification.permission === "granted";
+    return on ? `شغالة · ${p.fav_teams.length ? countTeams(p.fav_teams.length) : "ضيفي فريق مفضل"}` : "طافية";
+  }
+  const countTeams = (n) => (n === 1 ? "فريق واحد" : n === 2 ? "فريقين" : `${n} فرق`);
+  async function toggleLiveNotify() {
+    const p = ZS.store.prefs();
+    try {
+      if (p.live_notify && p.live_notify.enabled && Notification.permission === "granted") {
+        await ZS.store.setPrefs({ live_notify: { ...p.live_notify, enabled: false } });
+        ZS.toast("طفيت إشعارات المباريات");
+      } else {
+        await ZS.live.enableNotifications();
+        ZS.toast(p.fav_teams.length ? "إشعارات البداية والأهداف والطرد والنهاية لفرقج المفضلة توصل وقت التطبيق مفتوح. وهو مسدود: تطبيق ntfy (docs/LIVE.md)" : "اشتغلت. ضيفي فريق للمفضلة من صفحته حتى توصلج إشعاراته");
+      }
+    } catch (e) { ZS.toast(e.message); }
+    ZS.render();
+  }
   async function renderMore(view) {
     const p = ZS.store.prefs();
     let name = "";
@@ -672,6 +692,7 @@
       row("moon", "المظهر", themeAr, { click: () => cycle("theme", ["dark", "light", "system"]) }),
       row("text", "حجم الخط", fsAr, { click: () => cycle("font_size", ["s", "m", "l"]) }),
       row("clock", "توقيت المباريات", `بغداد · ${p.clock === "12" ? "12 ساعة" : "24 ساعة"}`, { click: () => cycle("clock", ["24", "12"]) }),
+      row("bell", "إشعارات المباريات المباشرة", liveNotifyLabel(p), { click: toggleLiveNotify }),
       row("bell", "التنبيهات", "", { href: ZS.href("alerts") }),
       row("comps", "ترتيب البطولات وإخفاؤها", "", { href: ZS.href("comps") }),
       row("method", "المنهجية والدقة", "", { href: ZS.href("method") }),

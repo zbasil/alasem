@@ -250,6 +250,9 @@ def build_live(games_by_comp: dict, stamp: str | None = None, fixtures: dict | N
     doc = {"generated_utc": stamp, "source": "ESPN public site API (unofficial, personal non-commercial use)",
            "n_live": sum(1 for e in matches.values() if e["state"] in ("live", "ht") and not e.get("stale")),
            "matches": matches, "unmatched": unmatched, "sources": source_report or {}}
+    proxy = os.environ.get("LIVE_PROXY", "").strip()
+    if proxy.startswith("https://"):
+        doc["proxy"] = proxy.rstrip("/")   # the app reads live scores from this shared edge cache between runs
     for d in out_dirs:
         os.makedirs(d, exist_ok=True)
         tmp = os.path.join(d, "now.json.tmp")

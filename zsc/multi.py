@@ -770,12 +770,14 @@ MULTI_OUT = os.path.join(ROOT, "outputs", "multi")
 
 def stored_files() -> dict:
     """The last Premier League / Champions League app files (outputs/multi) and free-source files
-    (outputs/free -> free/), added to every app snapshot by zsc.export so a La Liga update never drops them."""
+    (outputs/free -> free/) and the live file (outputs/live -> live/), added to every app snapshot by zsc.export so a La Liga update never drops them."""
     out = {}
-    for folder, prefix in ((MULTI_OUT, ""), (os.path.join(ROOT, "outputs", "free"), "free/")):
+    for folder, prefix in ((MULTI_OUT, ""), (os.path.join(ROOT, "outputs", "free"), "free/"),
+                           (os.path.join(ROOT, "outputs", "live"), "live/")):
         for base, _, names in os.walk(folder):
             for n in names:
-                if n.endswith(".json") and not n.startswith("_ntfy"):
+                # the raw ESPN dump stays out of the app: live/now.json is its normalised form
+                if n.endswith(".json") and not n.startswith("_ntfy") and n != "espn_today.json":
                     path = os.path.join(base, n)
                     rel = prefix + os.path.relpath(path, folder).replace(os.sep, "/")
                     out[rel] = json.load(open(path, encoding="utf-8"))

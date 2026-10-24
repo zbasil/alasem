@@ -53,6 +53,14 @@ def build() -> str:
     out = os.path.join(DIST, "index.html")
     with open(out, "w", encoding="utf-8") as f:
         f.write(page)
+    # installable app: manifest, icons and the service worker (its cache name changes with every build)
+    shutil.copy2(os.path.join(APP, "manifest.webmanifest"), os.path.join(DIST, "manifest.webmanifest"))
+    shutil.rmtree(os.path.join(DIST, "icons"), ignore_errors=True)
+    shutil.copytree(os.path.join(APP, "icons"), os.path.join(DIST, "icons"))
+    build_id = hashlib.sha256(page.encode("utf-8")).hexdigest()[:12]
+    sw = open(os.path.join(APP, "sw.js"), encoding="utf-8").read().replace("__BUILD__", build_id)
+    with open(os.path.join(DIST, "sw.js"), "w", encoding="utf-8") as f:
+        f.write(sw)
     data_out = os.path.join(DIST, "data")
     shutil.rmtree(data_out, ignore_errors=True)
     shutil.copytree(os.path.join(APP, "data"), data_out, ignore=shutil.ignore_patterns("_manifest.json"))

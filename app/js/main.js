@@ -128,6 +128,12 @@
       if (fr === "hourly") drawAlertDot();
     }, 5 * 60 * 1000);
   }
+  // installable app and offline copy: only on a real web host or the local server (not inside a Claude artifact)
+  function registerSW() {
+    if (!("serviceWorker" in navigator) || !/^https?:$/.test(location.protocol) || (window.claude && window.claude.use)) return;
+    navigator.serviceWorker.register("sw.js").catch(() => { /* not allowed here: the app works without it */ });
+  }
+  window.addEventListener("load", registerSW);
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
   else boot();
 })();

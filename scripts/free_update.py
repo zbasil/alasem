@@ -2,6 +2,8 @@
 
     python scripts/free_update.py            fetch, write outputs/free/*.json and app/data/free/*.json
     python scripts/free_update.py --notify   also push goals / red cards / full time of favourite teams to ntfy
+    python scripts/free_update.py --live     ESPN live layer only (the every-5-minutes run; FPL, Understat
+                                             and RSS change slowly and run with the daily update)
 
 Runs on your computer or on GitHub Actions (.github/workflows/update.yml); no key and no payment. One failing
 source never stops the others; each file says when and from where it was fetched.
@@ -33,7 +35,8 @@ def main(argv):
     cfg = json.load(open(os.path.join(ROOT, "config", "free_sources.json"), encoding="utf-8"))
     stamp = fs.now_utc()
     report = {}
-    if cfg["fpl"]["enabled"]:
+    live_only = "--live" in argv
+    if cfg["fpl"]["enabled"] and not live_only:
         try:
             js = fs.fpl_bootstrap()
             save("fpl_availability.json", {"fetched_utc": stamp, "source": "Fantasy Premier League API",
@@ -71,7 +74,7 @@ def main(argv):
             report["live"] = f'ok ({len(doc["matches"])} matches, {doc["n_live"]} live, {len(doc["unmatched"])} unmatched)'
         if "--notify" in argv and cfg["ntfy"]["enabled"]:
             report["ntfy"] = notify(cfg, games)
-    if cfg["understat"]["enabled"]:
+    if cfg["understat"]["enabled"] and not live_only:
         for comp in cfg["understat"]["competitions"]:
             try:
                 rows = fs.understat_league(comp, cfg["understat"]["season"])
@@ -79,14 +82,14 @@ def main(argv):
                 report[f"understat_{comp}"] = f"ok ({len(rows)})"
             except Exception as e:
                 report[f"understat_{comp}"] = f"failed: {e}"
-    if cfg["rss"]["enabled"] and cfg["rss"]["feeds"]:
+    if cfg["rss"]["enabled"] and cfg["rss"]["feeds"] and not live_only:
         save("headlines.json", {"fetched_utc": stamp, "items": fs.rss_headlines(cfg["rss"]["feeds"])})
         report["rss"] = "ok"
     save("_status.json", {"fetched_utc": stamp, "report": report})
     if os.path.isdir(OUT):
         os.makedirs(APP, exist_ok=True)
         for n in os.listdir(OUT):
-            if n.endswith(".json"):
+            if n.endswith(".json") and not n.startswith("_ntfy") and n != "espn_today.json":
                 shutil.copy2(os.path.join(OUT, n), os.path.join(APP, n))
     print(json.dumps(report, indent=1, ensure_ascii=False))
     return 0
