@@ -145,7 +145,8 @@
     saveSeen(seen);
   }
   async function show(title, body, tag, mid) {
-    const opts = { body, tag, lang: "ar", dir: "rtl", data: { url: location.pathname + ZS.href(D.fixturesById.has(mid) ? "match" : "xmatch", mid) } };
+    if (ZS.lang === "en" && ZS.i18n) { title = ZS.i18n.tr(title); body = ZS.i18n.tr(body); }
+    const opts = { body, tag, lang: ZS.lang, dir: ZS.lang === "en" ? "ltr" : "rtl", data: { url: location.pathname + ZS.href(D.fixturesById.has(mid) ? "match" : "xmatch", mid) } };
     try {
       const reg = navigator.serviceWorker && (await navigator.serviceWorker.getRegistration());
       if (reg) return reg.showNotification(title, opts);

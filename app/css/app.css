@@ -802,3 +802,5 @@ section.stack > .cgroup-rows { background: var(--card); border: 1px solid var(--
 .verdict.insufficient .verdict-tag { background: var(--led-soft); color: var(--led); }
 .script-box { white-space: pre-wrap; font: inherit; font-size: .92rem; line-height: 1.8; background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 14px; margin: 0; }
 @media (max-width: 520px) { .h2h-list li { grid-template-columns: 74px minmax(0, 1fr) 44px minmax(0, 1fr); } .h2h-list li > small { display: none; } }
+/* English (left-to-right): direction-bearing icons point the other way */
+[dir="ltr"] .ico-chevron, [dir="ltr"] .ico-back { transform: scaleX(-1); }

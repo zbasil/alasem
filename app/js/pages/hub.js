@@ -131,7 +131,7 @@
     if (diff === 0) return "اليوم";
     if (diff === -1) return "أمس";
     if (diff === 1) return "باجر";
-    return ZS.fmtDay ? ZS.fmtDay(key) : new Intl.DateTimeFormat("ar-IQ-u-nu-latn", { weekday: "short", timeZone: "UTC" }).format(new Date(key + "T12:00:00Z"));
+    return ZS.fmtDay ? ZS.fmtDay(key) : new Intl.DateTimeFormat(ZS.lang === "en" ? "en-GB" : "ar-IQ-u-nu-latn", { weekday: "short", timeZone: "UTC" }).format(new Date(key + "T12:00:00Z"));
   };
   const addDays = (key, n) => new Date(Date.parse(key + "T12:00:00Z") + n * 864e5).toISOString().slice(0, 10);
 
@@ -573,6 +573,7 @@
     };
     drawTop();
     view.appendChild(top);
+    const offLive = ZS.on("live", drawTop);   // registered before any await, so no live update is missed
     const box = h("div.stack");
     box.appendChild(ui().probBar(f.home, f.away, f.p, { big: true }));
     box.appendChild(h("p.big-line", f.takeaway_ar));
@@ -617,7 +618,7 @@
           : h("p.small", "ماكو غيابات مسجلة للفريقين بآخر جلب")));
       } catch (e) { /* FPL file not fetched in this build */ }
     }
-    return ZS.on("live", drawTop);
+    return offLive;
   }
 
   // ------------------------------------------------------------------ any team (Premier League / Champions League / La Liga in Europe)
@@ -689,7 +690,7 @@
       h("span.set-ico", ui().icon(ic)), h("span.set-lab", lab), val ? h("span.set-val", val) : null, h("span.set-chev", ui().icon("chevron")));
     const cycle = async (key, vals) => { const cur = ZS.store.prefs()[key]; const nx = vals[(vals.indexOf(cur) + 1) % vals.length]; await ZS.store.setPrefs({ [key]: nx }); ZS.applyTheme(); ZS.render(); };
     view.appendChild(h("div.set-list", { role: "list" },
-      row("globe", "اللغة", "العربية", { click: () => ZS.toast("الواجهة عربية حالياً؛ الإنجليزية مقترحة للنسخة القادمة") }),
+      row("globe", "اللغة", ZS.lang === "en" ? "English" : "العربية", { click: async () => { await ZS.store.setPrefs({ lang: ZS.lang === "en" ? "ar" : "en" }); location.reload(); } }),
       row("moon", "المظهر", themeAr, { click: () => cycle("theme", ["dark", "light", "system"]) }),
       row("text", "حجم الخط", fsAr, { click: () => cycle("font_size", ["s", "m", "l"]) }),
       row("clock", "توقيت المباريات", `بغداد · ${p.clock === "12" ? "12 ساعة" : "24 ساعة"}`, { click: () => cycle("clock", ["24", "12"]) }),

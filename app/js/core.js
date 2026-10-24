@@ -88,7 +88,7 @@
   function fmt(opts) {
     const key = JSON.stringify(opts);
     if (!fmtCache[key]) {
-      try { fmtCache[key] = new Intl.DateTimeFormat("ar-IQ-u-nu-latn", { timeZone: TZ, ...opts }); }
+      try { fmtCache[key] = new Intl.DateTimeFormat(ZS.lang === "en" ? "en-GB" : "ar-IQ-u-nu-latn", { timeZone: TZ, ...opts }); }
       catch (e) { fmtCache[key] = new Intl.DateTimeFormat("ar", { ...opts }); }
     }
     return fmtCache[key];
@@ -109,9 +109,17 @@
     const p = new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit" }).format(d);
     return p;
   }
+  function enRel(s, suffix) {
+    if (s < 60) return suffix ? "just now" : "under a minute";
+    const m = Math.round(s / 60), hr = Math.round(s / 3600), dy = Math.round(s / 86400);
+    if (s < 3600) return `${m} min${suffix}`;
+    if (s < 86400) return `${hr} h${suffix}`;
+    return `${dy} day${dy === 1 ? "" : "s"}${suffix}`;
+  }
   function ago(iso, now) {
     const d = toDate(iso); if (!d || isNaN(d)) return "—";
     const s = Math.max(0, ((now || Date.now()) - d.getTime()) / 1000);
+    if (ZS.lang === "en") return enRel(s, " ago");
     if (s < 60) return "قبل لحظات";
     const m = s / 60, hr = m / 60, dy = hr / 24;
     if (m < 60) return "قبل " + countAr(m, "دقيقة", "دقيقتين", "دقائق", "دقيقة");
@@ -122,6 +130,7 @@
     const d = toDate(iso); if (!d || isNaN(d)) return "";
     const s = (d.getTime() - (now || Date.now())) / 1000;
     if (s <= 0) return "";
+    if (ZS.lang === "en") return "in " + enRel(s, "");
     const m = s / 60, hr = m / 60, dy = hr / 24;
     if (m < 60) return "بعد " + countAr(Math.ceil(m), "دقيقة", "دقيقتين", "دقائق", "دقيقة");
     if (hr < 24) return "بعد " + countAr(Math.round(hr), "ساعة", "ساعتين", "ساعات", "ساعة");
@@ -206,6 +215,8 @@
   const team = (id) => {
     const t = (D.teams && D.teams.teams[id]) || (D.xteams && D.xteams[id]) || { id, ar: id, en: id, color: "#777777", kit: ["#777777", "#cccccc"] };
     if (!t.short) t.short = t.ar;
+    // English interface: every page that prints a team name prints the English one
+    if (ZS.lang === "en") return { ...t, ar: t.en || t.ar, short: t.short_en || t.en || t.short };
     return t;
   };
   const teamByKey = (key) => team(D.keyToId[key] || key);
@@ -260,7 +271,7 @@
     theme: "dark", track: "", fav_teams: [], fav_players: [], watchlist: [], filters: {},
     alerts: { forecast_change: true, reports: true, stories: true, threshold_pp: 5, frequency: "visit" },
     reduce_motion: false, player_name: "", seen: null,
-    comp_order: ["ESP1", "ENG1", "UCL"], comp_hidden: [], fav_comps: ["ESP1"], font_size: "m", clock: "24",
+    comp_order: ["ESP1", "ENG1", "UCL"], comp_hidden: [], fav_comps: ["ESP1"], font_size: "m", clock: "24", lang: "ar",
     collapsed: [],
   };
   const mem = { prefs: null, lists: {} };

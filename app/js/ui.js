@@ -60,7 +60,7 @@
     chevron: '<path d="M15 6l-6 6 6 6"/>',
   });
   function icon(name, cls = "") {
-    return svgEl(`<svg class="ico ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${P[name] || P.info}</svg>`);
+    return svgEl(`<svg class="ico ico-${name} ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${P[name] || P.info}</svg>`);
   }
 
   // ------------------------------------------------------------------ crests (generic shields in club colours)

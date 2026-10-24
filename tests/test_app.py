@@ -99,3 +99,9 @@ def test_meta_has_versions_and_feature_status():
 def test_javascript_ports_match_python():
     r = subprocess.run(["node", os.path.join(ROOT, "tests", "js", "test_models.js")], capture_output=True, text=True, cwd=ROOT, timeout=300)
     assert r.returncode == 0, r.stdout + r.stderr
+
+
+@pytest.mark.skipif(shutil.which("node") is None, reason="node not installed")
+def test_english_interface_translator():
+    r = subprocess.run(["node", os.path.join(ROOT, "tests", "js", "test_i18n.js")], capture_output=True, text=True, cwd=ROOT, timeout=120)
+    assert r.returncode == 0, r.stdout + r.stderr

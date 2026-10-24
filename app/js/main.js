@@ -88,6 +88,7 @@
   async function boot() {
     document.documentElement.setAttribute("lang", "ar");
     document.documentElement.setAttribute("dir", "rtl");
+    if (ZS.i18n) ZS.i18n.start();
     applyTheme();
     buildNav();
     ZS.on("route", (r) => { markNav(r); });
