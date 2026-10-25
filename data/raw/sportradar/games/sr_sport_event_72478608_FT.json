@@ -1,0 +1,196 @@
+{
+"fetched_at": "2026-10-24T10:50:00Z",
+"source": "SportRadar via fetch_sports_data (game_stats)",
+"id": "sr:sport_event:72478608",
+"kickoff_utc": "2026-10-11T16:30:00Z",
+"home": "Real Betis Seville",
+"away": "CA Osasuna",
+"status": "final",
+"score": {
+"home": 5,
+"away": 2
+},
+"ht_score": {
+"home": 2,
+"away": 0,
+"derived_from": "score_change events up to minute 45"
+},
+"team_stats": {
+"home": {
+"ball_possession": 55,
+"cards_given": 2,
+"corner_kicks": 8,
+"fouls": 11,
+"free_kicks": 12,
+"goal_kicks": 4,
+"injuries": 0,
+"offsides": 0,
+"red_cards": 0,
+"shots_blocked": 5,
+"shots_off_target": 3,
+"shots_on_target": 9,
+"shots_saved": 3,
+"shots_total": 17,
+"substitutions": 5,
+"throw_ins": 17,
+"yellow_cards": 2,
+"yellow_red_cards": 0
+},
+"away": {
+"ball_possession": 45,
+"cards_given": 5,
+"corner_kicks": 4,
+"fouls": 12,
+"free_kicks": 11,
+"goal_kicks": 5,
+"injuries": 0,
+"offsides": 2,
+"red_cards": 0,
+"shots_blocked": 4,
+"shots_off_target": 2,
+"shots_on_target": 5,
+"shots_saved": 5,
+"shots_total": 11,
+"substitutions": 5,
+"throw_ins": 10,
+"yellow_cards": 5,
+"yellow_red_cards": 0
+}
+},
+"key_events": [
+{
+"type": "score_change",
+"time": 10,
+"team": "home",
+"home_score": 1,
+"away_score": 0
+},
+{
+"type": "score_change",
+"time": 31,
+"team": "home",
+"home_score": 2,
+"away_score": 0
+},
+{
+"type": "yellow_card",
+"time": 41,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 45,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 45,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 46,
+"team": "away"
+},
+{
+"type": "score_change",
+"time": 48,
+"team": "home",
+"home_score": 3,
+"away_score": 0
+},
+{
+"type": "score_change",
+"time": 51,
+"team": "away",
+"home_score": 3,
+"away_score": 1
+},
+{
+"type": "score_change",
+"time": 56,
+"team": "away",
+"home_score": 3,
+"away_score": 2
+},
+{
+"type": "substitution",
+"time": 63,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 63,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 64,
+"team": "away"
+},
+{
+"type": "score_change",
+"time": 67,
+"team": "home",
+"home_score": 4,
+"away_score": 2
+},
+{
+"type": "substitution",
+"time": 73,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 74,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 74,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 79,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 81,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 81,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 81,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 88,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 90,
+"team": "home"
+},
+{
+"type": "score_change",
+"time": 90,
+"team": "home",
+"home_score": 5,
+"away_score": 2
+},
+{
+"type": "yellow_card",
+"time": 90,
+"team": "away"
+}
+]
+}

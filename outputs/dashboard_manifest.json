@@ -1,0 +1,135 @@
+{
+ "artifact": "https://claude.ai/artifact/Y6aQg9z4MxgUrQRp5NvjRX",
+ "files": {
+  "index.html": 2,
+  "common.js": 1,
+  "today.js": 1,
+  "fixtures.js": 1,
+  "season.js": 1,
+  "deep.js": 1,
+  "accuracy.js": 1,
+  "app.js": 1
+ },
+ "datasets": {
+  "fixtures": {
+   "url": "/_blob/6f75d2c30fcb7eb28ad91f535adaa2da",
+   "sha256": "6b127b6dd69b19afabe2d3cdcc0881315219dcb5212a64fb7db8041f0148fda6",
+   "version": 1
+  },
+  "forecast": {
+   "url": "/_blob/b8b200fb7cfb0488e4f6848052571dc2",
+   "sha256": "17b73ab5bd74550e2155537c9d032da28f9c1ae37b58c4be7c6e37cc5b265fcc",
+   "version": 2
+  },
+  "positions": {
+   "url": "/_blob/7ea5a4a3769ed80e72d51549ef1abfdc",
+   "sha256": "0133d2cfcc7835e81b0d289098ee6268ea0838e8e4f8c71601a2f1842dd1ebc3",
+   "version": 2
+  },
+  "table_now": {
+   "url": "/_blob/d285daa1d563f11386569de901d71d4a",
+   "sha256": "5e29125b8f9fe3fdcf9f8ce33178a8b2dcbb561b395f9beb1cc8a7ae5c4f0a23",
+   "version": 2
+  },
+  "accuracy": {
+   "url": "/_blob/51e08f03d7a86f410e50ed64e32d0e08",
+   "sha256": "fb8b7e4400704054136e8a390c1a50bbced8081531a2e3bc6822f9f5dca175b6",
+   "version": 2
+  },
+  "run_info": {
+   "url": "/_blob/81f4f5f903a18dd74c8a02a00a871a06",
+   "sha256": "f4f73c76a62c6ab424178ee107a8cb82e19f536c776078459b78b74fee12f845",
+   "version": 2
+  },
+  "model_facts": {
+   "url": "/_blob/903f0739d4b5c823f1e295ae16ff9d8f",
+   "sha256": "389f687593ffff33bb537a72b0ece6e52d4980b20c8b2e6cc706c9502bddf6ba",
+   "version": 1
+  },
+  "inplay_calibration": {
+   "url": "/_blob/0367780f13c78acad1fb7203e6520fb0",
+   "sha256": "c9bc63ed5d35e86c7277467e1d8c1b3a1bbe65fa9ab7e8fc8ebfccf957dd2ab6",
+   "version": 1
+  },
+  "track": {
+   "url": "/_blob/f8d7df8f744bf2c21bb9f70e02314e2b",
+   "sha256": "bbfa4422c76c9346fdd63cf4a8f7c2ccfc1042fcf2cb5eaf528d240fc66c84e3",
+   "version": 1
+  },
+  "track_summary": {
+   "url": "/_blob/416bfeb76fbcae44273104499a45c77d",
+   "sha256": "1c4483515f6f7afe85bb28d36035fa322ec805d0182df15e43c8574cd2e9006b",
+   "version": 1
+  },
+  "live_matches": {
+   "url": "/_blob/fcf1e901d0f45f2c0f75fa30bf06e4b1",
+   "sha256": "e3e1a02fb374787a12864f4f147ae45d599f69e190d0f6514abb209bd6433326",
+   "version": 1
+  },
+  "live_insights": {
+   "url": "/_blob/bc070c1feb0306eb5002acb35324206d",
+   "sha256": "ba4581f43584c095a0c8f2210109fa1d5b0eb0cedd38f1f6a0c6c0f08ffa6ae3",
+   "version": 1
+  },
+  "live_stats": {
+   "url": "/_blob/1c6269411c2538a4f7fabe7d62007f32",
+   "sha256": "092abb0e866fc4e6c1005b975e9087a0bf0a266e17a4ca17a1b718ca3b810283",
+   "version": 1
+  },
+  "live_timeline": {
+   "url": "/_blob/ad62a2e2d85c327d93da027226338d77",
+   "sha256": "087bdcf8c339f9eae248a6c53248aa7ace9d38021250957d012b5972d80ebfc1",
+   "version": 1
+  },
+  "live_impact": {
+   "url": "/_blob/54900158c3e2b97ae3d068b9a8ff8cff",
+   "sha256": "9af3cb4d1ae7baa31bf6dfe4bcb9f7c683266b2a79cec4ff3d8837d7b8adf073",
+   "version": 1
+  },
+  "deep_matches": {
+   "url": "/_blob/7c19bacdbc95764037e06f2b7fee81b0",
+   "sha256": "afcf0b4c077b3761738306187151cef54c8592e8ac767ba2ee7b74c9216ef012",
+   "version": 1
+  },
+  "deep_insights": {
+   "url": "/_blob/655c17e676bfd06d66d0f45a2caa47dd",
+   "sha256": "f10cd71006b50d2f530e579dd748ee38820b0bf01ea641762e6ea627d0360c6f",
+   "version": 1
+  },
+  "deep_stats": {
+   "url": "/_blob/d530ca2b017aa9270f4abaf876448657",
+   "sha256": "a3885d2271a5ecd2e1abffe5377ff224ff1ff51feae56a1c4f4218a8509286e7",
+   "version": 1
+  },
+  "deep_shots": {
+   "url": "/_blob/c4aa0b83fe98bf9937dcae73fbd39439",
+   "sha256": "6df4035c0144060c9ce008925168b4f76d7211b838718f9ea1b4c4c069563297",
+   "version": 1
+  },
+  "deep_timeline": {
+   "url": "/_blob/5af8dfd99753b39c253ed286619e43f3",
+   "sha256": "cb7744a33be32818b8c3f436569e89ebe7c3624a5e0ebc1cf97ee4eb48269ed9",
+   "version": 1
+  },
+  "deep_touches": {
+   "url": "/_blob/149dc9d99937fd197551b6bdce8c527d",
+   "sha256": "647bffebe49fcdb4dfc10c7b7f2b599938233ba85dc4eedd375acb7a4b1bcaad",
+   "version": 1
+  },
+  "deep_pass_nodes": {
+   "url": "/_blob/20b828c41b79056d9075cd129375c7c0",
+   "sha256": "d5fe031eb2829947c9b85b4d139fb3d35efcaa96b002a8a821d51810b95d9afd",
+   "version": 1
+  },
+  "deep_pass_edges": {
+   "url": "/_blob/72d6ad645044032c87e95047a9bf47d5",
+   "sha256": "e9906f47f542a63d1544b0f062ceb3783cddd18148c3e34833d96274f785d272",
+   "version": 1
+  },
+  "deep_players": {
+   "url": "/_blob/21c34e79c86578291adc00803a25d161",
+   "sha256": "d6f866e61e09986df3dd4ed64061860104212170212c996e616e0531be78ce77",
+   "version": 1
+  }
+ }
+}

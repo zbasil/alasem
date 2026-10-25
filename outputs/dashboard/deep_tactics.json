@@ -1,0 +1,431 @@
+{
+ "sb69299": {
+  "flanks": [
+   {
+    "team_side": "home",
+    "channel": "left",
+    "channel_ar": "اليسار",
+    "attack_actions": 33,
+    "attack_completed": 25,
+    "crosses": 3,
+    "shots": 0,
+    "xg": 0.0,
+    "attackers": [
+     "إنييستا",
+     "ميسي"
+    ],
+    "opp_channel_ar": "اليمين",
+    "defend_actions": 28,
+    "defenders": [
+     "راموس",
+     "خضيرة"
+    ]
+   },
+   {
+    "team_side": "home",
+    "channel": "centre",
+    "channel_ar": "العمق",
+    "attack_actions": 20,
+    "attack_completed": 12,
+    "crosses": 0,
+    "shots": 12,
+    "xg": 2.76,
+    "attackers": [
+     "ميسي",
+     "إنييستا"
+    ],
+    "opp_channel_ar": "العمق",
+    "defend_actions": 41,
+    "defenders": [
+     "بيبي",
+     "خضيرة"
+    ]
+   },
+   {
+    "team_side": "home",
+    "channel": "right",
+    "channel_ar": "اليمين",
+    "attack_actions": 40,
+    "attack_completed": 26,
+    "crosses": 5,
+    "shots": 2,
+    "xg": 0.01,
+    "attackers": [
+     "داني ألفيش",
+     "ميسي"
+    ],
+    "opp_channel_ar": "اليسار",
+    "defend_actions": 39,
+    "defenders": [
+     "مارسيلو",
+     "كارفاليو"
+    ]
+   },
+   {
+    "team_side": "away",
+    "channel": "left",
+    "channel_ar": "اليسار",
+    "attack_actions": 35,
+    "attack_completed": 22,
+    "crosses": 6,
+    "shots": 2,
+    "xg": 0.05,
+    "attackers": [
+     "تشابي ألونسو",
+     "بنزيما"
+    ],
+    "opp_channel_ar": "اليمين",
+    "defend_actions": 27,
+    "defenders": [
+     "داني ألفيش",
+     "بويول"
+    ]
+   },
+   {
+    "team_side": "away",
+    "channel": "centre",
+    "channel_ar": "العمق",
+    "attack_actions": 8,
+    "attack_completed": 3,
+    "crosses": 0,
+    "shots": 3,
+    "xg": 0.08,
+    "attackers": [
+     "خضيرة",
+     "بيبي"
+    ],
+    "opp_channel_ar": "العمق",
+    "defend_actions": 21,
+    "defenders": [
+     "بويول",
+     "بيكيه"
+    ]
+   },
+   {
+    "team_side": "away",
+    "channel": "right",
+    "channel_ar": "اليمين",
+    "attack_actions": 20,
+    "attack_completed": 11,
+    "crosses": 5,
+    "shots": 0,
+    "xg": 0.0,
+    "attackers": [
+     "راموس",
+     "رونالدو"
+    ],
+    "opp_channel_ar": "اليسار",
+    "defend_actions": 13,
+    "defenders": [
+     "أبيدال",
+     "بويول"
+    ]
+   }
+  ],
+  "pressing": [
+   {
+    "team_side": "home",
+    "ppda": 3.7,
+    "high_recoveries": 10,
+    "pressures_high": 9,
+    "opp_pressed_passes": 9,
+    "opp_pressed_pass_pct": 67.0
+   },
+   {
+    "team_side": "away",
+    "ppda": 6.0,
+    "high_recoveries": 5,
+    "pressures_high": 12,
+    "opp_pressed_passes": 33,
+    "opp_pressed_pass_pct": 94.0
+   }
+  ],
+  "note_ar": "القنوات من منظور الفريق المهاجم (يسار/عمق/يمين)، ودفاع الخصم بالقناة المقابلة بثلثه الدفاعي. PPDA = تمريرات الخصم ببنائه مقابل كل فعل دفاعي بالضغط العالي (أقل = ضغط أعلى)."
+ },
+ "sb266424": {
+  "flanks": [
+   {
+    "team_side": "home",
+    "channel": "left",
+    "channel_ar": "اليسار",
+    "attack_actions": 29,
+    "attack_completed": 18,
+    "crosses": 1,
+    "shots": 0,
+    "xg": 0.0,
+    "attackers": [
+     "كروس",
+     "راموس"
+    ],
+    "opp_channel_ar": "اليمين",
+    "defend_actions": 31,
+    "defenders": [
+     "داني ألفيش",
+     "بيكيه"
+    ]
+   },
+   {
+    "team_side": "home",
+    "channel": "centre",
+    "channel_ar": "العمق",
+    "attack_actions": 8,
+    "attack_completed": 1,
+    "crosses": 0,
+    "shots": 11,
+    "xg": 1.32,
+    "attackers": [
+     "مودريتش",
+     "خاميس"
+    ],
+    "opp_channel_ar": "العمق",
+    "defend_actions": 35,
+    "defenders": [
+     "ماتيو",
+     "بيكيه"
+    ]
+   },
+   {
+    "team_side": "home",
+    "channel": "right",
+    "channel_ar": "اليمين",
+    "attack_actions": 43,
+    "attack_completed": 31,
+    "crosses": 8,
+    "shots": 2,
+    "xg": 0.02,
+    "attackers": [
+     "بيل",
+     "مودريتش"
+    ],
+    "opp_channel_ar": "اليسار",
+    "defend_actions": 30,
+    "defenders": [
+     "جوردي ألبا",
+     "بوسكيتس"
+    ]
+   },
+   {
+    "team_side": "away",
+    "channel": "left",
+    "channel_ar": "اليسار",
+    "attack_actions": 41,
+    "attack_completed": 30,
+    "crosses": 6,
+    "shots": 1,
+    "xg": 0.01,
+    "attackers": [
+     "نيمار",
+     "جوردي ألبا"
+    ],
+    "opp_channel_ar": "اليمين",
+    "defend_actions": 39,
+    "defenders": [
+     "فاران",
+     "دانيلو"
+    ]
+   },
+   {
+    "team_side": "away",
+    "channel": "centre",
+    "channel_ar": "العمق",
+    "attack_actions": 24,
+    "attack_completed": 15,
+    "crosses": 1,
+    "shots": 16,
+    "xg": 2.45,
+    "attackers": [
+     "ميسي",
+     "سواريز"
+    ],
+    "opp_channel_ar": "العمق",
+    "defend_actions": 39,
+    "defenders": [
+     "فاران",
+     "راموس"
+    ]
+   },
+   {
+    "team_side": "away",
+    "channel": "right",
+    "channel_ar": "اليمين",
+    "attack_actions": 22,
+    "attack_completed": 13,
+    "crosses": 2,
+    "shots": 1,
+    "xg": 0.02,
+    "attackers": [
+     "داني ألفيش",
+     "سيرجي روبرتو"
+    ],
+    "opp_channel_ar": "اليسار",
+    "defend_actions": 16,
+    "defenders": [
+     "راموس",
+     "مارسيلو"
+    ]
+   }
+  ],
+  "pressing": [
+   {
+    "team_side": "home",
+    "ppda": 9.4,
+    "high_recoveries": 9,
+    "pressures_high": 38,
+    "opp_pressed_passes": 55,
+    "opp_pressed_pass_pct": 67.0
+   },
+   {
+    "team_side": "away",
+    "ppda": 6.8,
+    "high_recoveries": 8,
+    "pressures_high": 18,
+    "opp_pressed_passes": 31,
+    "opp_pressed_pass_pct": 77.0
+   }
+  ],
+  "note_ar": "القنوات من منظور الفريق المهاجم (يسار/عمق/يمين)، ودفاع الخصم بالقناة المقابلة بثلثه الدفاعي. PPDA = تمريرات الخصم ببنائه مقابل كل فعل دفاعي بالضغط العالي (أقل = ضغط أعلى)."
+ },
+ "sb267533": {
+  "flanks": [
+   {
+    "team_side": "home",
+    "channel": "left",
+    "channel_ar": "اليسار",
+    "attack_actions": 37,
+    "attack_completed": 31,
+    "crosses": 2,
+    "shots": 1,
+    "xg": 0.03,
+    "attackers": [
+     "إنييستا",
+     "جوردي ألبا"
+    ],
+    "opp_channel_ar": "اليمين",
+    "defend_actions": 32,
+    "defenders": [
+     "كارفاخال",
+     "مودريتش"
+    ]
+   },
+   {
+    "team_side": "home",
+    "channel": "centre",
+    "channel_ar": "العمق",
+    "attack_actions": 28,
+    "attack_completed": 17,
+    "crosses": 0,
+    "shots": 10,
+    "xg": 0.65,
+    "attackers": [
+     "ميسي",
+     "بوسكيتس"
+    ],
+    "opp_channel_ar": "العمق",
+    "defend_actions": 58,
+    "defenders": [
+     "كاسيميرو",
+     "بيبي"
+    ]
+   },
+   {
+    "team_side": "home",
+    "channel": "right",
+    "channel_ar": "اليمين",
+    "attack_actions": 31,
+    "attack_completed": 27,
+    "crosses": 2,
+    "shots": 3,
+    "xg": 0.04,
+    "attackers": [
+     "داني ألفيش",
+     "ماسكيرانو"
+    ],
+    "opp_channel_ar": "اليسار",
+    "defend_actions": 28,
+    "defenders": [
+     "كاسيميرو",
+     "مارسيلو"
+    ]
+   },
+   {
+    "team_side": "away",
+    "channel": "left",
+    "channel_ar": "اليسار",
+    "attack_actions": 22,
+    "attack_completed": 14,
+    "crosses": 2,
+    "shots": 3,
+    "xg": 0.05,
+    "attackers": [
+     "رونالدو",
+     "مارسيلو"
+    ],
+    "opp_channel_ar": "اليمين",
+    "defend_actions": 17,
+    "defenders": [
+     "داني ألفيش",
+     "سواريز"
+    ]
+   },
+   {
+    "team_side": "away",
+    "channel": "centre",
+    "channel_ar": "العمق",
+    "attack_actions": 17,
+    "attack_completed": 9,
+    "crosses": 0,
+    "shots": 10,
+    "xg": 1.08,
+    "attackers": [
+     "بيبي",
+     "بيل"
+    ],
+    "opp_channel_ar": "العمق",
+    "defend_actions": 26,
+    "defenders": [
+     "بيكيه",
+     "ماسكيرانو"
+    ]
+   },
+   {
+    "team_side": "away",
+    "channel": "right",
+    "channel_ar": "اليمين",
+    "attack_actions": 29,
+    "attack_completed": 21,
+    "crosses": 4,
+    "shots": 2,
+    "xg": 0.19,
+    "attackers": [
+     "كارفاخال",
+     "مودريتش"
+    ],
+    "opp_channel_ar": "اليسار",
+    "defend_actions": 18,
+    "defenders": [
+     "جوردي ألبا",
+     "ماسكيرانو"
+    ]
+   }
+  ],
+  "pressing": [
+   {
+    "team_side": "home",
+    "ppda": 4.1,
+    "high_recoveries": 12,
+    "pressures_high": 22,
+    "opp_pressed_passes": 21,
+    "opp_pressed_pass_pct": 67.0
+   },
+   {
+    "team_side": "away",
+    "ppda": 13.3,
+    "high_recoveries": 4,
+    "pressures_high": 17,
+    "opp_pressed_passes": 11,
+    "opp_pressed_pass_pct": 100.0
+   }
+  ],
+  "note_ar": "القنوات من منظور الفريق المهاجم (يسار/عمق/يمين)، ودفاع الخصم بالقناة المقابلة بثلثه الدفاعي. PPDA = تمريرات الخصم ببنائه مقابل كل فعل دفاعي بالضغط العالي (أقل = ضغط أعلى)."
+ }
+}

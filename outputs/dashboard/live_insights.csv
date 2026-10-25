@@ -1,0 +1,11 @@
+event_id,phase,row_id,side,team_ar,kind,rank,text
+sr:sport_event:72478646,FT,sr:sport_event:72478646|FT|home|pos|0,home,ألافيس,pos,1,أفضلية بالتسديد: 10 مقابل 6
+sr:sport_event:72478646,FT,sr:sport_event:72478646|FT|home|pos|1,home,ألافيس,pos,2,ضغط من الركنيات: 7 مقابل 2
+sr:sport_event:72478646,FT,sr:sport_event:72478646|FT|home|pos|2,home,ألافيس,pos,3,توقيت قاتل: هدف بالدقيقة 89
+sr:sport_event:72478646,FT,sr:sport_event:72478646|FT|home|neg|0,home,ألافيس,neg,1,نقطتين ضايعة: كان مرشح للفوز بنسبة 64٪
+sr:sport_event:72478646,FT,sr:sport_event:72478646|FT|away|pos|0,away,ملقة,pos,1,دقة بالتسديد: 4 من 6 على المرمى (67٪)
+sr:sport_event:72478646,FT,sr:sport_event:72478646|FT|away|pos|1,away,ملقة,pos,2,نقطة ثمينة: الموديل كان يعطيه 16٪ للفوز بس
+sr:sport_event:72478646,FT,sr:sport_event:72478646|FT|away|neg|0,away,ملقة,neg,1,أقل خطورة من الخصم: 6 تسديدات مقابل 10
+sr:sport_event:72478646,FT,sr:sport_event:72478646|FT|away|neg|1,away,ملقة,neg,2,غفلة بآخر الدقائق: استقبل هدف بالدقيقة 89
+sr:sport_event:72478646,FT,sr:sport_event:72478646|FT|away|neg|2,away,ملقة,neg,3,محاصَر بالركنيات: 7 للخصم مقابل 2
+sr:sport_event:72478646,FT,sr:sport_event:72478646|FT|match|note|0,match,,note,1,أكبر لحظة بالمباراة: هدف ألافيس بالدقيقة 89 نزّل فرصة فوز ملقة من 85٪ إلى 5٪.

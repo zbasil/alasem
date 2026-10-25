@@ -1,0 +1,14 @@
+event_id,row_id,team,team_ar,metric,label_ar,before_pct,now_pct,change_pts
+sr:sport_event:72478646,sr:sport_event:72478646|Alaves|p_top4,Alaves,ألافيس,p_top4,دوري الأبطال,0.6,0.4,-0.2
+sr:sport_event:72478646,sr:sport_event:72478646|Alaves|p_top6,Alaves,ألافيس,p_top6,أوروبا,6.2,4.6,-1.6
+sr:sport_event:72478646,sr:sport_event:72478646|Alaves|p_releg,Alaves,ألافيس,p_releg,الهبوط,7.1,8.7,1.6
+sr:sport_event:72478646,sr:sport_event:72478646|Villarreal|p_top4,Villarreal,فياريال,p_top4,دوري الأبطال,5.7,5.7,0.0
+sr:sport_event:72478646,sr:sport_event:72478646|Villarreal|p_top6,Villarreal,فياريال,p_top6,أوروبا,32.4,32.7,0.3
+sr:sport_event:72478646,sr:sport_event:72478646|Villarreal|p_releg,Villarreal,فياريال,p_releg,الهبوط,0.7,0.7,-0.0
+sr:sport_event:72478646,sr:sport_event:72478646|Santander|p_releg,Santander,راسينغ سانتاندير,p_releg,الهبوط,57.4,57.1,-0.3
+sr:sport_event:72478646,sr:sport_event:72478646|Malaga|p_releg,Malaga,ملقة,p_releg,الهبوط,91.9,91.7,-0.3
+sr:sport_event:72478646,sr:sport_event:72478646|Ath Bilbao|p_top4,Ath Bilbao,أتلتيك بلباو,p_top4,دوري الأبطال,6.1,6.1,0.0
+sr:sport_event:72478646,sr:sport_event:72478646|Ath Bilbao|p_top6,Ath Bilbao,أتلتيك بلباو,p_top6,أوروبا,29.5,29.8,0.3
+sr:sport_event:72478646,sr:sport_event:72478646|Ath Bilbao|p_releg,Ath Bilbao,أتلتيك بلباو,p_releg,الهبوط,1.2,1.1,-0.0
+sr:sport_event:72478646,sr:sport_event:72478646|Elche|p_top6,Elche,إلتشي,p_top6,أوروبا,1.4,1.4,0.0
+sr:sport_event:72478646,sr:sport_event:72478646|Elche|p_releg,Elche,إلتشي,p_releg,الهبوط,24.4,24.2,-0.2

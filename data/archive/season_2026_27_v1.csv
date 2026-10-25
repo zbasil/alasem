@@ -1,0 +1,91 @@
+date,season,home,away,hg,ag,hst,ast,odds_h,odds_d,odds_a,odds_o25,odds_u25,source
+2026-08-15,2026,Alaves,Getafe,3,0,8.0,2.0,2.35,2.8,3.75,3.2,1.36,openfootball
+2026-08-15,2026,Sevilla,Vallecano,2,1,4.0,3.0,2.3,3.1,3.4,2.3,1.62,openfootball
+2026-08-16,2026,Espanol,Levante,3,0,6.0,0.0,2.0,3.25,4.0,2.2,1.67,openfootball
+2026-08-16,2026,Santander,Villarreal,2,2,3.0,7.0,3.2,3.6,2.15,1.8,2.0,openfootball
+2026-08-17,2026,La Coruna,Elche,1,1,3.0,6.0,2.3,3.0,3.5,2.3,1.62,openfootball
+2026-08-19,2026,Ath Madrid,Malaga,2,0,6.0,1.0,1.33,5.25,9.5,1.73,2.1,openfootball
+2026-08-20,2026,Vallecano,Alaves,1,1,3.0,3.0,2.25,3.0,3.6,2.75,1.44,openfootball
+2026-08-21,2026,Betis,Sociedad,1,0,7.0,3.0,2.05,3.5,3.5,1.8,2.0,openfootball
+2026-08-22,2026,Ath Bilbao,Sevilla,1,3,8.0,4.0,1.7,3.6,5.25,2.2,1.67,openfootball
+2026-08-22,2026,Espanol,Real Madrid,1,2,3.0,8.0,7.0,4.5,1.44,1.73,2.1,openfootball
+2026-08-22,2026,Valencia,Celta,0,0,2.0,3.0,2.35,3.2,3.2,2.2,1.67,openfootball
+2026-08-23,2026,Ath Madrid,Villarreal,2,2,4.0,6.0,1.85,3.6,4.1,1.88,1.98,openfootball
+2026-08-23,2026,Elche,Barcelona,0,5,2.0,7.0,9.0,5.75,1.3,1.44,2.75,openfootball
+2026-08-23,2026,Getafe,Santander,1,0,1.0,3.0,2.2,2.9,3.9,2.75,1.44,openfootball
+2026-08-24,2026,Malaga,La Coruna,1,1,2.0,4.0,2.5,3.1,3.1,2.63,1.5,openfootball
+2026-08-24,2026,Osasuna,Levante,0,0,7.0,1.0,1.83,3.6,4.33,2.0,1.8,openfootball
+2026-08-25,2026,Valencia,Betis,0,1,3.0,3.0,2.8,3.3,2.55,2.1,1.73,openfootball
+2026-08-26,2026,Real Madrid,Sociedad,4,1,11.0,3.0,1.3,6.25,8.0,1.44,2.75,openfootball
+2026-08-27,2026,Barcelona,Ath Bilbao,2,0,10.0,0.0,1.33,5.25,8.0,1.44,2.75,openfootball
+2026-08-27,2026,Celta,Osasuna,1,2,2.0,5.0,2.0,3.3,4.0,2.2,1.67,openfootball
+2026-08-28,2026,Alaves,Villarreal,1,0,2.0,6.0,3.2,3.5,2.2,1.8,2.0,openfootball
+2026-08-28,2026,Santander,Elche,3,2,6.0,7.0,2.0,3.6,3.6,1.67,2.2,openfootball
+2026-08-29,2026,Levante,Betis,5,2,10.0,6.0,3.4,3.3,2.2,1.98,1.88,openfootball
+2026-08-29,2026,Sevilla,Ath Madrid,1,3,5.0,5.0,3.6,3.3,2.1,1.98,1.88,openfootball
+2026-08-29,2026,Sociedad,Espanol,2,1,10.0,3.0,1.91,3.6,4.0,1.88,1.98,openfootball
+2026-08-30,2026,Celta,Ath Bilbao,0,2,2.0,7.0,2.38,3.2,3.1,2.1,1.73,openfootball
+2026-08-30,2026,La Coruna,Valencia,3,1,4.0,4.0,2.55,3.0,3.1,2.38,1.57,openfootball
+2026-08-30,2026,Real Madrid,Malaga,4,0,8.0,1.0,1.11,9.0,21.0,1.33,3.4,openfootball
+2026-08-31,2026,Barcelona,Vallecano,5,2,9.0,5.0,1.17,8.0,13.0,1.36,3.2,openfootball
+2026-08-31,2026,Osasuna,Getafe,1,0,2.0,1.0,2.2,3.0,3.75,3.0,1.4,openfootball
+2026-09-03,2026,Sociedad,Celta,0,0,5.0,2.0,1.95,3.6,3.8,1.93,1.93,openfootball
+2026-09-04,2026,Betis,Real Madrid,1,0,5.0,8.0,7.0,5.25,1.38,1.36,3.2,openfootball
+2026-09-05,2026,Ath Bilbao,Ath Madrid,3,0,4.0,5.0,3.1,3.3,2.3,1.91,1.91,openfootball
+2026-09-05,2026,Vallecano,Santander,3,2,10.0,4.0,2.25,3.25,3.3,1.83,2.03,openfootball
+2026-09-05,2026,Villarreal,La Coruna,2,3,5.0,3.0,1.5,4.2,6.5,1.73,2.1,openfootball
+2026-09-06,2026,Alaves,Osasuna,5,2,7.0,5.0,2.25,3.1,3.5,2.5,1.53,openfootball
+2026-09-06,2026,Espanol,Sevilla,1,1,3.0,3.0,2.3,3.1,3.4,2.38,1.57,openfootball
+2026-09-06,2026,Malaga,Levante,0,0,3.0,3.0,2.38,3.25,3.0,1.98,1.88,openfootball
+2026-09-06,2026,Valencia,Barcelona,0,5,2.0,10.0,10.0,5.75,1.29,1.36,3.2,openfootball
+2026-09-07,2026,Elche,Sociedad,2,3,10.0,6.0,3.1,3.25,2.38,1.8,2.0,openfootball
+2026-09-07,2026,Getafe,Celta,1,1,2.0,3.0,2.4,2.9,3.4,3.0,1.4,openfootball
+2026-09-11,2026,Sevilla,Valencia,1,0,4.0,0.0,1.95,3.4,4.0,2.3,1.62,openfootball
+2026-09-12,2026,Ath Bilbao,Elche,1,1,3.0,1.0,1.4,4.75,7.5,1.67,2.2,openfootball
+2026-09-12,2026,Osasuna,Espanol,0,2,4.0,3.0,2.15,3.1,3.75,2.2,1.67,openfootball
+2026-09-12,2026,Real Madrid,Vallecano,4,1,11.0,7.0,1.13,9.5,19.0,1.29,3.75,openfootball
+2026-09-12,2026,Santander,Alaves,2,1,4.0,8.0,2.45,3.5,2.75,1.73,2.1,openfootball
+2026-09-13,2026,Celta,Malaga,1,1,5.0,2.0,1.7,3.7,5.25,2.1,1.73,openfootball
+2026-09-13,2026,Getafe,La Coruna,1,1,4.0,3.0,2.4,2.9,3.4,3.2,1.36,openfootball
+2026-09-13,2026,Levante,Barcelona,2,4,7.0,6.0,17.0,8.0,1.14,1.29,3.75,openfootball
+2026-09-13,2026,Sociedad,Ath Madrid,0,3,3.0,5.0,2.8,3.5,2.38,1.67,2.2,openfootball
+2026-09-14,2026,Villarreal,Betis,1,2,8.0,12.0,1.91,4.0,3.6,1.57,2.38,openfootball
+2026-09-15,2026,Alaves,Valencia,0,1,3.0,3.0,1.7,3.5,5.5,2.1,1.73,openfootball
+2026-09-15,2026,Elche,Real Madrid,2,3,3.0,4.0,12.0,7.5,1.2,1.3,3.5,openfootball
+2026-09-15,2026,Vallecano,Espanol,2,1,2.0,5.0,2.3,3.3,3.1,1.95,1.9,openfootball
+2026-09-16,2026,Ath Madrid,Osasuna,4,0,11.0,1.0,1.38,4.75,8.5,1.73,2.1,openfootball
+2026-09-16,2026,Barcelona,Santander,7,2,9.0,3.0,1.06,14.0,23.0,1.13,6.0,openfootball
+2026-09-16,2026,La Coruna,Sevilla,0,1,3.0,6.0,2.4,3.25,3.0,2.2,1.67,openfootball
+2026-09-17,2026,Betis,Getafe,1,0,8.0,2.0,1.57,4.0,5.75,2.2,1.67,openfootball
+2026-09-17,2026,Malaga,Villarreal,1,3,1.0,7.0,3.6,3.7,1.95,1.62,2.3,openfootball
+2026-09-18,2026,Espanol,Elche,1,3,4.0,6.0,1.8,3.5,4.5,1.8,2.0,openfootball
+2026-09-19,2026,Ath Bilbao,Alaves,0,0,6.0,0.0,1.62,4.0,5.25,1.9,1.95,openfootball
+2026-09-19,2026,Celta,Santander,5,0,9.0,5.0,1.8,3.8,4.2,1.67,2.2,openfootball
+2026-09-19,2026,Osasuna,Vallecano,1,1,3.0,2.0,2.38,3.3,3.0,2.0,1.8,openfootball
+2026-09-19,2026,Sevilla,Barcelona,1,3,3.0,7.0,11.0,7.5,1.2,1.25,4.0,openfootball
+2026-09-20,2026,Ath Madrid,Real Madrid,2,1,9.0,3.0,3.6,3.8,1.95,1.44,2.75,openfootball
+2026-09-20,2026,Getafe,Malaga,1,0,7.0,4.0,2.0,3.1,4.2,2.75,1.44,openfootball
+2026-09-20,2026,La Coruna,Betis,1,1,7.0,4.0,3.4,3.75,2.05,1.8,2.0,openfootball
+2026-09-20,2026,Valencia,Sociedad,2,3,5.0,6.0,2.7,3.4,2.6,1.93,1.93,openfootball
+2026-09-20,2026,Villarreal,Levante,3,1,7.0,1.0,1.5,4.75,5.5,1.5,2.63,openfootball
+2026-10-09,2026,Malaga,Espanol,1,1,7.0,4.0,2.9,3.2,2.55,2.0,1.8,footballwebpages.co.uk (date page + October results page)
+2026-10-10,2026,Alaves,Ath Madrid,1,2,3.0,7.0,4.1,3.8,1.8,1.91,1.91,footballwebpages.co.uk (date page + October results page)
+2026-10-10,2026,Barcelona,Getafe,3,0,8.0,1.0,1.08,12.0,23.0,1.25,4.0,footballwebpages.co.uk (date page + October results page)
+2026-10-10,2026,Real Madrid,Villarreal,1,0,4.0,4.0,1.38,6.0,6.25,1.29,3.75,footballwebpages.co.uk (date page + October results page)
+2026-10-11,2026,Betis,Osasuna,5,2,,,,,,,,footballwebpages.co.uk (date page + October results page)
+2026-10-11,2026,Elche,Celta,0,0,2.0,0.0,2.8,3.2,2.63,2.0,1.8,footballwebpages.co.uk (date page + October results page)
+2026-10-11,2026,Santander,Valencia,2,2,,,,,,,,footballwebpages.co.uk (date page + October results page)
+2026-10-11,2026,Sociedad,La Coruna,3,2,,,,,,,,footballwebpages.co.uk (date page + October results page)
+2026-10-12,2026,Levante,Sevilla,3,3,,,,,,,,footballwebpages.co.uk (date page + October results page)
+2026-10-16,2026,La Coruna,Levante,1,1,,,,,,,,footballwebpages.co.uk (date page + October results page)
+2026-10-17,2026,Betis,Barcelona,2,5,,,,,,,,footballwebpages.co.uk (date page + October results page)
+2026-10-17,2026,Espanol,Ath Madrid,0,1,,,,,,,,footballwebpages.co.uk (date page + October results page)
+2026-10-17,2026,Valencia,Ath Bilbao,0,0,,,,,,,,footballwebpages.co.uk (date page + October results page)
+2026-10-17,2026,Villarreal,Elche,0,0,,,,,,,,footballwebpages.co.uk (date page + October results page)
+2026-10-18,2026,Celta,Alaves,2,1,,,,,,,,laliga.com match page + footballwebpages.co.uk October results page
+2026-10-18,2026,Malaga,Sociedad,2,5,,,,,,,,footballwebpages.co.uk October results page + table residual
+2026-10-18,2026,Osasuna,Santander,2,0,,,,,,,,footballwebpages.co.uk October results page + table residual
+2026-10-18,2026,Real Madrid,Sevilla,4,1,,,,,,,,footballwebpages.co.uk (October results page + video section)
+2026-10-19,2026,Getafe,Vallecano,1,1,,,,,,,,footballwebpages.co.uk (date page + October results page)
+2026-10-21,2026,Levante,Ath Bilbao,3,1,,,,,,,,footballwebpages.co.uk (date page + October results page)
+2026-10-23,2026,Alaves,Malaga,1,1,,,,,,,,"SportRadar final (goals 44' Malaga, 89' Alaves); consistent with sportytrader live snapshot (0-0 at 40')"

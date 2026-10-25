@@ -1,0 +1,142 @@
+{
+"fetched_at": "2026-10-24T10:50:00Z",
+"source": "SportRadar via fetch_sports_data (game_stats)",
+"id": "sr:sport_event:72478644",
+"kickoff_utc": "2026-10-17T14:15:00Z",
+"home": "Villarreal CF",
+"away": "Elche CF",
+"status": "final",
+"score": {
+"home": 0,
+"away": 0
+},
+"ht_score": {
+"home": 0,
+"away": 0,
+"derived_from": "score_change events up to minute 45"
+},
+"team_stats": {
+"home": {
+"ball_possession": 58,
+"cards_given": 2,
+"corner_kicks": 10,
+"fouls": 12,
+"free_kicks": 8,
+"goal_kicks": 7,
+"injuries": 0,
+"offsides": 5,
+"red_cards": 0,
+"shots_blocked": 6,
+"shots_off_target": 5,
+"shots_on_target": 5,
+"shots_saved": 1,
+"shots_total": 16,
+"substitutions": 5,
+"throw_ins": 10,
+"yellow_cards": 2,
+"yellow_red_cards": 0
+},
+"away": {
+"ball_possession": 42,
+"cards_given": 4,
+"corner_kicks": 5,
+"fouls": 7,
+"free_kicks": 13,
+"goal_kicks": 9,
+"injuries": 0,
+"offsides": 0,
+"red_cards": 0,
+"shots_blocked": 1,
+"shots_off_target": 3,
+"shots_on_target": 1,
+"shots_saved": 5,
+"shots_total": 5,
+"substitutions": 5,
+"throw_ins": 16,
+"yellow_cards": 4,
+"yellow_red_cards": 0
+}
+},
+"key_events": [
+{
+"type": "substitution",
+"time": 28,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 38,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 65,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 65,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 65,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 66,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 66,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 66,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 71,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 75,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 75,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 81,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 83,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 84,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 90,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 90,
+"team": "away"
+}
+]
+}

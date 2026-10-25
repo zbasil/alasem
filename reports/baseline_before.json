@@ -1,0 +1,66 @@
+{
+ "recorded_at_utc": "2026-10-24T09:53:13Z",
+ "version": "v1 (delivered 2026-10-24 09:50 Baghdad)",
+ "tests": {
+  "count": 46,
+  "passed": 46
+ },
+ "data": {
+  "history_seasons": "1993/94-2025/26 (model uses 2000/01+)",
+  "season_2026_27_played": 90,
+  "with_market_odds": 74,
+  "with_shots_on_target": 74,
+  "missing_both": 16,
+  "missing_matches": "11-23 Oct 2026 (football-data.co.uk file stops at 11/10/2026 13:00 Elche-Celta)"
+ },
+ "prematch_test": {
+  "period": "2023/24-2025/26",
+  "n": 1140,
+  "rps_model": 0.19242839460137862,
+  "rps_bet365": 0.18932710337016723,
+  "rps_baseline_insample_base_rates": 0.22525969529085874,
+  "logloss_model": 0.9661740804445187,
+  "logloss_bet365": 0.9553579610905724,
+  "brier_model": 0.5729358720556161,
+  "hit_model": 0.537,
+  "hit_bet365": 0.552,
+  "hit_always_home": 0.458,
+  "skill_share_pct_shown_as_accuracy": 91.4
+ },
+ "season_backtest": {
+  "seasons": "2012/13-2025/26 (14)",
+  "drift_selected_on_same_seasons": true,
+  "points_MAE": 5.146550892857142,
+  "coverage_80": 0.8285714285714286,
+  "z_sd": 1.0075512813814984,
+  "brier_title": 0.02944142455357143,
+  "brier_top4": 0.029116461607142857,
+  "brier_releg": 0.08125312633928572
+ },
+ "inplay_ht": {
+  "period": "2016/17-2025/26",
+  "variant_selected_on_same_seasons": true,
+  "inputs": "market-implied expected goals (not the production path)",
+  "rps": 0.1510165515961967,
+  "hit": 0.6152631578947368,
+  "rps_prematch_only": 0.19275078364504739
+ },
+ "minute0_gap_pp": {
+  "Ath Madrid-La Coruna": 3.97,
+  "Barcelona-Real Madrid": 2.27,
+  "Vallecano-Elche": 2.46,
+  "Valencia-Villarreal": 1.98
+ },
+ "issues_confirmed": [
+  "1. 'skill' (91.4%) is a share of the bookmaker's RPS improvement over a baseline, but was labelled as the model's accuracy relative to bookmakers",
+  "2. RPS baseline uses outcome frequencies of the test matches themselves (in-sample)",
+  "3. Pre-match (Dixon-Coles with rho) and in-play minute 0 disagree by up to 4.0 points: state multipliers at 0-0 (0.98/0.97 plus strength terms) and no low-score correction",
+  "4. In-play evaluation used market-implied goals; production used the project's model goals",
+  "5. In-play variant and season drift were chosen on the same seasons they are reported on",
+  "6. 'goals_plus_shots' variant equals 'goals_only' (beta_sot was 0 in both)",
+  "7. Prediction log keyed by team names; no model version, data version or fetch time; no separation of live logs",
+  "8. 16 of 90 current-season matches lack market odds and shots on target",
+  "9. Missing live stats were turned into 0 (parse_game_stats)",
+  "10. App depends on the hosting environment's dashboard runtime ('dash')"
+ ]
+}

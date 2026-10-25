@@ -1,0 +1,12 @@
+start rps=0.19673 DCConfig(xi=0.003, prior_sd=0.4, beta_sot=0.2, beta_mkt=0.0, promoted_attack=-0.19, promoted_defence=-0.13, seasons_back=3, sot_k=None, rating_scale=1.0)
+  improved rps=0.19658 with xi=0.001
+  improved rps=0.19646 with xi=0.002
+  improved rps=0.19644 with prior_sd=0.5
+  improved rps=0.19635 with seasons_back=4
+  improved rps=0.19621 with rating_scale=1.05
+  improved rps=0.19618 with rating_scale=1.1
+  improved rps=0.19605 with beta_sot=0.3
+  improved rps=0.19604 with beta_sot=0.4
+  improved rps=0.19595 with rating_scale=1.15
+  improved rps=0.19595 with rating_scale=1.2
+best independent on selection seasons 2012-2022: rps=0.19595 DCConfig(xi=0.002, prior_sd=0.5, beta_sot=0.4, beta_mkt=0.0, promoted_attack=-0.19, promoted_defence=-0.13, seasons_back=4, sot_k=None, rating_scale=1.2) (499s)

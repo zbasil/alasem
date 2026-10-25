@@ -1,0 +1,80 @@
+match_id,row_id,side,player_ar,minute,period,x,y,xg,outcome,is_goal,pattern
+sb69299,sb69299|ac6fe122-123e-4da1-8581-1545cc0cd45e,home,ميسي,6,1,114.6,58.7,0.007,Post,0,From Corner
+sb69299,sb69299|410b1509-b300-4c39-82ba-da7b6a43811e,home,بيدرو,6,1,96.8,48.0,0.031,Blocked,0,From Corner
+sb69299,sb69299|bc0aedd7-1ccb-424e-b9b2-0bb2f686aa8a,home,داني ألفيش,7,1,86.7,55.9,0.005,Off T,0,From Corner
+sb69299,sb69299|82072730-2216-41e7-8c59-564b1f27e8d1,home,تشافي,10,1,113.9,41.2,0.427,Goal,1,From Goal Kick
+sb69299,sb69299|25e0b5f4-51c8-436c-b12e-d0e2a339745e,away,دي ماريا,12,1,16.0,56.1,0.04,Saved,0,Regular Play
+sb69299,sb69299|491400d5-53c7-4920-89fd-7f1ef78c4674,away,راموس,15,1,8.5,46.2,0.043,Off T,0,From Corner
+sb69299,sb69299|7fde89a6-431b-4ea4-b7eb-9fb8124a7fe8,home,بيدرو,18,1,117.5,41.3,0.895,Goal,1,Regular Play
+sb69299,sb69299|9ba0c6bd-e5a8-4979-8997-4cdf60aa29d2,away,رونالدو,35,1,33.0,45.9,0.027,Off T,0,From Free Kick
+sb69299,sb69299|74471189-0a92-402c-bdd9-c923cd9f90ed,home,ميسي,41,1,91.7,31.7,0.023,Off T,0,From Goal Kick
+sb69299,sb69299|1e68733e-ce52-4708-9a47-f0962ad0cd89,away,رونالدو,44,1,38.9,33.4,0.008,Saved,0,Regular Play
+sb69299,sb69299|055ca883-51e3-415d-920d-099cd250749e,home,ميسي,48,2,101.6,42.1,0.071,Blocked,0,Regular Play
+sb69299,sb69299|bfee1ce7-4cdb-4e9b-a3a3-35c3c9aac33b,home,دافيد فيا,48,2,114.2,27.7,0.075,Blocked,0,Regular Play
+sb69299,sb69299|d3aa7bf5-939e-4b4e-8d25-9a33017bfcf0,home,تشافي,52,2,114.6,50.0,0.342,Off T,0,From Free Kick
+sb69299,sb69299|cd966405-1e52-44f5-8f7d-d51160710464,home,دافيد فيا,55,2,108.7,48.7,0.356,Goal,1,Regular Play
+sb69299,sb69299|7ac1a40a-3eeb-4dcb-ae0b-d82d6d76c6b5,home,دافيد فيا,58,2,102.3,27.7,0.156,Goal,1,Regular Play
+sb69299,sb69299|50c94221-9be7-4fd3-ab3c-1640ed54b89b,away,رونالدو,60,2,35.2,56.8,0.008,Off T,0,From Free Kick
+sb69299,sb69299|a3dec96d-b91e-4c1f-941a-265b9826845d,home,بوسكيتس,65,2,66.5,39.9,0.005,Off T,0,From Free Kick
+sb69299,sb69299|6ebd14ce-5161-4c9f-b237-978bd43e90f2,home,بويان,77,2,102.6,51.3,0.105,Saved,0,Regular Play
+sb69299,sb69299|fc4622c1-1d02-4e72-8c54-e7a9e778d6b8,home,جيفرين,91,2,111.4,38.4,0.273,Goal,1,Regular Play
+sb266424,sb266424|1808a841-0a47-4191-9eb7-c88d479602a5,away,نيمار,7,1,17.8,46.0,0.126,Off T,0,Regular Play
+sb266424,sb266424|5e8ba3db-ecc3-475f-890d-44f3993858d9,away,سواريز,11,1,13.9,33.4,0.259,Goal,1,Regular Play
+sb266424,sb266424|3f76c1aa-20ac-4750-9e6e-8c7436097461,away,راكيتيتش,14,1,17.3,26.8,0.046,Off T,0,Regular Play
+sb266424,sb266424|b457debb-7630-4292-bdd4-9378399db566,away,نيمار,24,1,24.2,57.8,0.011,Saved,0,From Free Kick
+sb266424,sb266424|bf67eabe-43b9-4a6b-ac61-b43c022d57c5,away,سيرجي روبرتو,25,1,11.1,39.7,0.13,Off T,0,Regular Play
+sb266424,sb266424|8bee3759-7e3c-4265-90fa-d60a9bb55174,home,خاميس,28,1,99.5,50.3,0.044,Saved,0,Regular Play
+sb266424,sb266424|490b73dd-de44-47cb-9d56-8f08fce4c157,away,نيمار,39,1,6.4,51.0,0.159,Goal,1,Regular Play
+sb266424,sb266424|b19c7985-7551-431f-820e-1a14c5e1dd7b,away,راكيتيتش,46,1,17.6,22.1,0.021,Blocked,0,Regular Play
+sb266424,sb266424|60acdf0b-e6d5-4f27-abdd-b424ac909dae,away,سواريز,47,1,6.2,43.3,0.395,Blocked,0,Regular Play
+sb266424,sb266424|6957e6c7-ebea-41ab-ab96-5deb8c970422,away,راكيتيتش,48,1,8.3,39.5,0.167,Blocked,0,Regular Play
+sb266424,sb266424|632d8edb-e7d8-4e67-af09-ddf6a85dde3a,home,مارسيلو,47,2,110.4,28.0,0.097,Off T,0,Regular Play
+sb266424,sb266424|68efa92b-0035-4176-beb6-f0ef4a0248d9,home,خاميس,48,2,96.1,37.1,0.042,Saved,0,From Throw In
+sb266424,sb266424|2559b462-166c-4a71-ba4c-1ddcb1be0997,home,بيل,49,2,90.6,54.5,0.011,Off T,0,From Corner
+sb266424,sb266424|109473c8-193c-4f93-bcd5-13dd1a7a1009,away,نيمار,52,2,24.4,46.6,0.078,Saved,0,From Free Kick
+sb266424,sb266424|11b23607-fae8-4943-9ce7-3bd43cffa04b,away,إنييستا,53,2,16.8,33.4,0.117,Goal,1,From Corner
+sb266424,sb266424|77ab8918-1a67-44c6-95cf-678132924832,away,سواريز,55,2,6.2,51.8,0.123,Off T,0,Regular Play
+sb266424,sb266424|0f0e7139-a0fe-446c-9cc7-0e70f9ab5844,home,إيسكو,59,2,98.1,33.8,0.036,Blocked,0,From Corner
+sb266424,sb266424|23622baf-ce23-477d-814c-80edf9322f55,home,كارفاخال,61,2,103.6,52.8,0.048,Blocked,0,Regular Play
+sb266424,sb266424|9d8bc2f5-4f19-476f-95eb-4b6d46b8463b,home,فاران,61,2,114.9,42.2,0.389,Saved,0,From Corner
+sb266424,sb266424|a67f7c1d-49e9-4d44-a193-03c45a53cbe7,away,ميسي,66,2,12.0,47.9,0.125,Blocked,0,From Throw In
+sb266424,sb266424|55b07cde-34d6-4cc9-b9f8-f01a7ed26c16,away,ميسي,68,2,31.4,44.5,0.027,Blocked,0,From Free Kick
+sb266424,sb266424|02a579e4-aadd-40fb-8c5f-3348a484e577,home,رونالدو,68,2,108.8,36.9,0.326,Saved,0,Regular Play
+sb266424,sb266424|80a89b3f-b2e5-40cb-b8b1-0120124541fc,away,سواريز,74,2,11.3,34.3,0.421,Goal,1,Regular Play
+sb266424,sb266424|3a915dce-22ca-4a5a-9ffc-d8f9e2eb768b,home,بنزيما,81,2,111.1,38.5,0.129,Saved,0,From Throw In
+sb266424,sb266424|9a8c65a5-e2aa-4cbf-a2c6-717ee0faabb2,away,منير,82,2,33.5,32.7,0.017,Off T,0,From Throw In
+sb266424,sb266424|2c72a7de-c4a3-4f3d-9ad8-7fe2047a3882,away,منير,86,2,12.3,38.1,0.116,Off T,0,From Free Kick
+sb266424,sb266424|9df5e983-9faa-4375-a724-fcbef0a46a3c,home,بنزيما,88,2,98.9,50.3,0.036,Blocked,0,Regular Play
+sb266424,sb266424|f31baa81-ba3f-4d2d-8a40-8f1c0be4c350,away,منير,89,2,13.8,39.6,0.14,Off T,0,From Keeper
+sb266424,sb266424|df47da0e-595a-446b-a1fa-a00239812868,home,رونالدو,89,2,113.4,41.3,0.125,Saved,0,From Corner
+sb266424,sb266424|ccf01f8a-e9bc-4cd1-8db8-267b7e57415d,home,مودريتش,89,2,98.1,38.5,0.05,Blocked,0,From Corner
+sb266424,sb266424|f11cba55-6e6f-41d9-be3b-42c15e859608,home,بيل,90,2,99.6,60.0,0.01,Saved,0,Regular Play
+sb267533,sb267533|bd061622-94bc-4367-b68b-ee4c2c7a10a4,home,إنييستا,17,1,101.2,33.2,0.078,Blocked,0,From Throw In
+sb267533,sb267533|af8c6c42-f167-4b84-8999-a3c8b2bc96e0,home,ميسي,19,1,94.3,24.6,0.034,Off T,0,From Free Kick
+sb267533,sb267533|afe00df7-fd1c-489f-beb6-11d698fd739b,home,راكيتيتش,19,1,103.1,42.0,0.063,Saved,0,Regular Play
+sb267533,sb267533|b8e767d0-d0cd-4e89-966d-aadd8c05a388,home,نيمار,22,1,102.4,28.5,0.049,Off T,0,Regular Play
+sb267533,sb267533|0cde2d0f-0092-409d-bcc1-9b34ac6f735e,away,رونالدو,25,1,15.2,25.1,0.06,Saved,0,Regular Play
+sb267533,sb267533|db233de3-cb91-4d70-9473-8357615b247d,away,بنزيما,25,1,15.6,43.3,0.086,Blocked,0,Regular Play
+sb267533,sb267533|73eca55a-9580-4b98-aa18-7f741f7f00c3,away,بيل,25,1,7.5,56.2,0.015,Off T,0,Regular Play
+sb267533,sb267533|da0b7e0b-1c4c-42a7-8f67-db07d0215e2c,away,رونالدو,30,1,28.0,43.5,0.05,Off T,0,From Free Kick
+sb267533,sb267533|33fa3c9a-db7e-4c7f-ba55-e00a9fc9c5db,home,داني ألفيش,42,1,102.1,57.2,0.026,Off T,0,Regular Play
+sb267533,sb267533|644849ae-5257-453b-95bd-65ecbe282d99,away,بنزيما,43,1,13.8,39.7,0.118,Off T,0,From Free Kick
+sb267533,sb267533|69795747-bca8-4f26-a2a0-b2191e6867da,home,راكيتيتش,46,1,94.2,51.2,0.022,Off T,0,From Free Kick
+sb267533,sb267533|7b790694-92ed-436c-9a56-a5638337861f,home,ميسي,48,2,91.1,43.1,0.045,Off T,0,From Free Kick
+sb267533,sb267533|1679515f-c2e7-40ca-9387-9001362d88e9,away,بنزيما,51,2,12.6,51.4,0.08,Blocked,0,Regular Play
+sb267533,sb267533|fa58bb85-a029-4f28-b694-0695416eaa18,away,مارسيلو,51,2,13.0,60.0,0.009,Blocked,0,Regular Play
+sb267533,sb267533|3d897bed-df86-4b36-ba5b-24954360f1e7,away,مودريتش,52,2,26.6,40.1,0.031,Blocked,0,From Corner
+sb267533,sb267533|7bfdf190-e08a-4680-9516-dd024a5c4506,away,بيل,52,2,12.2,43.6,0.178,Saved,0,From Corner
+sb267533,sb267533|1c818a8f-aabc-4ccb-9b26-0032deba1cb0,home,داني ألفيش,54,2,91.0,61.2,0.006,Blocked,0,Regular Play
+sb267533,sb267533|945c0c9e-3df6-4b38-a9e4-7f50cd0e87dd,home,ميسي,54,2,102.6,33.9,0.062,Saved,0,Regular Play
+sb267533,sb267533|78f4c78f-0fc8-493b-9321-bdad695a9d36,home,بيكيه,56,2,112.3,42.6,0.108,Goal,1,From Corner
+sb267533,sb267533|22e7db7e-ba18-4ab4-9b1e-a79bcb0ed896,away,بنزيما,62,2,6.5,38.0,0.343,Goal,1,Regular Play
+sb267533,sb267533|81a360ed-5b3b-4adc-989f-8d37c92a4a5c,away,بيل,68,2,20.0,37.4,0.094,Saved,0,From Throw In
+sb267533,sb267533|78178271-bfef-4706-a122-dc21d4b124f3,home,سواريز,70,2,103.6,42.0,0.046,Blocked,0,From Free Kick
+sb267533,sb267533|3d688983-eaa4-4cb4-a535-48cdcc27db0a,away,رونالدو,79,2,20.2,45.8,0.027,Blocked,0,From Counter
+sb267533,sb267533|c3b99c27-8c58-46a7-9163-7b63696fa9fc,home,سواريز,80,2,111.0,59.3,0.01,Off T,0,Regular Play
+sb267533,sb267533|56ff215d-2f67-452e-9406-8adafbcde601,away,رونالدو,82,2,16.3,57.8,0.025,Post,0,Regular Play
+sb267533,sb267533|b940e093-9ade-457e-988c-14c8d6b6f321,away,بيل,82,2,9.9,23.8,0.128,Saved,0,From Counter
+sb267533,sb267533|d61bd461-9ddc-466f-9a4e-8aec10e58183,home,سواريز,84,2,105.5,44.6,0.06,Off T,0,From Free Kick
+sb267533,sb267533|f6d1ebd3-8a50-4c05-bff0-17f75139b50b,away,رونالدو,85,2,4.2,49.9,0.077,Goal,1,Regular Play
+sb267533,sb267533|d847e843-7caf-439d-a969-edea4475a938,home,أردا توران,92,2,108.5,41.3,0.115,Blocked,0,From Throw In

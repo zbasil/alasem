@@ -1,0 +1,43 @@
+{
+ "data": "La Liga 2015/16, StatsBomb Open Data first halves + market-track pre-match forecasts",
+ "n": 380,
+ "baseline_rps": 0.13347826354220826,
+ "signals": {
+  "xg": {
+   "beta_by_fold": [
+    0.055,
+    0.044,
+    0.083,
+    0.105,
+    0.157
+   ],
+   "rps": 0.13337175446664135,
+   "vs_baseline": {
+    "diff": -0.00010650907556690773,
+    "ci_low": -0.0015363421978269777,
+    "ci_high": 0.001287355385505776,
+    "n": 380,
+    "clear": false
+   }
+  },
+  "sot": {
+   "beta_by_fold": [
+    0.123,
+    0.143,
+    0.153,
+    0.103,
+    0.153
+   ],
+   "rps": 0.13289502322653654,
+   "vs_baseline": {
+    "diff": -0.0005832403156716987,
+    "ci_low": -0.002154513030324098,
+    "ci_high": 0.0010160185189004483,
+    "n": 380,
+    "clear": false
+   }
+  }
+ },
+ "decision": "not adopted: no clear improvement on 380 matches (one season of event data); re-test when more event data exist",
+ "decision_ar": "ما ينضاف: ماكو تحسن واضح على 380 مباراة (موسم واحد بيانات أحداث)؛ ينعاد الاختبار لما تتوفر بيانات أكثر"
+}

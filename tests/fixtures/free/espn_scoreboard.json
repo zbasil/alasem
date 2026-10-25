@@ -1,0 +1,15 @@
+{"leagues": [{"abbreviation": "ENG.1"}], "events": [
+ {"id": "740001", "date": "2026-10-24T16:30Z", "name": "Tottenham Hotspur at Chelsea",
+  "status": {"clock": 2940.0, "displayClock": "49'", "type": {"id": "2", "name": "STATUS_SECOND_HALF", "state": "in", "completed": false, "description": "Second Half", "detail": "49'", "shortDetail": "49'"}},
+  "competitions": [{"id": "740001", "competitors": [
+    {"id": "363", "homeAway": "home", "score": "1", "team": {"id": "363", "abbreviation": "CHE", "displayName": "Chelsea"}},
+    {"id": "367", "homeAway": "away", "score": "0", "team": {"id": "367", "abbreviation": "TOT", "displayName": "Tottenham Hotspur"}}],
+   "details": [{"type": {"id": "70", "text": "Goal"}, "clock": {"displayValue": "23'"}, "team": {"id": "363"}, "scoringPlay": true,
+                "athletesInvolved": [{"displayName": "Cole Palmer"}]},
+               {"type": {"id": "94", "text": "Yellow Card"}, "clock": {"displayValue": "31'"}, "team": {"id": "367"}, "yellowCard": true,
+                "athletesInvolved": [{"displayName": "Some Player"}]}]}]},
+ {"id": "740002", "date": "2026-10-25T14:00Z", "name": "Brighton at Liverpool",
+  "status": {"displayClock": "0'", "type": {"state": "pre", "completed": false, "detail": "Sun, October 25th at 10:00 AM EDT", "shortDetail": "10/25 - 10:00 AM EDT"}},
+  "competitions": [{"competitors": [
+    {"homeAway": "home", "score": "0", "team": {"id": "364", "abbreviation": "LIV", "displayName": "Liverpool"}},
+    {"homeAway": "away", "score": "0", "team": {"id": "331", "abbreviation": "BHA", "displayName": "Brighton & Hove Albion"}}], "details": []}]}]}

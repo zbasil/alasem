@@ -1,0 +1,7 @@
+name = "zsc-live-proxy"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+[vars]
+# comma-separated origins allowed to read the proxy, e.g. "https://zbasil.github.io"; empty = any origin
+ALLOWED_ORIGINS = "https://zbasil.github.io"

@@ -1,0 +1,9 @@
+start rps=0.19439 DCConfig(xi=0.005, prior_sd=0.7, beta_sot=0.0, beta_mkt=0.9, promoted_attack=-0.19, promoted_defence=-0.13, seasons_back=2, sot_k=None, rating_scale=1.0)
+  improved rps=0.19423 with rating_scale=1.05
+  improved rps=0.19417 with rating_scale=1.1
+  improved rps=0.19414 with xi=0.006
+best on tuning seasons: rps=0.19414 DCConfig(xi=0.006, prior_sd=0.7, beta_sot=0.0, beta_mkt=0.9, promoted_attack=-0.19, promoted_defence=-0.13, seasons_back=2, sot_k=None, rating_scale=1.1)  (370s)
+TEST goals_only: n=1140, rps=0.19615, logloss=0.97962, brier=0.58280, n_mkt=1140, rps_model_on_mkt=0.19615, rps_mkt=0.18933, logloss_model_on_mkt=0.97962, logloss_mkt=0.95536, rps_base_rates=0.22526
+TEST goals_plus_shots: n=1140, rps=0.19615, logloss=0.97962, brier=0.58280, n_mkt=1140, rps_model_on_mkt=0.19615, rps_mkt=0.18933, logloss_model_on_mkt=0.97962, logloss_mkt=0.95536, rps_base_rates=0.22526
+TEST final_model: n=1140, rps=0.19243, logloss=0.96617, brier=0.57294, n_mkt=1140, rps_model_on_mkt=0.19243, rps_mkt=0.18933, logloss_model_on_mkt=0.96617, logloss_mkt=0.95536, rps_base_rates=0.22526
+done in 376s

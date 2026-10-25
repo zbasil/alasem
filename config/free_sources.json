@@ -1,0 +1,18 @@
+{
+  "_note": "Free sources run by scripts/free_update.py on your computer or GitHub Actions (a Claude link cannot reach them).",
+  "espn": {"enabled": true, "competitions": ["ESP1", "ENG1", "UCL"]},
+  "fpl": {"enabled": true},
+  "understat": {"enabled": true, "competitions": ["ESP1", "ENG1"], "season": 2026},
+  "rss": {
+    "enabled": true,
+    "_note": "Add feeds you trust (title + source + link are shown, never the article). Examples to check yourself:",
+    "feeds": [],
+    "examples": [
+      {"name": "BBC Sport Football (EN)", "url": "https://feeds.bbci.co.uk/sport/football/rss.xml"},
+      {"name": "BBC Arabic (AR, general)", "url": "https://feeds.bbci.co.uk/arabic/rss.xml"},
+      {"name": "ESPN FC (EN)", "url": "https://www.espn.com/espn/rss/soccer/news"}
+    ]
+  },
+  "ntfy": {"enabled": false, "topic_env": "NTFY_TOPIC", "server": "https://ntfy.sh", "fav_teams": ["BAR"],
+           "events": ["goal", "red_card", "full_time"]}
+}

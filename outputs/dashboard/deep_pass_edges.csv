@@ -1,0 +1,198 @@
+match_id,row_id,side,a_ar,b_ar,passes,x1,y1,x2,y2
+sb69299,sb69299|home|Andrés Iniesta Luján|Carles Puyol i Saforcada,home,إنييستا,بويول,4,65.8,27.7,43.9,43.3
+sb69299,sb69299|home|Andrés Iniesta Luján|Daniel Alves da Silva,home,إنييستا,داني ألفيش,3,65.8,27.7,62.8,67.6
+sb69299,sb69299|home|Andrés Iniesta Luján|David Villa Sánchez,home,إنييستا,دافيد فيا,14,65.8,27.7,76.4,13.6
+sb69299,sb69299|home|Andrés Iniesta Luján|Eric-Sylvain Bilal Abidal,home,إنييستا,أبيدال,24,65.8,27.7,61.8,9.7
+sb69299,sb69299|home|Andrés Iniesta Luján|Gerard Piqué Bernabéu,home,إنييستا,بيكيه,10,65.8,27.7,42.6,41.0
+sb69299,sb69299|home|Andrés Iniesta Luján|Lionel Andrés Messi Cuccittini,home,إنييستا,ميسي,11,65.8,27.7,71.4,45.0
+sb69299,sb69299|home|Andrés Iniesta Luján|Pedro Eliezer Rodríguez Ledesma,home,إنييستا,بيدرو,8,65.8,27.7,75.5,62.4
+sb69299,sb69299|home|Andrés Iniesta Luján|Sergio Busquets i Burgos,home,إنييستا,بوسكيتس,24,65.8,27.7,57.0,40.0
+sb69299,sb69299|home|Andrés Iniesta Luján|Xavier Hernández Creus,home,إنييستا,تشافي,24,65.8,27.7,65.5,47.9
+sb69299,sb69299|home|Carles Puyol i Saforcada|Daniel Alves da Silva,home,بويول,داني ألفيش,3,43.9,43.3,62.8,67.6
+sb69299,sb69299|home|Carles Puyol i Saforcada|Eric-Sylvain Bilal Abidal,home,بويول,أبيدال,6,43.9,43.3,61.8,9.7
+sb69299,sb69299|home|Carles Puyol i Saforcada|Gerard Piqué Bernabéu,home,بويول,بيكيه,16,43.9,43.3,42.6,41.0
+sb69299,sb69299|home|Carles Puyol i Saforcada|Sergio Busquets i Burgos,home,بويول,بوسكيتس,10,43.9,43.3,57.0,40.0
+sb69299,sb69299|home|Carles Puyol i Saforcada|Víctor Valdés Arribas,home,بويول,فالديس,5,43.9,43.3,13.2,39.6
+sb69299,sb69299|home|Carles Puyol i Saforcada|Xavier Hernández Creus,home,بويول,تشافي,8,43.9,43.3,65.5,47.9
+sb69299,sb69299|home|Daniel Alves da Silva|Gerard Piqué Bernabéu,home,داني ألفيش,بيكيه,3,62.8,67.6,42.6,41.0
+sb69299,sb69299|home|Daniel Alves da Silva|Lionel Andrés Messi Cuccittini,home,داني ألفيش,ميسي,16,62.8,67.6,71.4,45.0
+sb69299,sb69299|home|Daniel Alves da Silva|Pedro Eliezer Rodríguez Ledesma,home,داني ألفيش,بيدرو,16,62.8,67.6,75.5,62.4
+sb69299,sb69299|home|Daniel Alves da Silva|Sergio Busquets i Burgos,home,داني ألفيش,بوسكيتس,17,62.8,67.6,57.0,40.0
+sb69299,sb69299|home|Daniel Alves da Silva|Xavier Hernández Creus,home,داني ألفيش,تشافي,34,62.8,67.6,65.5,47.9
+sb69299,sb69299|home|David Villa Sánchez|Eric-Sylvain Bilal Abidal,home,دافيد فيا,أبيدال,17,76.4,13.6,61.8,9.7
+sb69299,sb69299|home|David Villa Sánchez|Gerard Piqué Bernabéu,home,دافيد فيا,بيكيه,4,76.4,13.6,42.6,41.0
+sb69299,sb69299|home|David Villa Sánchez|Lionel Andrés Messi Cuccittini,home,دافيد فيا,ميسي,8,76.4,13.6,71.4,45.0
+sb69299,sb69299|home|David Villa Sánchez|Pedro Eliezer Rodríguez Ledesma,home,دافيد فيا,بيدرو,4,76.4,13.6,75.5,62.4
+sb69299,sb69299|home|David Villa Sánchez|Sergio Busquets i Burgos,home,دافيد فيا,بوسكيتس,4,76.4,13.6,57.0,40.0
+sb69299,sb69299|home|David Villa Sánchez|Xavier Hernández Creus,home,دافيد فيا,تشافي,9,76.4,13.6,65.5,47.9
+sb69299,sb69299|home|Eric-Sylvain Bilal Abidal|Gerard Piqué Bernabéu,home,أبيدال,بيكيه,15,61.8,9.7,42.6,41.0
+sb69299,sb69299|home|Eric-Sylvain Bilal Abidal|Lionel Andrés Messi Cuccittini,home,أبيدال,ميسي,7,61.8,9.7,71.4,45.0
+sb69299,sb69299|home|Eric-Sylvain Bilal Abidal|Sergio Busquets i Burgos,home,أبيدال,بوسكيتس,10,61.8,9.7,57.0,40.0
+sb69299,sb69299|home|Eric-Sylvain Bilal Abidal|Víctor Valdés Arribas,home,أبيدال,فالديس,4,61.8,9.7,13.2,39.6
+sb69299,sb69299|home|Eric-Sylvain Bilal Abidal|Xavier Hernández Creus,home,أبيدال,تشافي,6,61.8,9.7,65.5,47.9
+sb69299,sb69299|home|Gerard Piqué Bernabéu|Lionel Andrés Messi Cuccittini,home,بيكيه,ميسي,5,42.6,41.0,71.4,45.0
+sb69299,sb69299|home|Gerard Piqué Bernabéu|Sergio Busquets i Burgos,home,بيكيه,بوسكيتس,22,42.6,41.0,57.0,40.0
+sb69299,sb69299|home|Gerard Piqué Bernabéu|Víctor Valdés Arribas,home,بيكيه,فالديس,15,42.6,41.0,13.2,39.6
+sb69299,sb69299|home|Gerard Piqué Bernabéu|Xavier Hernández Creus,home,بيكيه,تشافي,22,42.6,41.0,65.5,47.9
+sb69299,sb69299|home|Lionel Andrés Messi Cuccittini|Pedro Eliezer Rodríguez Ledesma,home,ميسي,بيدرو,8,71.4,45.0,75.5,62.4
+sb69299,sb69299|home|Lionel Andrés Messi Cuccittini|Sergio Busquets i Burgos,home,ميسي,بوسكيتس,16,71.4,45.0,57.0,40.0
+sb69299,sb69299|home|Lionel Andrés Messi Cuccittini|Xavier Hernández Creus,home,ميسي,تشافي,33,71.4,45.0,65.5,47.9
+sb69299,sb69299|home|Pedro Eliezer Rodríguez Ledesma|Sergio Busquets i Burgos,home,بيدرو,بوسكيتس,7,75.5,62.4,57.0,40.0
+sb69299,sb69299|home|Pedro Eliezer Rodríguez Ledesma|Xavier Hernández Creus,home,بيدرو,تشافي,24,75.5,62.4,65.5,47.9
+sb69299,sb69299|home|Sergio Busquets i Burgos|Víctor Valdés Arribas,home,بوسكيتس,فالديس,4,57.0,40.0,13.2,39.6
+sb69299,sb69299|home|Sergio Busquets i Burgos|Xavier Hernández Creus,home,بوسكيتس,تشافي,43,57.0,40.0,65.5,47.9
+sb69299,sb69299|away|Cristiano Ronaldo dos Santos Aveiro|Karim Benzema,away,رونالدو,بنزيما,6,82.4,35.3,75.9,31.2
+sb69299,sb69299|away|Cristiano Ronaldo dos Santos Aveiro|Mesut Özil,away,رونالدو,أوزيل,8,82.4,35.3,72.3,28.0
+sb69299,sb69299|away|Cristiano Ronaldo dos Santos Aveiro|Sergio Ramos García,away,رونالدو,راموس,4,82.4,35.3,52.6,67.0
+sb69299,sb69299|away|Cristiano Ronaldo dos Santos Aveiro|Xabier Alonso Olano,away,رونالدو,تشابي ألونسو,4,82.4,35.3,55.0,29.8
+sb69299,sb69299|away|Cristiano Ronaldo dos Santos Aveiro|Ángel Fabián Di María Hernández,away,رونالدو,دي ماريا,4,82.4,35.3,75.6,14.8
+sb69299,sb69299|away|Iker Casillas Fernández|Kléper Laveran Lima Ferreira,away,كاسياس,بيبي,3,15.8,39.3,44.8,55.8
+sb69299,sb69299|away|Iker Casillas Fernández|Ricardo Alberto Silveira de Carvalho,away,كاسياس,كارفاليو,3,15.8,39.3,46.8,27.4
+sb69299,sb69299|away|Karim Benzema|Marcelo Vieira da Silva Júnior,away,بنزيما,مارسيلو,3,75.9,31.2,50.9,15.0
+sb69299,sb69299|away|Karim Benzema|Mesut Özil,away,بنزيما,أوزيل,5,75.9,31.2,72.3,28.0
+sb69299,sb69299|away|Kléper Laveran Lima Ferreira|Marcelo Vieira da Silva Júnior,away,بيبي,مارسيلو,3,44.8,55.8,50.9,15.0
+sb69299,sb69299|away|Kléper Laveran Lima Ferreira|Ricardo Alberto Silveira de Carvalho,away,بيبي,كارفاليو,3,44.8,55.8,46.8,27.4
+sb69299,sb69299|away|Kléper Laveran Lima Ferreira|Sergio Ramos García,away,بيبي,راموس,5,44.8,55.8,52.6,67.0
+sb69299,sb69299|away|Kléper Laveran Lima Ferreira|Xabier Alonso Olano,away,بيبي,تشابي ألونسو,3,44.8,55.8,55.0,29.8
+sb69299,sb69299|away|Marcelo Vieira da Silva Júnior|Mesut Özil,away,مارسيلو,أوزيل,4,50.9,15.0,72.3,28.0
+sb69299,sb69299|away|Marcelo Vieira da Silva Júnior|Xabier Alonso Olano,away,مارسيلو,تشابي ألونسو,5,50.9,15.0,55.0,29.8
+sb69299,sb69299|away|Marcelo Vieira da Silva Júnior|Ángel Fabián Di María Hernández,away,مارسيلو,دي ماريا,6,50.9,15.0,75.6,14.8
+sb69299,sb69299|away|Mesut Özil|Xabier Alonso Olano,away,أوزيل,تشابي ألونسو,9,72.3,28.0,55.0,29.8
+sb69299,sb69299|away|Mesut Özil|Ángel Fabián Di María Hernández,away,أوزيل,دي ماريا,3,72.3,28.0,75.6,14.8
+sb69299,sb69299|away|Ricardo Alberto Silveira de Carvalho|Ángel Fabián Di María Hernández,away,كارفاليو,دي ماريا,3,46.8,27.4,75.6,14.8
+sb69299,sb69299|away|Sami Khedira|Sergio Ramos García,away,خضيرة,راموس,5,49.2,52.5,52.6,67.0
+sb69299,sb69299|away|Sergio Ramos García|Xabier Alonso Olano,away,راموس,تشابي ألونسو,3,52.6,67.0,55.0,29.8
+sb69299,sb69299|away|Xabier Alonso Olano|Ángel Fabián Di María Hernández,away,تشابي ألونسو,دي ماريا,4,55.0,29.8,75.6,14.8
+sb266424,sb266424|home|Cristiano Ronaldo dos Santos Aveiro|James David Rodríguez Rubio,home,رونالدو,خاميس,3,70.5,23.3,73.9,53.8
+sb266424,sb266424|home|Cristiano Ronaldo dos Santos Aveiro|Karim Benzema,home,رونالدو,بنزيما,3,70.5,23.3,70.5,39.7
+sb266424,sb266424|home|Cristiano Ronaldo dos Santos Aveiro|Luka Modrić,home,رونالدو,مودريتش,5,70.5,23.3,63.2,47.1
+sb266424,sb266424|home|Cristiano Ronaldo dos Santos Aveiro|Marcelo Vieira da Silva Júnior,home,رونالدو,مارسيلو,6,70.5,23.3,63.5,10.8
+sb266424,sb266424|home|Cristiano Ronaldo dos Santos Aveiro|Toni Kroos,home,رونالدو,كروس,6,70.5,23.3,61.4,33.8
+sb266424,sb266424|home|Danilo Luiz da Silva|Gareth Frank Bale,home,دانيلو,بيل,3,61.9,66.9,82.4,46.7
+sb266424,sb266424|home|Danilo Luiz da Silva|James David Rodríguez Rubio,home,دانيلو,خاميس,8,61.9,66.9,73.9,53.8
+sb266424,sb266424|home|Danilo Luiz da Silva|Keylor Navas Gamboa,home,دانيلو,نافاس,3,61.9,66.9,11.5,40.4
+sb266424,sb266424|home|Danilo Luiz da Silva|Luka Modrić,home,دانيلو,مودريتش,11,61.9,66.9,63.2,47.1
+sb266424,sb266424|home|Danilo Luiz da Silva|Raphaël Varane,home,دانيلو,فاران,3,61.9,66.9,43.5,51.3
+sb266424,sb266424|home|Danilo Luiz da Silva|Toni Kroos,home,دانيلو,كروس,11,61.9,66.9,61.4,33.8
+sb266424,sb266424|home|Gareth Frank Bale|James David Rodríguez Rubio,home,بيل,خاميس,8,82.4,46.7,73.9,53.8
+sb266424,sb266424|home|Gareth Frank Bale|Karim Benzema,home,بيل,بنزيما,6,82.4,46.7,70.5,39.7
+sb266424,sb266424|home|Gareth Frank Bale|Luka Modrić,home,بيل,مودريتش,6,82.4,46.7,63.2,47.1
+sb266424,sb266424|home|Gareth Frank Bale|Marcelo Vieira da Silva Júnior,home,بيل,مارسيلو,3,82.4,46.7,63.5,10.8
+sb266424,sb266424|home|Gareth Frank Bale|Raphaël Varane,home,بيل,فاران,3,82.4,46.7,43.5,51.3
+sb266424,sb266424|home|James David Rodríguez Rubio|Karim Benzema,home,خاميس,بنزيما,4,73.9,53.8,70.5,39.7
+sb266424,sb266424|home|James David Rodríguez Rubio|Luka Modrić,home,خاميس,مودريتش,7,73.9,53.8,63.2,47.1
+sb266424,sb266424|home|James David Rodríguez Rubio|Toni Kroos,home,خاميس,كروس,11,73.9,53.8,61.4,33.8
+sb266424,sb266424|home|Keylor Navas Gamboa|Raphaël Varane,home,نافاس,فاران,8,11.5,40.4,43.5,51.3
+sb266424,sb266424|home|Keylor Navas Gamboa|Sergio Ramos García,home,نافاس,راموس,6,11.5,40.4,44.8,19.3
+sb266424,sb266424|home|Luka Modrić|Marcelo Vieira da Silva Júnior,home,مودريتش,مارسيلو,3,63.2,47.1,63.5,10.8
+sb266424,sb266424|home|Luka Modrić|Raphaël Varane,home,مودريتش,فاران,10,63.2,47.1,43.5,51.3
+sb266424,sb266424|home|Luka Modrić|Sergio Ramos García,home,مودريتش,راموس,3,63.2,47.1,44.8,19.3
+sb266424,sb266424|home|Luka Modrić|Toni Kroos,home,مودريتش,كروس,17,63.2,47.1,61.4,33.8
+sb266424,sb266424|home|Marcelo Vieira da Silva Júnior|Sergio Ramos García,home,مارسيلو,راموس,11,63.5,10.8,44.8,19.3
+sb266424,sb266424|home|Marcelo Vieira da Silva Júnior|Toni Kroos,home,مارسيلو,كروس,14,63.5,10.8,61.4,33.8
+sb266424,sb266424|home|Raphaël Varane|Sergio Ramos García,home,فاران,راموس,7,43.5,51.3,44.8,19.3
+sb266424,sb266424|home|Raphaël Varane|Toni Kroos,home,فاران,كروس,5,43.5,51.3,61.4,33.8
+sb266424,sb266424|home|Sergio Ramos García|Toni Kroos,home,راموس,كروس,11,44.8,19.3,61.4,33.8
+sb266424,sb266424|away|Andrés Iniesta Luján|Gerard Piqué Bernabéu,away,إنييستا,بيكيه,4,63.8,25.8,42.5,53.5
+sb266424,sb266424|away|Andrés Iniesta Luján|Ivan Rakitić,away,إنييستا,راكيتيتش,5,63.8,25.8,63.6,60.7
+sb266424,sb266424|away|Andrés Iniesta Luján|Javier Alejandro Mascherano,away,إنييستا,ماسكيرانو,7,63.8,25.8,39.4,27.4
+sb266424,sb266424|away|Andrés Iniesta Luján|Jordi Alba Ramos,away,إنييستا,جوردي ألبا,9,63.8,25.8,50.4,10.8
+sb266424,sb266424|away|Andrés Iniesta Luján|Neymar da Silva Santos Junior,away,إنييستا,نيمار,7,63.8,25.8,61.1,9.5
+sb266424,sb266424|away|Andrés Iniesta Luján|Sergio Busquets i Burgos,away,إنييستا,بوسكيتس,10,63.8,25.8,54.9,43.0
+sb266424,sb266424|away|Claudio Andrés Bravo Muñoz|Gerard Piqué Bernabéu,away,برافو,بيكيه,6,12.5,34.4,42.5,53.5
+sb266424,sb266424|away|Claudio Andrés Bravo Muñoz|Javier Alejandro Mascherano,away,برافو,ماسكيرانو,4,12.5,34.4,39.4,27.4
+sb266424,sb266424|away|Daniel Alves da Silva|Gerard Piqué Bernabéu,away,داني ألفيش,بيكيه,3,58.5,68.2,42.5,53.5
+sb266424,sb266424|away|Daniel Alves da Silva|Ivan Rakitić,away,داني ألفيش,راكيتيتش,16,58.5,68.2,63.6,60.7
+sb266424,sb266424|away|Daniel Alves da Silva|Luis Alberto Suárez Díaz,away,داني ألفيش,سواريز,3,58.5,68.2,63.7,38.6
+sb266424,sb266424|away|Daniel Alves da Silva|Sergi Roberto Carnicer,away,داني ألفيش,سيرجي روبرتو,10,58.5,68.2,74.7,65.4
+sb266424,sb266424|away|Daniel Alves da Silva|Sergio Busquets i Burgos,away,داني ألفيش,بوسكيتس,7,58.5,68.2,54.9,43.0
+sb266424,sb266424|away|Gerard Piqué Bernabéu|Ivan Rakitić,away,بيكيه,راكيتيتش,6,42.5,53.5,63.6,60.7
+sb266424,sb266424|away|Gerard Piqué Bernabéu|Javier Alejandro Mascherano,away,بيكيه,ماسكيرانو,5,42.5,53.5,39.4,27.4
+sb266424,sb266424|away|Gerard Piqué Bernabéu|Jordi Alba Ramos,away,بيكيه,جوردي ألبا,3,42.5,53.5,50.4,10.8
+sb266424,sb266424|away|Gerard Piqué Bernabéu|Sergi Roberto Carnicer,away,بيكيه,سيرجي روبرتو,8,42.5,53.5,74.7,65.4
+sb266424,sb266424|away|Gerard Piqué Bernabéu|Sergio Busquets i Burgos,away,بيكيه,بوسكيتس,5,42.5,53.5,54.9,43.0
+sb266424,sb266424|away|Ivan Rakitić|Sergi Roberto Carnicer,away,راكيتيتش,سيرجي روبرتو,9,63.6,60.7,74.7,65.4
+sb266424,sb266424|away|Ivan Rakitić|Sergio Busquets i Burgos,away,راكيتيتش,بوسكيتس,5,63.6,60.7,54.9,43.0
+sb266424,sb266424|away|Javier Alejandro Mascherano|Jordi Alba Ramos,away,ماسكيرانو,جوردي ألبا,13,39.4,27.4,50.4,10.8
+sb266424,sb266424|away|Javier Alejandro Mascherano|Sergio Busquets i Burgos,away,ماسكيرانو,بوسكيتس,3,39.4,27.4,54.9,43.0
+sb266424,sb266424|away|Jordi Alba Ramos|Luis Alberto Suárez Díaz,away,جوردي ألبا,سواريز,4,50.4,10.8,63.7,38.6
+sb266424,sb266424|away|Jordi Alba Ramos|Neymar da Silva Santos Junior,away,جوردي ألبا,نيمار,14,50.4,10.8,61.1,9.5
+sb266424,sb266424|away|Jordi Alba Ramos|Sergio Busquets i Burgos,away,جوردي ألبا,بوسكيتس,7,50.4,10.8,54.9,43.0
+sb266424,sb266424|away|Luis Alberto Suárez Díaz|Neymar da Silva Santos Junior,away,سواريز,نيمار,4,63.7,38.6,61.1,9.5
+sb266424,sb266424|away|Sergi Roberto Carnicer|Sergio Busquets i Burgos,away,سيرجي روبرتو,بوسكيتس,3,74.7,65.4,54.9,43.0
+sb267533,sb267533|home|Andrés Iniesta Luján|Daniel Alves da Silva,home,إنييستا,داني ألفيش,5,65.6,21.6,64.3,68.8
+sb267533,sb267533|home|Andrés Iniesta Luján|Gerard Piqué Bernabéu,home,إنييستا,بيكيه,6,65.6,21.6,46.7,50.4
+sb267533,sb267533|home|Andrés Iniesta Luján|Ivan Rakitić,home,إنييستا,راكيتيتش,3,65.6,21.6,67.4,57.5
+sb267533,sb267533|home|Andrés Iniesta Luján|Javier Alejandro Mascherano,home,إنييستا,ماسكيرانو,11,65.6,21.6,48.6,26.4
+sb267533,sb267533|home|Andrés Iniesta Luján|Jordi Alba Ramos,home,إنييستا,جوردي ألبا,33,65.6,21.6,61.3,11.8
+sb267533,sb267533|home|Andrés Iniesta Luján|Lionel Andrés Messi Cuccittini,home,إنييستا,ميسي,15,65.6,21.6,70.4,43.9
+sb267533,sb267533|home|Andrés Iniesta Luján|Luis Alberto Suárez Díaz,home,إنييستا,سواريز,3,65.6,21.6,83.1,43.0
+sb267533,sb267533|home|Andrés Iniesta Luján|Neymar da Silva Santos Junior,home,إنييستا,نيمار,18,65.6,21.6,84.6,22.5
+sb267533,sb267533|home|Andrés Iniesta Luján|Sergio Busquets i Burgos,home,إنييستا,بوسكيتس,17,65.6,21.6,58.7,38.4
+sb267533,sb267533|home|Claudio Andrés Bravo Muñoz|Daniel Alves da Silva,home,برافو,داني ألفيش,3,18.5,36.3,64.3,68.8
+sb267533,sb267533|home|Claudio Andrés Bravo Muñoz|Gerard Piqué Bernabéu,home,برافو,بيكيه,5,18.5,36.3,46.7,50.4
+sb267533,sb267533|home|Claudio Andrés Bravo Muñoz|Javier Alejandro Mascherano,home,برافو,ماسكيرانو,3,18.5,36.3,48.6,26.4
+sb267533,sb267533|home|Claudio Andrés Bravo Muñoz|Jordi Alba Ramos,home,برافو,جوردي ألبا,5,18.5,36.3,61.3,11.8
+sb267533,sb267533|home|Claudio Andrés Bravo Muñoz|Sergio Busquets i Burgos,home,برافو,بوسكيتس,3,18.5,36.3,58.7,38.4
+sb267533,sb267533|home|Daniel Alves da Silva|Gerard Piqué Bernabéu,home,داني ألفيش,بيكيه,8,64.3,68.8,46.7,50.4
+sb267533,sb267533|home|Daniel Alves da Silva|Ivan Rakitić,home,داني ألفيش,راكيتيتش,27,64.3,68.8,67.4,57.5
+sb267533,sb267533|home|Daniel Alves da Silva|Javier Alejandro Mascherano,home,داني ألفيش,ماسكيرانو,6,64.3,68.8,48.6,26.4
+sb267533,sb267533|home|Daniel Alves da Silva|Jordi Alba Ramos,home,داني ألفيش,جوردي ألبا,3,64.3,68.8,61.3,11.8
+sb267533,sb267533|home|Daniel Alves da Silva|Lionel Andrés Messi Cuccittini,home,داني ألفيش,ميسي,22,64.3,68.8,70.4,43.9
+sb267533,sb267533|home|Daniel Alves da Silva|Luis Alberto Suárez Díaz,home,داني ألفيش,سواريز,5,64.3,68.8,83.1,43.0
+sb267533,sb267533|home|Daniel Alves da Silva|Neymar da Silva Santos Junior,home,داني ألفيش,نيمار,3,64.3,68.8,84.6,22.5
+sb267533,sb267533|home|Daniel Alves da Silva|Sergio Busquets i Burgos,home,داني ألفيش,بوسكيتس,15,64.3,68.8,58.7,38.4
+sb267533,sb267533|home|Gerard Piqué Bernabéu|Ivan Rakitić,home,بيكيه,راكيتيتش,15,46.7,50.4,67.4,57.5
+sb267533,sb267533|home|Gerard Piqué Bernabéu|Javier Alejandro Mascherano,home,بيكيه,ماسكيرانو,45,46.7,50.4,48.6,26.4
+sb267533,sb267533|home|Gerard Piqué Bernabéu|Jordi Alba Ramos,home,بيكيه,جوردي ألبا,4,46.7,50.4,61.3,11.8
+sb267533,sb267533|home|Gerard Piqué Bernabéu|Lionel Andrés Messi Cuccittini,home,بيكيه,ميسي,14,46.7,50.4,70.4,43.9
+sb267533,sb267533|home|Gerard Piqué Bernabéu|Luis Alberto Suárez Díaz,home,بيكيه,سواريز,3,46.7,50.4,83.1,43.0
+sb267533,sb267533|home|Gerard Piqué Bernabéu|Sergio Busquets i Burgos,home,بيكيه,بوسكيتس,21,46.7,50.4,58.7,38.4
+sb267533,sb267533|home|Ivan Rakitić|Javier Alejandro Mascherano,home,راكيتيتش,ماسكيرانو,7,67.4,57.5,48.6,26.4
+sb267533,sb267533|home|Ivan Rakitić|Lionel Andrés Messi Cuccittini,home,راكيتيتش,ميسي,12,67.4,57.5,70.4,43.9
+sb267533,sb267533|home|Ivan Rakitić|Luis Alberto Suárez Díaz,home,راكيتيتش,سواريز,5,67.4,57.5,83.1,43.0
+sb267533,sb267533|home|Ivan Rakitić|Neymar da Silva Santos Junior,home,راكيتيتش,نيمار,4,67.4,57.5,84.6,22.5
+sb267533,sb267533|home|Ivan Rakitić|Sergio Busquets i Burgos,home,راكيتيتش,بوسكيتس,19,67.4,57.5,58.7,38.4
+sb267533,sb267533|home|Javier Alejandro Mascherano|Jordi Alba Ramos,home,ماسكيرانو,جوردي ألبا,24,48.6,26.4,61.3,11.8
+sb267533,sb267533|home|Javier Alejandro Mascherano|Neymar da Silva Santos Junior,home,ماسكيرانو,نيمار,5,48.6,26.4,84.6,22.5
+sb267533,sb267533|home|Javier Alejandro Mascherano|Sergio Busquets i Burgos,home,ماسكيرانو,بوسكيتس,18,48.6,26.4,58.7,38.4
+sb267533,sb267533|home|Jordi Alba Ramos|Lionel Andrés Messi Cuccittini,home,جوردي ألبا,ميسي,12,61.3,11.8,70.4,43.9
+sb267533,sb267533|home|Jordi Alba Ramos|Neymar da Silva Santos Junior,home,جوردي ألبا,نيمار,21,61.3,11.8,84.6,22.5
+sb267533,sb267533|home|Jordi Alba Ramos|Sergio Busquets i Burgos,home,جوردي ألبا,بوسكيتس,13,61.3,11.8,58.7,38.4
+sb267533,sb267533|home|Lionel Andrés Messi Cuccittini|Luis Alberto Suárez Díaz,home,ميسي,سواريز,12,70.4,43.9,83.1,43.0
+sb267533,sb267533|home|Lionel Andrés Messi Cuccittini|Neymar da Silva Santos Junior,home,ميسي,نيمار,14,70.4,43.9,84.6,22.5
+sb267533,sb267533|home|Lionel Andrés Messi Cuccittini|Sergio Busquets i Burgos,home,ميسي,بوسكيتس,30,70.4,43.9,58.7,38.4
+sb267533,sb267533|home|Luis Alberto Suárez Díaz|Neymar da Silva Santos Junior,home,سواريز,نيمار,6,83.1,43.0,84.6,22.5
+sb267533,sb267533|home|Neymar da Silva Santos Junior|Sergio Busquets i Burgos,home,نيمار,بوسكيتس,4,84.6,22.5,58.7,38.4
+sb267533,sb267533|away|Carlos Henrique Casimiro|Cristiano Ronaldo dos Santos Aveiro,away,كاسيميرو,رونالدو,3,47.7,39.0,62.8,22.6
+sb267533,sb267533|away|Carlos Henrique Casimiro|Daniel Carvajal Ramos,away,كاسيميرو,كارفاخال,4,47.7,39.0,54.6,68.3
+sb267533,sb267533|away|Carlos Henrique Casimiro|Karim Benzema,away,كاسيميرو,بنزيما,3,47.7,39.0,70.6,33.4
+sb267533,sb267533|away|Carlos Henrique Casimiro|Kléper Laveran Lima Ferreira,away,كاسيميرو,بيبي,5,47.7,39.0,41.5,58.2
+sb267533,sb267533|away|Carlos Henrique Casimiro|Luka Modrić,away,كاسيميرو,مودريتش,11,47.7,39.0,57.9,54.9
+sb267533,sb267533|away|Carlos Henrique Casimiro|Marcelo Vieira da Silva Júnior,away,كاسيميرو,مارسيلو,9,47.7,39.0,54.1,17.9
+sb267533,sb267533|away|Carlos Henrique Casimiro|Sergio Ramos García,away,كاسيميرو,راموس,5,47.7,39.0,32.7,19.2
+sb267533,sb267533|away|Carlos Henrique Casimiro|Toni Kroos,away,كاسيميرو,كروس,8,47.7,39.0,55.8,28.6
+sb267533,sb267533|away|Cristiano Ronaldo dos Santos Aveiro|Karim Benzema,away,رونالدو,بنزيما,3,62.8,22.6,70.6,33.4
+sb267533,sb267533|away|Cristiano Ronaldo dos Santos Aveiro|Marcelo Vieira da Silva Júnior,away,رونالدو,مارسيلو,8,62.8,22.6,54.1,17.9
+sb267533,sb267533|away|Cristiano Ronaldo dos Santos Aveiro|Toni Kroos,away,رونالدو,كروس,5,62.8,22.6,55.8,28.6
+sb267533,sb267533|away|Daniel Carvajal Ramos|Gareth Frank Bale,away,كارفاخال,بيل,11,54.6,68.3,72.7,57.6
+sb267533,sb267533|away|Daniel Carvajal Ramos|Karim Benzema,away,كارفاخال,بنزيما,5,54.6,68.3,70.6,33.4
+sb267533,sb267533|away|Daniel Carvajal Ramos|Kléper Laveran Lima Ferreira,away,كارفاخال,بيبي,8,54.6,68.3,41.5,58.2
+sb267533,sb267533|away|Daniel Carvajal Ramos|Luka Modrić,away,كارفاخال,مودريتش,10,54.6,68.3,57.9,54.9
+sb267533,sb267533|away|Daniel Carvajal Ramos|Toni Kroos,away,كارفاخال,كروس,4,54.6,68.3,55.8,28.6
+sb267533,sb267533|away|Gareth Frank Bale|Karim Benzema,away,بيل,بنزيما,10,72.7,57.6,70.6,33.4
+sb267533,sb267533|away|Gareth Frank Bale|Kléper Laveran Lima Ferreira,away,بيل,بيبي,3,72.7,57.6,41.5,58.2
+sb267533,sb267533|away|Gareth Frank Bale|Luka Modrić,away,بيل,مودريتش,11,72.7,57.6,57.9,54.9
+sb267533,sb267533|away|Gareth Frank Bale|Toni Kroos,away,بيل,كروس,4,72.7,57.6,55.8,28.6
+sb267533,sb267533|away|Karim Benzema|Luka Modrić,away,بنزيما,مودريتش,7,70.6,33.4,57.9,54.9
+sb267533,sb267533|away|Karim Benzema|Marcelo Vieira da Silva Júnior,away,بنزيما,مارسيلو,7,70.6,33.4,54.1,17.9
+sb267533,sb267533|away|Karim Benzema|Toni Kroos,away,بنزيما,كروس,11,70.6,33.4,55.8,28.6
+sb267533,sb267533|away|Keylor Navas Gamboa|Kléper Laveran Lima Ferreira,away,نافاس,بيبي,4,10.9,38.3,41.5,58.2
+sb267533,sb267533|away|Keylor Navas Gamboa|Sergio Ramos García,away,نافاس,راموس,6,10.9,38.3,32.7,19.2
+sb267533,sb267533|away|Kléper Laveran Lima Ferreira|Luka Modrić,away,بيبي,مودريتش,8,41.5,58.2,57.9,54.9
+sb267533,sb267533|away|Kléper Laveran Lima Ferreira|Toni Kroos,away,بيبي,كروس,4,41.5,58.2,55.8,28.6
+sb267533,sb267533|away|Luka Modrić|Marcelo Vieira da Silva Júnior,away,مودريتش,مارسيلو,5,57.9,54.9,54.1,17.9
+sb267533,sb267533|away|Luka Modrić|Toni Kroos,away,مودريتش,كروس,6,57.9,54.9,55.8,28.6
+sb267533,sb267533|away|Marcelo Vieira da Silva Júnior|Sergio Ramos García,away,مارسيلو,راموس,8,54.1,17.9,32.7,19.2
+sb267533,sb267533|away|Marcelo Vieira da Silva Júnior|Toni Kroos,away,مارسيلو,كروس,20,54.1,17.9,55.8,28.6
+sb267533,sb267533|away|Sergio Ramos García|Toni Kroos,away,راموس,كروس,3,32.7,19.2,55.8,28.6

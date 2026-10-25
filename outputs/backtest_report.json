@@ -1,0 +1,67 @@
+{
+  "tune_seasons": [
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "test_seasons": [
+    2023,
+    2024,
+    2025
+  ],
+  "best_config": {
+    "xi": 0.006,
+    "prior_sd": 0.7,
+    "beta_sot": 0.0,
+    "beta_mkt": 0.9,
+    "promoted_attack": -0.19,
+    "promoted_defence": -0.13,
+    "seasons_back": 2,
+    "sot_k": null,
+    "rating_scale": 1.1
+  },
+  "goals_only": {
+    "n": 1140,
+    "rps": 0.1961521671755564,
+    "logloss": 0.9796180038103992,
+    "brier": 0.5828013688760152,
+    "n_mkt": 1140,
+    "rps_model_on_mkt": 0.1961521671755564,
+    "rps_mkt": 0.18932710337016723,
+    "logloss_model_on_mkt": 0.9796180038103992,
+    "logloss_mkt": 0.9553579610905724,
+    "rps_base_rates": 0.22525969529085874
+  },
+  "goals_plus_shots": {
+    "n": 1140,
+    "rps": 0.1961521671755564,
+    "logloss": 0.9796180038103992,
+    "brier": 0.5828013688760152,
+    "n_mkt": 1140,
+    "rps_model_on_mkt": 0.1961521671755564,
+    "rps_mkt": 0.18932710337016723,
+    "logloss_model_on_mkt": 0.9796180038103992,
+    "logloss_mkt": 0.9553579610905724,
+    "rps_base_rates": 0.22525969529085874
+  },
+  "final_model": {
+    "n": 1140,
+    "rps": 0.19242839460137862,
+    "logloss": 0.9661740804445187,
+    "brier": 0.5729358720556161,
+    "n_mkt": 1140,
+    "rps_model_on_mkt": 0.19242839460137862,
+    "rps_mkt": 0.18932710337016723,
+    "logloss_model_on_mkt": 0.9661740804445187,
+    "logloss_mkt": 0.9553579610905724,
+    "rps_base_rates": 0.22525969529085874
+  }
+}

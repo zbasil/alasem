@@ -1,0 +1,151 @@
+{
+"fetched_at": "2026-10-24T10:50:00Z",
+"source": "SportRadar via fetch_sports_data (game_stats)",
+"id": "sr:sport_event:72478638",
+"kickoff_utc": "2026-10-18T12:00:00Z",
+"home": "CA Osasuna",
+"away": "Racing Santander",
+"status": "final",
+"score": {
+"home": 2,
+"away": 0
+},
+"ht_score": {
+"home": 1,
+"away": 0,
+"derived_from": "score_change events up to minute 45"
+},
+"team_stats": {
+"home": {
+"ball_possession": 46,
+"cards_given": 2,
+"corner_kicks": 7,
+"fouls": 21,
+"free_kicks": 8,
+"goal_kicks": 9,
+"injuries": 0,
+"offsides": 4,
+"red_cards": 0,
+"shots_blocked": 4,
+"shots_off_target": 7,
+"shots_on_target": 4,
+"shots_saved": 2,
+"shots_total": 15,
+"substitutions": 5,
+"throw_ins": 24,
+"yellow_cards": 2,
+"yellow_red_cards": 0
+},
+"away": {
+"ball_possession": 54,
+"cards_given": 3,
+"corner_kicks": 4,
+"fouls": 8,
+"free_kicks": 21,
+"goal_kicks": 13,
+"injuries": 1,
+"offsides": 2,
+"red_cards": 0,
+"shots_blocked": 1,
+"shots_off_target": 5,
+"shots_on_target": 2,
+"shots_saved": 2,
+"shots_total": 8,
+"substitutions": 5,
+"throw_ins": 24,
+"yellow_cards": 3,
+"yellow_red_cards": 0
+}
+},
+"key_events": [
+{
+"type": "yellow_card",
+"time": 6,
+"team": "away"
+},
+{
+"type": "score_change",
+"time": 9,
+"team": "home",
+"home_score": 1,
+"away_score": 0
+},
+{
+"type": "yellow_card",
+"time": 28,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 46,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 51,
+"team": "away"
+},
+{
+"type": "yellow_card",
+"time": 60,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 67,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 67,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 69,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 76,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 76,
+"team": "home"
+},
+{
+"type": "yellow_card",
+"time": 80,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 83,
+"team": "away"
+},
+{
+"type": "substitution",
+"time": 83,
+"team": "away"
+},
+{
+"type": "score_change",
+"time": 88,
+"team": "home",
+"home_score": 2,
+"away_score": 0
+},
+{
+"type": "substitution",
+"time": 90,
+"team": "home"
+},
+{
+"type": "substitution",
+"time": 90,
+"team": "away"
+}
+]
+}

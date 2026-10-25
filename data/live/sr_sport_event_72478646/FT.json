@@ -1,0 +1,12 @@
+{"fetched_at": "2026-10-24T05:42:00Z", "source": "SportRadar via fetch_sports_data (game_stats)", "id": "sr:sport_event:72478646",
+ "home": "Deportivo Alaves", "away": "Malaga CF", "status": "final", "score": {"home": 1, "away": 1},
+ "team_stats": {
+  "home": {"ball_possession": 51, "cards_given": 2, "corner_kicks": 7, "fouls": 14, "free_kicks": 12, "goal_kicks": 5, "injuries": 0, "offsides": 0, "red_cards": 0, "shots_blocked": 3, "shots_off_target": 3, "shots_on_target": 4, "shots_saved": 3, "shots_total": 10, "substitutions": 5, "throw_ins": 31, "yellow_cards": 2, "yellow_red_cards": 0},
+  "away": {"ball_possession": 49, "cards_given": 1, "corner_kicks": 2, "fouls": 12, "free_kicks": 14, "goal_kicks": 9, "injuries": 0, "offsides": 2, "red_cards": 0, "shots_blocked": 0, "shots_off_target": 2, "shots_on_target": 4, "shots_saved": 3, "shots_total": 6, "substitutions": 5, "throw_ins": 22, "yellow_cards": 1, "yellow_red_cards": 0}},
+ "key_events": [
+  {"type": "yellow_card", "time": 39, "team": "home"}, {"type": "score_change", "time": 44, "team": "away", "home_score": 0, "away_score": 1},
+  {"type": "substitution", "time": 46, "team": "home"}, {"type": "substitution", "time": 55, "team": "home"}, {"type": "substitution", "time": 55, "team": "home"},
+  {"type": "substitution", "time": 66, "team": "home"}, {"type": "yellow_card", "time": 67, "team": "home"}, {"type": "substitution", "time": 68, "team": "away"},
+  {"type": "substitution", "time": 68, "team": "away"}, {"type": "substitution", "time": 75, "team": "home"}, {"type": "substitution", "time": 77, "team": "away"},
+  {"type": "substitution", "time": 77, "team": "away"}, {"type": "yellow_card", "time": 84, "team": "away"}, {"type": "substitution", "time": 87, "team": "away"},
+  {"type": "score_change", "time": 89, "team": "home", "home_score": 1, "away_score": 1}]}

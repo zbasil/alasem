@@ -1,0 +1,14 @@
+WALK-FORWARD pre-match only                         rps=0.19275 logloss=0.96808 hit=0.539
+WALK-FORWARD HT, even time, no state                rps=0.15269 logloss=0.82070 hit=0.610
+WALK-FORWARD HT, time profile                       rps=0.15174 logloss=0.81666 hit=0.617
+WALK-FORWARD HT, time profile + state               rps=0.15116 logloss=0.81394 hit=0.614
+WALK-FORWARD HT, time profile + state x strength    rps=0.15102 logloss=0.81346 hit=0.615
+chosen: HT, time profile + state x strength; vs time profile only -0.00072 (95% CI -0.00114 to -0.00028), n=3800
+calibration at half-time (forecast -> observed): 0.0-0.1: 0.043->0.041 (n=2206); 0.1-0.2: 0.152->0.157 (n=1664); 0.2-0.3: 0.250->0.255 (n=2080); 0.3-0.4: 0.354->0.361 (n=2109); 0.4-0.5: 0.434->0.429 (n=1044); 0.5-0.6: 0.549->0.570 (n=409); 0.6-0.7: 0.653->0.627 (n=493); 0.7-0.8: 0.748->0.704 (n=503); 0.8-0.9: 0.847->0.854 (n=411); 0.9-1.0: 0.958->0.956 (n=481)
+final fit on 2018/2025: 3040 matches, first-half share 0.4369
+state multipliers at even strength (HT goal difference home-away): -2: home x1.224 away x0.856, -1: home x1.127 away x0.887, +0: home x0.980 away x0.973, +1: home x0.830 away x1.079, +2: home x0.833 away x1.278
+StatsBomb 2015/16: 1517 matches, 1503 with event goals matching the final score
+goals on the effective clock: 3963; first-half share 0.4431
+share of goals per 15 min, data vs model: 0.130/0.132, 0.145/0.146, 0.168/0.160, 0.185/0.174, 0.177/0.188, 0.195/0.202
+matches with a red card: 348; team-match units: 696
+red card effect: own scoring x0.682 (95% CI 0.53-0.87), opponent scoring x1.480 (95% CI 1.25-1.76)

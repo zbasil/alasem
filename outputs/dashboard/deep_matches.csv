@@ -1,0 +1,4 @@
+match_id,date,home,away,home_ar,away_ar,hg,ag,xg_home,xg_away,label_ar,source,pre_home_pct,pre_draw_pct,pre_away_pct
+sb69299,2010-11-29,Barcelona,Real Madrid,برشلونة,ريال مدريد,5,0,2.77,0.13,برشلونة 5-0 ريال مدريد,StatsBomb,46.9,23.8,29.3
+sb266424,2015-11-21,Real Madrid,Barcelona,ريال مدريد,برشلونة,0,4,1.34,2.48,ريال مدريد 0-4 برشلونة,StatsBomb,40.5,23.2,36.3
+sb267533,2016-04-02,Barcelona,Real Madrid,برشلونة,ريال مدريد,1,2,0.73,1.32,برشلونة 1-2 ريال مدريد,StatsBomb,62.4,18.7,18.9

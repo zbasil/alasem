@@ -1,0 +1,385 @@
+<style>
+  /* layout: one right-to-left column; a sticky tab bar switches five pages; cards share rows when wide */
+  #dash-root .zs { direction: rtl; max-width: 1180px; margin-inline: auto; display: grid; gap: var(--cds-gap-lg);
+    font-family: var(--font-anthropic-sans), "Noto Naskh Arabic", "Segoe UI", Tahoma, sans-serif; color: var(--color-fg); }
+  .zs h1, .zs h2, .zs h3 { margin: 0; text-wrap: balance; }
+  .zs .zs-head { display: grid; gap: var(--cds-gap-xs); }
+  .zs .zs-head h1 { font-family: var(--font-anthropic-serif), Georgia, serif; font-weight: 400; font-size: var(--cds-font-size-title); }
+  .zs .zs-take { margin: 0; font-size: var(--cds-font-size-body); line-height: 1.8; }
+  .zs .zs-meta, .zs .note { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); line-height: 1.7; }
+  .zs .num { font-variant-numeric: tabular-nums; }
+  .zs .ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+
+  .zs .zs-tabs { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; display: flex; gap: var(--cds-gap-xs);
+    overflow-x: auto; padding-block: var(--cds-pad-xs); background: var(--color-bg); border-bottom: 1px solid var(--color-border-line); }
+  .zs .zs-tabs button { font: inherit; font-size: var(--cds-font-size-body); color: var(--color-fg-muted); background: none;
+    border: 1px solid transparent; border-radius: 999px; padding: var(--cds-pad-xs) var(--cds-pad-md); cursor: pointer; white-space: nowrap; }
+  .zs .zs-tabs button[aria-selected="true"] { color: var(--color-fg); background: var(--color-panel); border-color: var(--color-border-line);
+    font-weight: var(--cds-font-weight-medium); }
+  .zs .zs-tabs button:focus-visible, .zs select:focus-visible, .zs .seg button:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+
+  .zs .page { display: grid; gap: var(--cds-gap-md); }
+  .zs .page[hidden] { display: none; }
+  .zs .grid { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); }
+  .zs .card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius);
+    padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); align-content: start; min-width: 0; }
+  .zs .card.wide { grid-column: 1 / -1; }
+  .zs .card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+  .zs .row { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: center; }
+  .zs select { font: inherit; font-size: var(--cds-font-size-body); color: var(--color-fg); background: var(--color-bg);
+    border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); max-width: 100%; }
+  .zs .seg { display: inline-flex; border: 1px solid var(--color-border-line); border-radius: 999px; overflow: hidden; }
+  .zs .seg button { font: inherit; font-size: var(--cds-font-size-caption); background: none; color: var(--color-fg-muted);
+    border: 0; padding: var(--cds-pad-xs) var(--cds-pad-md); cursor: pointer; }
+  .zs .seg button[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); }
+
+  /* match list */
+  .zs .mlist { display: grid; gap: var(--cds-gap-sm); }
+  .zs .m { display: grid; grid-template-columns: 4.2rem 1fr; gap: var(--cds-gap-sm); align-items: center;
+    padding-block: var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); }
+  .zs .m:last-child { border-bottom: 0; }
+  .zs .m .when { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); text-align: center; line-height: 1.5; }
+  .zs .m .teams { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: var(--cds-gap-sm); }
+  .zs .m .t { font-weight: var(--cds-font-weight-medium); min-width: 0; }
+  .zs .m .t.a { text-align: left; }
+  .zs .m .mid { font-variant-numeric: tabular-nums; font-weight: var(--cds-font-weight-medium); text-align: center; min-width: 3.4rem; }
+  .zs .m .mid.done { font-family: var(--font-anthropic-serif), Georgia, serif; font-size: var(--cds-font-size-heading); }
+  .zs .m .bar { grid-column: 2; }
+  .zs .pbar { display: flex; height: 22px; border-radius: 6px; overflow: hidden; font-size: var(--cds-font-size-caption); }
+  .zs .pbar > div { display: flex; align-items: center; justify-content: center; color: var(--color-bg); font-weight: var(--cds-font-weight-medium);
+    min-width: 0; white-space: nowrap; overflow: hidden; font-variant-numeric: tabular-nums; }
+  .zs .sr { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .zs .pill { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: var(--cds-font-size-caption);
+    border: 1px solid var(--color-border-line); color: var(--color-fg-muted); }
+  .zs .pill.live { border-color: var(--cds-chart-status-critical); color: var(--color-fg); }
+
+  /* insights */
+  .zs .ins { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+  .zs .ins h3 { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin-bottom: var(--cds-gap-xs); }
+  .zs .ins ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--cds-gap-xs); }
+  .zs .ins li { padding-inline-start: 1.4em; position: relative; line-height: 1.7; }
+  .zs .ins li::before { content: ""; position: absolute; inset-inline-start: 0.2em; top: 0.62em; width: 0.55em; height: 0.55em; border-radius: 50%; background: var(--k); }
+  .zs .notes li { line-height: 1.8; }
+
+  /* stat comparison */
+  .zs .cmp { display: grid; gap: 6px; }
+  .zs .cmp .r { display: grid; grid-template-columns: 3.2rem 1fr minmax(6rem, auto) 1fr 3.2rem; align-items: center; gap: var(--cds-gap-xs);
+    font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+  .zs .cmp .lab { text-align: center; color: var(--color-fg-muted); }
+  .zs .cmp .v { text-align: center; font-weight: var(--cds-font-weight-medium); }
+  .zs .cmp .track { height: 8px; background: var(--cds-chart-grid); border-radius: 4px; overflow: hidden; display: flex; }
+  .zs .cmp .track.h { justify-content: flex-end; }
+  .zs .cmp .track.a { justify-content: flex-start; }
+  .zs .cmp .fill { height: 100%; border-radius: 4px; }
+
+  /* tables */
+  .zs .tw { overflow-x: auto; }
+  .zs table { border-collapse: collapse; width: 100%; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+  .zs th, .zs td { padding: var(--cds-pad-xs) var(--cds-pad-sm); text-align: center; white-space: nowrap; border-bottom: 1px solid var(--color-border-line); }
+  .zs th { color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); background: var(--color-panel); position: sticky; top: 0; }
+  .zs th.t, .zs td.t { text-align: right; }
+  .zs td.t { font-weight: var(--cds-font-weight-medium); font-size: var(--cds-font-size-body); }
+  .zs td.wrap { white-space: normal; min-width: 13em; text-align: right; }
+  .zs tbody tr:last-child td { border-bottom: 0; }
+  .zs .scroll { max-height: 34rem; overflow: auto; }
+  .zs .pillv { display: inline-block; min-width: 3.2em; padding: 1px 6px; border-radius: 999px; }
+  .zs tr.z-ucl td:first-child { box-shadow: inset -3px 0 0 var(--z-ucl); }
+  .zs tr.z-eur td:first-child { box-shadow: inset -3px 0 0 var(--z-eur); }
+  .zs tr.z-rel td:first-child { box-shadow: inset -3px 0 0 var(--cds-chart-status-critical); }
+
+  /* tiles */
+  .zs .tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--cds-gap-sm); }
+  .zs .tile { display: grid; gap: 2px; min-width: 0; }
+  .zs .tile .who { font-weight: var(--cds-font-weight-medium); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .zs .tile .big { font-family: var(--font-anthropic-serif), Georgia, serif; font-size: var(--cds-font-size-title); line-height: 1.2; font-variant-numeric: tabular-nums; }
+
+  /* charts */
+  .zs .chart { position: relative; width: 100%; min-width: 0; }
+  .zs .chart svg { display: block; }
+  .zs .chart text { fill: var(--color-fg); font-family: var(--font-anthropic-sans), "Noto Naskh Arabic", Tahoma, sans-serif; }
+  .zs .tip { position: absolute; pointer-events: none; z-index: 3; background: var(--cds-surface-popover); border: 1px solid var(--cds-border);
+    border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm);
+    font-size: var(--cds-font-size-caption); white-space: nowrap; opacity: 0; }
+  .zs .tip .t2 { color: var(--cds-text-secondary); }
+  .zs .keys { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .zs .keys span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-inline-end: 6px;
+    vertical-align: -1px; background: var(--k); }
+  .zs .fail { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 6rem; color: var(--color-fg-muted);
+    font-size: var(--cds-font-size-caption); }
+  .zs .fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+  .zs .empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding-block: var(--cds-pad-sm); }
+  .zs [data-dash-source-state=empty] { color: transparent; }
+  .zs [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+  .zs .pitches { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); }
+  .zs .pitches h3 { font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); margin-bottom: 4px; }
+  .zs .pitches > div { position: relative; min-width: 0; }
+  @media (max-width: 560px) {
+    .zs .tiles { grid-template-columns: 1fr; }
+    .zs .cmp .r { grid-template-columns: 2.4rem 1fr minmax(5rem, auto) 1fr 2.4rem; }
+  }
+</style>
+
+<div class="zs" dir="rtl" lang="ar">
+  <header class="zs-head" id="top">
+    <h1>حاسوب زهراء الخارق</h1>
+    <p class="zs-take" id="takeaway">
+      <span class="dash-skeleton" data-source="forecast" data-field="ar" data-row="0">—</span>
+      الأقرب للقب بنسبة <span class="num dash-skeleton" data-source="forecast" data-field="title_pct" data-row="0">—</span>٪.
+      <span id="take-next"></span>
+    </p>
+    <p class="zs-meta">
+      الدوري الإسباني <span class="ltr num dash-skeleton" data-source="run_info" data-field="season">—</span>
+      · <span class="num dash-skeleton" data-source="run_info" data-field="matches_played">—</span> مباراة ملعوبة
+      · <span class="num dash-skeleton" data-source="run_info" data-field="n_sims_text">—</span> موسم محاكى
+      · تحديث <span class="ltr num dash-skeleton" data-source="run_info" data-field="as_of">—</span>
+    </p>
+  </header>
+
+  <nav class="zs-tabs" role="tablist" aria-label="أقسام التطبيق">
+    <button role="tab" id="tab-today" data-tab="today" aria-selected="true">اليوم والمباشر</button>
+    <button role="tab" id="tab-fixtures" data-tab="fixtures" aria-selected="false">المباريات</button>
+    <button role="tab" id="tab-season" data-tab="season" aria-selected="false">الموسم</button>
+    <button role="tab" id="tab-deep" data-tab="deep" aria-selected="false">تحليل عميق</button>
+    <button role="tab" id="tab-accuracy" data-tab="accuracy" aria-selected="false">الدقة</button>
+  </nav>
+
+  <!-- TODAY -->
+  <section class="page" id="today" data-page="today">
+    <div class="grid">
+      <section class="card" id="round">
+        <h2 id="round-title">مباريات الجولة <span class="num" data-source="current_round" data-field="matchday" data-row="0">—</span></h2>
+        <p class="note">الأوقات بتوقيت بغداد. الشريط احتمالات الحاسوب: فوز صاحب الأرض، تعادل، فوز الضيف. تحته احتمالات SportRadar للمقارنة.</p>
+        <div class="keys" id="round-keys"><span class="k-h">صاحب الأرض</span><span class="k-d">تعادل</span><span class="k-a">الضيف</span></div>
+        <div class="mlist dash-skeleton" id="round-list" data-source="fixtures"></div>
+      </section>
+
+      <section class="card" id="live">
+        <h2>التحليل المباشر</h2>
+        <p class="note">يتحدث بنهاية كل شوط: الإيجابيات والسلبيات، احتمالات الفوز من الموديل، وأثر النتيجة على الدوري.</p>
+        <div class="row"><label class="note" for="live-match">المباراة</label><select id="live-match" data-source="live_matches"></select></div>
+        <div id="live-head" class="mlist" data-source="live_matches"></div>
+        <div class="ins" id="live-ins" data-source="live_insights"></div>
+      </section>
+
+      <section class="card" id="live-stats-card">
+        <h2 id="live-stats-title">إحصائيات المباراة</h2>
+        <div class="seg" id="live-part" role="group" aria-label="الجزء"></div>
+        <div class="cmp" id="live-stats" data-source="live_stats"></div>
+      </section>
+
+      <section class="card" id="live-wp">
+        <h2>مسار فرصة الفوز دقيقة بدقيقة</h2>
+        <p class="note">من الموديل: يحسب الأهداف الباقية حسب الوقت والنتيجة والطرد.</p>
+        <div class="keys"><span class="k-h" id="wp-k-h">فوز صاحب الأرض</span><span class="k-d">تعادل</span><span class="k-a" id="wp-k-a">فوز الضيف</span></div>
+        <div class="chart" id="live-timeline" data-source="live_timeline" style="min-height:220px"></div>
+      </section>
+
+      <section class="card wide" id="live-impact-card">
+        <h2>أثر المباراة على الدوري</h2>
+        <p class="note">شلون تغيّرت فرص الفرق قبل المباراة وبعد هالنتيجة، من <span class="num" data-source="model_facts" data-field="value" data-where="id=impact_sims">—</span> موسم محاكى.</p>
+        <div class="tw">
+          <table id="live-impact" data-source="live_impact" data-row-key="row_id">
+            <thead><tr><th class="t" data-field="team_ar">الفريق</th><th data-field="label_ar">الهدف</th>
+              <th data-field="before_pct">قبل ٪</th><th data-field="now_pct">الآن ٪</th><th data-field="change_pts">التغيير</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="empty" id="live-impact-empty" hidden>ماكو تغيير يذكر بفرص الفرق.</p>
+      </section>
+    </div>
+  </section>
+
+  <section class="page" id="fixtures" data-page="fixtures" hidden></section>
+  <section class="page" id="season" data-page="season" hidden></section>
+  <section class="page" id="deep" data-page="deep" hidden></section>
+  <section class="page" id="accuracy" data-page="accuracy" hidden></section>
+
+  <!-- FIXTURES -->
+  <template id="tpl-fixtures">
+    <section class="card wide">
+      <h2>جدول المباريات والنتائج</h2>
+      <p class="note">كل الموسم بتوقيت بغداد. المباريات القادمة فيها احتمالات الحاسوب والأهداف المتوقعة.</p>
+      <div class="row">
+        <label class="note" for="fx-md">الجولة</label><select id="fx-md"></select>
+        <label class="note" for="fx-team">الفريق</label><select id="fx-team"></select>
+      </div>
+      <div class="tw">
+        <table id="fx-table" data-source="fixtures" data-row-key="row_id">
+          <thead><tr>
+            <th data-field="matchday">الجولة</th><th data-field="date_baghdad">التاريخ</th><th data-field="time_baghdad">الساعة</th>
+            <th class="t" data-field="home_ar">صاحب الأرض</th><th data-field="score">النتيجة</th><th class="t" data-field="away_ar">الضيف</th>
+            <th data-field="p_home">فوز الأرض ٪</th><th data-field="p_draw">تعادل ٪</th><th data-field="p_away">فوز الضيف ٪</th>
+            <th data-field="xg_home">أهداف متوقعة</th><th data-field="xg_away">للضيف</th><th data-field="status_ar">الحالة</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </template>
+
+  <!-- SEASON -->
+  <template id="tpl-season">
+    <div class="grid">
+      <section class="card" id="race">
+        <h2>سباق اللقب</h2>
+        <div class="tiles">
+          <div class="tile"><div class="who" data-source="forecast" data-field="ar" data-row="0">—</div>
+            <div class="big"><span data-source="forecast" data-field="title_pct" data-row="0">—</span>٪</div>
+            <div class="note">نقاط متوقعة <span class="num" data-source="forecast" data-field="exp_pts" data-row="0">—</span></div></div>
+          <div class="tile"><div class="who" data-source="forecast" data-field="ar" data-row="1">—</div>
+            <div class="big"><span data-source="forecast" data-field="title_pct" data-row="1">—</span>٪</div>
+            <div class="note">نقاط متوقعة <span class="num" data-source="forecast" data-field="exp_pts" data-row="1">—</span></div></div>
+          <div class="tile"><div class="who" data-source="forecast" data-field="ar" data-row="2">—</div>
+            <div class="big"><span data-source="forecast" data-field="title_pct" data-row="2">—</span>٪</div>
+            <div class="note">نقاط متوقعة <span class="num" data-source="forecast" data-field="exp_pts" data-row="2">—</span></div></div>
+        </div>
+        <div class="chart" id="title-chart" data-source="forecast" style="min-height:120px"></div>
+      </section>
+      <section class="card" id="now-card">
+        <h2>الترتيب الحالي</h2>
+        <div class="tw">
+          <table id="now-table" data-source="table_now" data-row-key="team">
+            <thead><tr><th data-field="pos">#</th><th class="t" data-field="ar">الفريق</th><th data-field="P">لعب</th>
+              <th data-field="W">فاز</th><th data-field="D">تعادل</th><th data-field="L">خسر</th><th data-field="GD">الفارق</th><th data-field="Pts">النقاط</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="card wide" id="projection">
+        <h2>الترتيب المتوقع بنهاية الموسم</h2>
+        <p class="note">النقاط المتوقعة معدل كل المواسم المحاكاة. "من" و"إلى": الفريق يخلص بين الرقمين في 80٪ من المحاكاة.</p>
+        <div class="keys"><span class="k-ucl">دوري الأبطال (أول 4)</span><span class="k-eur">أوروبا (أول 6)</span><span class="k-rel">الهبوط (آخر 3)</span></div>
+        <div class="tw">
+          <table id="proj-table" data-source="forecast" data-row-key="team">
+            <thead><tr><th class="t" data-field="ar">الفريق</th><th data-field="pts_now">نقاطه الآن</th><th data-field="exp_pts">المتوقعة</th>
+              <th data-field="pts_low">من</th><th data-field="pts_high">إلى</th><th data-field="title_pct">اللقب ٪</th>
+              <th data-field="top4_pct">أول 4 ٪</th><th data-field="europe_pct">أوروبا ٪</th><th data-field="releg_pct">الهبوط ٪</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="card wide" id="positions">
+        <h2>خريطة المراكز</h2>
+        <p class="note">كل خانة فرصة الفريق يخلص الموسم بذاك المركز. كل ما اللون أغمق، الفرصة أكبر.</p>
+        <div class="tw"><div class="chart" id="heatmap" data-source="positions forecast" style="min-height:300px"></div></div>
+      </section>
+    </div>
+  </template>
+
+  <!-- DEEP -->
+  <template id="tpl-deep">
+    <section class="card wide">
+      <h2>تحليل عميق: أرشيف الكلاسيكو</h2>
+      <p class="note">تحليل كامل من بيانات الأحداث (مكان كل لمسة وتمريرة وتسديدة) من StatsBomb المجانية. نفس التحليل يشتغل على أي مباراة تتوفر لها بيانات أحداث.</p>
+      <div class="row">
+        <label class="note" for="dp-match">المباراة</label><select id="dp-match" data-source="deep_matches"></select>
+        <div class="seg" id="dp-part" role="group" aria-label="الجزء"></div>
+      </div>
+      <div id="dp-head" class="mlist" data-source="deep_matches"></div>
+    </section>
+    <div class="grid">
+      <section class="card" id="dp-ins-card">
+        <h2>الإيجابيات والسلبيات</h2>
+        <div class="ins" id="dp-ins" data-source="deep_insights"></div>
+      </section>
+      <section class="card" id="dp-stats-card">
+        <h2>الأرقام</h2>
+        <div class="cmp" id="dp-stats" data-source="deep_stats"></div>
+      </section>
+      <section class="card wide" id="dp-shots-card">
+        <h2>خريطة التسديدات</h2>
+        <p class="note">كل دائرة تسديدة، وحجمها حسب xG (احتمال تصير هدف). الدوائر المليانة أهداف. صاحب الأرض يهاجم لليمين.</p>
+        <div class="chart" id="dp-shots" data-source="deep_shots" style="min-height:240px"></div>
+      </section>
+      <section class="card wide" id="dp-flow-card">
+        <h2>مجرى المباراة</h2>
+        <p class="note">فوق: تراكم xG لكل فريق. تحت: فرصة الفوز حسب الموديل دقيقة بدقيقة.</p>
+        <div class="chart" id="dp-xg" data-source="deep_timeline" style="min-height:220px"></div>
+      </section>
+      <section class="card wide" id="dp-heat-card">
+        <h2>الخريطة الحرارية</h2>
+        <div class="row"><label class="note" for="dp-player">اللاعب</label><select id="dp-player" data-source="deep_touches"></select></div>
+        <p class="note">أماكن لمس الكرة. كل فريق يهاجم لليمين.</p>
+        <div class="pitches chart" id="dp-heat" data-source="deep_touches" style="min-height:220px"></div>
+      </section>
+      <section class="card wide" id="dp-net-card">
+        <h2>شبكة التمريرات</h2>
+        <p class="note">التشكيلة الأساسية لحد أول تبديل. الدائرة متوسط مكان اللاعب، والخط أثخن كل ما تبادلوا تمريرات أكثر (3 أو أكثر).</p>
+        <div class="pitches chart" id="dp-net" data-source="deep_pass_nodes deep_pass_edges" style="min-height:220px"></div>
+      </section>
+      <section class="card wide" id="dp-players-card">
+        <h2>تقييم اللاعبين</h2>
+        <p class="note">تقييم الحاسوب تقديري من 3 إلى 10: يجمع الأهداف والتمريرات الحاسمة وxG وxA والحركات التقدمية والمراوغات والقطع والضغط، ويخصم فقدان الكرة والبطاقات.</p>
+        <div class="tw scroll">
+          <table id="dp-players" data-source="deep_players" data-row-key="row_id">
+            <thead><tr><th class="t" data-field="name_ar">اللاعب</th><th data-field="minutes">دقائق</th><th data-field="rating">التقييم</th>
+              <th data-field="goals">أهداف</th><th data-field="assists">صناعة</th><th data-field="xg">xG</th><th data-field="xa">xA</th>
+              <th data-field="key_passes">تمريرات مفتاحية</th><th data-field="progressive">تقدمية</th><th data-field="pass_pct">دقة التمرير ٪</th>
+              <th data-field="dribbles">مراوغات</th><th data-field="tackles_int">قطع</th><th data-field="pressures">ضغط</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </template>
+
+  <!-- ACCURACY -->
+  <template id="tpl-accuracy">
+    <div class="grid">
+      <section class="card wide" id="acc-card">
+        <h2>شكد دقيق الموديل؟</h2>
+        <p class="note">ماكو موديل يتوقع كرة القدم بدقة كاملة، ولا حتى شركات المراهنات. هاي الأرقام مقاسة على مباريات ومواسم ما شافها الموديل، ومقارنة بـBet365 وبتوقع بسيط.</p>
+        <div class="tw">
+          <table id="acc-table" data-source="accuracy" data-row-key="id">
+            <thead><tr><th class="t" data-field="ar">المقياس</th><th data-field="model">الموديل</th><th data-field="bookmaker">Bet365</th>
+              <th data-field="baseline">التوقع البسيط</th><th data-field="period">المواسم</th><th data-field="n">العدد</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="card" id="cal-card">
+        <h2>معايرة توقعات الاستراحة</h2>
+        <p class="note">لما الموديل يگول 70٪ وقت الاستراحة، شكد مرة تصير فعلاً؟ النقطة على الخط يعني التوقع صادق.</p>
+        <div class="chart" id="cal-chart" data-source="inplay_calibration" style="min-height:250px"></div>
+        <p class="note">الأفقي: توقع الموديل وقت الاستراحة. العمودي: شكد صار فعلاً. حجم النقطة: عدد التوقعات.</p>
+      </section>
+      <section class="card" id="track-card">
+        <h2>سجل التوقعات هذا الموسم</h2>
+        <p class="note">كل توقع ينحفظ قبل صافرة البداية، وينحسب بعد النتيجة. المقارنة على نفس المباريات.</p>
+        <p class="empty" id="track-empty" hidden>السجل يبدأ من هالجولة: التوقعات انحفظت قبل البداية، وتنحسب هنا أول ما تخلص المباريات.</p>
+        <div class="tw">
+          <table id="track-sum" data-source="track_summary" data-row-key="source">
+            <thead><tr><th class="t" data-field="source_ar">المصدر</th><th data-field="n">مباريات</th><th data-field="rps">RPS</th><th data-field="hit_pct">إصابة ٪</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="tw scroll">
+          <table id="track-table" data-source="track" data-row-key="row_id">
+            <thead><tr><th class="t" data-field="home_ar">صاحب الأرض</th><th data-field="score">النتيجة</th><th class="t" data-field="away_ar">الضيف</th>
+              <th data-field="source_ar">المصدر</th><th data-field="p_home">أرض ٪</th><th data-field="p_draw">تعادل ٪</th><th data-field="p_away">ضيف ٪</th><th data-field="rps">RPS</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="card wide" id="method">
+        <h2>شلون يشتغل</h2>
+        <p class="note">قوة الفرق: لكل فريق رقم هجوم ورقم دفاع (Dixon-Coles) يتعلم من الأهداف ومن الأهداف اللي توقعها السوق قبل كل مباراة.
+          الموسم: <span class="num" data-source="run_info" data-field="n_sims_text" data-row="0">—</span> محاكاة بقواعد الليغا الرسمية (المواجهات المباشرة قبل فارق الأهداف).
+          المباشر: الأهداف الباقية تتبع الوقت (<span class="num" data-source="model_facts" data-field="value" data-where="id=first_half_pct">—</span>٪ من الأهداف بالشوط الأول)،
+          والنتيجة (المتأخر يضغط أكثر؛ مختبر على <span class="num" data-source="model_facts" data-field="value" data-where="id=state_matches">—</span> مباراة ما شافها الموديل)،
+          والطرد (الفريق الناقص يسجل أقل بحوالي <span class="num" data-source="model_facts" data-field="value" data-where="id=red_own_pct">—</span>٪
+          وخصمه يسجل أكثر بحوالي <span class="num" data-source="model_facts" data-field="value" data-where="id=red_opp_pct">—</span>٪،
+          مقدّر من <span class="num" data-source="model_facts" data-field="value" data-where="id=red_matches">—</span> مباراة بيها طرد).
+          xG وخريطة الحرارة وشبكة التمريرات من بيانات أحداث StatsBomb المفتوحة.</p>
+      </section>
+    </div>
+  </template>
+</div>
+
+<script src="common.js"></script>
+<script src="today.js"></script>
+<script src="fixtures.js"></script>
+<script src="season.js"></script>
+<script src="deep.js"></script>
+<script src="accuracy.js"></script>
+<script src="app.js"></script>
