@@ -1,14 +1,15 @@
 {
- "built_at": "2026-10-24T10:56:42Z",
- "data_version": "72d266b07e2d",
+ "built_at": "2026-10-25T09:51:45Z",
+ "data_version": "e2bbccdf0bd1",
  "competition": "ESP1",
  "season": 2026,
  "matches": 12794,
  "current_season_played": 90,
  "fixtures": 380,
  "fixture_status": {
-  "scheduled": 289,
+  "scheduled": 285,
   "played": 90,
+  "result_pending": 4,
   "abandoned": 1
  },
  "coverage_by_season": [
@@ -246,192 +247,12 @@
   {
    "season": 2026,
    "matches": 90,
-   "with_odds": 74,
+   "with_odds": 89,
    "with_shots_on_target": 90,
-   "with_half_time": 85
+   "with_half_time": 90
   }
  ],
  "current_season_gaps": [
-  {
-   "match_id": "ESP1-2026-MCF-ESP",
-   "date": "2026-10-09",
-   "home": "Malaga",
-   "away": "Espanol",
-   "missing": [
-    "half_time"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-ALA-ATM",
-   "date": "2026-10-10",
-   "home": "Alaves",
-   "away": "Ath Madrid",
-   "missing": [
-    "half_time"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-BAR-GET",
-   "date": "2026-10-10",
-   "home": "Barcelona",
-   "away": "Getafe",
-   "missing": [
-    "half_time"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-RMA-VIL",
-   "date": "2026-10-10",
-   "home": "Real Madrid",
-   "away": "Villarreal",
-   "missing": [
-    "half_time"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-RBB-OSA",
-   "date": "2026-10-11",
-   "home": "Betis",
-   "away": "Osasuna",
-   "missing": [
-    "odds"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-ELC-RCC",
-   "date": "2026-10-11",
-   "home": "Elche",
-   "away": "Celta",
-   "missing": [
-    "half_time"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-RAC-VCF",
-   "date": "2026-10-11",
-   "home": "Santander",
-   "away": "Valencia",
-   "missing": [
-    "odds"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-RSO-DEP",
-   "date": "2026-10-11",
-   "home": "Sociedad",
-   "away": "La Coruna",
-   "missing": [
-    "odds"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-LEV-SEV",
-   "date": "2026-10-12",
-   "home": "Levante",
-   "away": "Sevilla",
-   "missing": [
-    "odds"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-DEP-LEV",
-   "date": "2026-10-16",
-   "home": "La Coruna",
-   "away": "Levante",
-   "missing": [
-    "odds"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-RBB-BAR",
-   "date": "2026-10-17",
-   "home": "Betis",
-   "away": "Barcelona",
-   "missing": [
-    "odds"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-ESP-ATM",
-   "date": "2026-10-17",
-   "home": "Espanol",
-   "away": "Ath Madrid",
-   "missing": [
-    "odds"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-VCF-ATH",
-   "date": "2026-10-17",
-   "home": "Valencia",
-   "away": "Ath Bilbao",
-   "missing": [
-    "odds"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-VIL-ELC",
-   "date": "2026-10-17",
-   "home": "Villarreal",
-   "away": "Elche",
-   "missing": [
-    "odds"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-RCC-ALA",
-   "date": "2026-10-18",
-   "home": "Celta",
-   "away": "Alaves",
-   "missing": [
-    "odds"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-MCF-RSO",
-   "date": "2026-10-18",
-   "home": "Malaga",
-   "away": "Sociedad",
-   "missing": [
-    "odds"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-OSA-RAC",
-   "date": "2026-10-18",
-   "home": "Osasuna",
-   "away": "Santander",
-   "missing": [
-    "odds"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-RMA-SEV",
-   "date": "2026-10-18",
-   "home": "Real Madrid",
-   "away": "Sevilla",
-   "missing": [
-    "odds"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-GET-RVC",
-   "date": "2026-10-19",
-   "home": "Getafe",
-   "away": "Vallecano",
-   "missing": [
-    "odds"
-   ]
-  },
-  {
-   "match_id": "ESP1-2026-LEV-ATH",
-   "date": "2026-10-21",
-   "home": "Levante",
-   "away": "Ath Bilbao",
-   "missing": [
-    "odds"
-   ]
-  },
   {
    "match_id": "ESP1-2026-ALA-MCF",
    "date": "2026-10-23",
@@ -719,338 +540,643 @@
   {
    "file": "betexplorer/results_2026_27.csv",
    "bytes": 2834,
-   "modified_utc": "2026-10-23T20:15:26Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-0001.csv",
+   "bytes": 31022,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-0102.csv",
+   "bytes": 31441,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-0203.csv",
+   "bytes": 29836,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-0304.csv",
+   "bytes": 29745,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-0405.csv",
+   "bytes": 30099,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-0506.csv",
+   "bytes": 29736,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-0607.csv",
+   "bytes": 29823,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-0708.csv",
+   "bytes": 29654,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-0809.csv",
+   "bytes": 29339,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-0910.csv",
+   "bytes": 29349,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-1011.csv",
+   "bytes": 29485,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-1112.csv",
+   "bytes": 29053,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-1213.csv",
+   "bytes": 29212,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-1314.csv",
+   "bytes": 29553,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-1415.csv",
+   "bytes": 29548,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-1516.csv",
+   "bytes": 30009,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-1617.csv",
+   "bytes": 29951,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-1718.csv",
+   "bytes": 29834,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-1819.csv",
+   "bytes": 29776,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-1920.csv",
+   "bytes": 30162,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-2021.csv",
+   "bytes": 29950,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-2122.csv",
+   "bytes": 29612,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-2223.csv",
+   "bytes": 30104,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-2324.csv",
+   "bytes": 30383,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-2425.csv",
+   "bytes": 30316,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "epl-mirror/season-2526.csv",
+   "bytes": 30115,
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-0001.csv",
    "bytes": 20769,
-   "modified_utc": "2026-10-23T19:13:42Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-0102.csv",
    "bytes": 20655,
-   "modified_utc": "2026-10-23T19:13:42Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-0203.csv",
    "bytes": 20769,
-   "modified_utc": "2026-10-23T19:13:42Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-0304.csv",
    "bytes": 20655,
-   "modified_utc": "2026-10-23T19:13:43Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-0405.csv",
    "bytes": 20655,
-   "modified_utc": "2026-10-23T19:13:43Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-0506.csv",
    "bytes": 26309,
-   "modified_utc": "2026-10-23T19:13:43Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-0607.csv",
    "bytes": 26615,
-   "modified_utc": "2026-10-23T19:13:43Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-0708.csv",
    "bytes": 26676,
-   "modified_utc": "2026-10-23T19:13:43Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-0809.csv",
    "bytes": 26738,
-   "modified_utc": "2026-10-23T19:13:44Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-0910.csv",
    "bytes": 26658,
-   "modified_utc": "2026-10-23T19:13:44Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-1011.csv",
    "bytes": 26603,
-   "modified_utc": "2026-10-23T19:13:44Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-1112.csv",
    "bytes": 26494,
-   "modified_utc": "2026-10-23T19:13:44Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-1213.csv",
    "bytes": 26417,
-   "modified_utc": "2026-10-23T19:13:44Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-1314.csv",
    "bytes": 26243,
-   "modified_utc": "2026-10-23T19:13:45Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-1415.csv",
    "bytes": 26152,
-   "modified_utc": "2026-10-23T19:13:45Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-1516.csv",
    "bytes": 26268,
-   "modified_utc": "2026-10-23T19:13:45Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-1617.csv",
    "bytes": 26217,
-   "modified_utc": "2026-10-23T19:13:45Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-1718.csv",
    "bytes": 26103,
-   "modified_utc": "2026-10-23T19:13:46Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-1819.csv",
    "bytes": 26083,
-   "modified_utc": "2026-10-23T19:13:46Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-1920.csv",
    "bytes": 26081,
-   "modified_utc": "2026-10-23T19:13:46Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-2021.csv",
    "bytes": 25777,
-   "modified_utc": "2026-10-23T19:13:46Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-2122.csv",
    "bytes": 25977,
-   "modified_utc": "2026-10-23T19:13:47Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-2223.csv",
    "bytes": 26089,
-   "modified_utc": "2026-10-23T19:13:47Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-2324.csv",
    "bytes": 26142,
-   "modified_utc": "2026-10-23T19:13:47Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-2425.csv",
    "bytes": 26278,
-   "modified_utc": "2026-10-23T19:13:47Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-2526.csv",
    "bytes": 25949,
-   "modified_utc": "2026-10-23T19:13:47Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-9394.csv",
    "bytes": 19629,
-   "modified_utc": "2026-10-23T19:13:40Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-9495.csv",
    "bytes": 19629,
-   "modified_utc": "2026-10-23T19:13:41Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-9596.csv",
    "bytes": 25210,
-   "modified_utc": "2026-10-23T19:13:41Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-9697.csv",
    "bytes": 25381,
-   "modified_utc": "2026-10-23T19:13:41Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-9798.csv",
    "bytes": 20769,
-   "modified_utc": "2026-10-23T19:13:41Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-9899.csv",
    "bytes": 20842,
-   "modified_utc": "2026-10-23T19:13:42Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data-mirror/season-9900.csv",
    "bytes": 20579,
-   "modified_utc": "2026-10-23T19:13:42Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "football-data/SP1_2627.csv",
+   "bytes": 42704,
+   "modified_utc": "2026-10-25T09:51:45Z"
   },
   {
    "file": "football-data/corrections.csv",
    "bytes": 330,
-   "modified_utc": "2026-10-24T10:08:16Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data/fetch_pieces/fetch1_rows1_45.csv",
    "bytes": 2661,
-   "modified_utc": "2026-10-23T20:01:09Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data/fetch_pieces/fetchA_rows46_74.csv",
    "bytes": 1731,
-   "modified_utc": "2026-10-23T20:05:16Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data/fetch_pieces/fetchB_from_0409.csv",
    "bytes": 2548,
-   "modified_utc": "2026-10-23T20:05:16Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "football-data/sp1_2026-27_extract.csv",
    "bytes": 2604,
-   "modified_utc": "2026-10-23T20:05:52Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "footballwebpages/upcoming_fixtures_md10.csv",
    "bytes": 406,
-   "modified_utc": "2026-10-23T19:31:25Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "laliga/official_table_2026-10-21.csv",
    "bytes": 575,
-   "modified_utc": "2026-10-23T19:15:21Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "manual/results_2026_27.csv",
    "bytes": 1990,
-   "modified_utc": "2026-10-24T05:48:09Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2025-26_at.1.json",
+   "bytes": 27949,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2025-26_be.1.json",
+   "bytes": 52633,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2025-26_de.1.json",
+   "bytes": 88247,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2025-26_en.1.json",
+   "bytes": 108493,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2025-26_es.1.json",
+   "bytes": 108642,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2025-26_fr.1.json",
+   "bytes": 85845,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2025-26_gr.1.json",
+   "bytes": 33995,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2025-26_it.1.json",
+   "bytes": 105202,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2025-26_nl.1.json",
+   "bytes": 85389,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2025-26_pt.1.json",
+   "bytes": 86590,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2025-26_tr.1.json",
+   "bytes": 55241,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2026-27_de.1.json",
+   "bytes": 40409,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2026-27_en.1.json",
+   "bytes": 55359,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2026-27_es.1.json",
+   "bytes": 50771,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2026-27_fr.1.json",
+   "bytes": 39943,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2026-27_it.1.json",
+   "bytes": 47608,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2026-27_nl.1.json",
+   "bytes": 41499,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "openfootball-multi/2026-27_pt.1.json",
+   "bytes": 41380,
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "openfootball/es1_2026-27.json",
    "bytes": 50771,
-   "modified_utc": "2026-10-24T06:16:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "sportradar-multi/epl_results_2026-27.csv",
+   "bytes": 1311,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "sportradar-multi/epl_upcoming_sr.csv",
+   "bytes": 834,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "sportradar-multi/standings_epl_2026-10-24.csv",
+   "bytes": 265,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "sportradar-multi/standings_ucl_2026-10-24.csv",
+   "bytes": 447,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "sportradar-multi/ucl_2026-27.csv",
+   "bytes": 6193,
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_72478608_FT.json",
    "bytes": 2675,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_72478614_FT.json",
    "bytes": 2519,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_72478618_FT.json",
    "bytes": 2349,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_72478624_FT.json",
    "bytes": 2348,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_72478626_FT.json",
    "bytes": 2619,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_72478628_FT.json",
    "bytes": 2041,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_72478630_FT.json",
    "bytes": 2065,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_72478632_FT.json",
    "bytes": 2138,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_72478634_FT.json",
    "bytes": 2380,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_72478636_FT.json",
    "bytes": 2460,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_72478638_FT.json",
    "bytes": 2109,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_72478640_FT.json",
    "bytes": 2324,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_72478642_FT.json",
    "bytes": 1990,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_72478644_FT.json",
    "bytes": 1981,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_72478646_FT_original.json",
    "bytes": 1849,
-   "modified_utc": "2026-10-24T05:49:09Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/games/sr_sport_event_74801144_FT.json",
    "bytes": 2290,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/scores_2026-10-24T0838.json",
    "bytes": 2470,
-   "modified_utc": "2026-10-24T05:49:09Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "sportradar/scores_2026-10-24T1050.json",
    "bytes": 6407,
-   "modified_utc": "2026-10-24T10:55:17Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "statsbomb/README.md",
    "bytes": 918,
-   "modified_utc": "2026-10-24T06:47:16Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "statsbomb/events_266424.json.gz",
    "bytes": 303562,
-   "modified_utc": "2026-10-24T06:14:46Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "statsbomb/events_267533.json.gz",
    "bytes": 287008,
-   "modified_utc": "2026-10-24T06:14:46Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "statsbomb/events_69299.json.gz",
    "bytes": 308447,
-   "modified_utc": "2026-10-24T06:14:46Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "statsbomb/sb1516_goals_reds.jsonl.gz",
    "bytes": 63616,
-   "modified_utc": "2026-10-24T06:46:33Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "ucl-openfootball/2016-17_cl.txt",
+   "bytes": 10446,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "ucl-openfootball/2017-18_cl.txt",
+   "bytes": 10389,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "ucl-openfootball/2018-19_cl.txt",
+   "bytes": 10379,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "ucl-openfootball/2019-20_cl.txt",
+   "bytes": 9967,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "ucl-openfootball/2020-21_cl.txt",
+   "bytes": 10495,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "ucl-openfootball/2021-22_cl.txt",
+   "bytes": 10428,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "ucl-openfootball/2022-23_cl.txt",
+   "bytes": 10399,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "ucl-openfootball/2023-24_cl.txt",
+   "bytes": 10428,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "ucl-openfootball/2024-25_cl.txt",
+   "bytes": 15374,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "ucl-openfootball/2025-26_cl.txt",
+   "bytes": 15265,
+   "modified_utc": "2026-10-25T09:50:56Z"
+  },
+  {
+   "file": "ucl-openfootball/README.md",
+   "bytes": 2129,
+   "modified_utc": "2026-10-25T09:50:56Z"
   },
   {
    "file": "xgabora/laliga_bet365_odds.csv",
    "bytes": 577974,
-   "modified_utc": "2026-10-23T19:16:12Z"
+   "modified_utc": "2026-10-25T09:50:56Z"
   }
  ],
- "build_seconds": 1.0
+ "build_seconds": 0.8
 }

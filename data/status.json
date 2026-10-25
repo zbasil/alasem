@@ -1,7 +1,47 @@
 {
- "last_build_attempt": "2026-10-24T10:56:42Z",
+ "last_build_attempt": "2026-10-25T09:51:45Z",
  "last_build_ok": true,
  "problems": [],
- "last_good_build": "2026-10-24T10:56:42Z",
- "data_version": "72d266b07e2d"
+ "last_good_build": "2026-10-25T09:51:45Z",
+ "data_version": "e2bbccdf0bd1",
+ "last_update_attempt": "2026-10-25T09:51:43Z",
+ "fetch": {
+  "openfootball": {
+   "status": "unchanged",
+   "at": "2026-10-25T09:51:43Z"
+  },
+  "football_data": {
+   "status": "fresh",
+   "at": "2026-10-25T09:51:43Z"
+  }
+ },
+ "last_good_export": "2026-10-25T09:53:06Z",
+ "last_update": {
+  "started": "2026-10-25T09:51:43Z",
+  "steps": {
+   "fetch": {
+    "openfootball": {
+     "status": "unchanged",
+     "path": "/home/runner/work/alasem/alasem/data/raw/openfootball/es1_2026-27.json"
+    },
+    "football_data": {
+     "status": "fresh",
+     "path": "/home/runner/work/alasem/alasem/data/raw/football-data/SP1_2627.csv",
+     "bytes": 42704
+    }
+   },
+   "api_football": {
+    "status": "skipped",
+    "reason": "يحتاج مفتاح API_FOOTBALL_KEY"
+   },
+   "build": {
+    "status": "ok",
+    "data_version": "e2bbccdf0bd1"
+   },
+   "export": {
+    "status": "ok"
+   }
+  },
+  "finished": "2026-10-25T09:53:06Z"
+ }
 }
