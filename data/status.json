@@ -1,23 +1,23 @@
 {
- "last_build_attempt": "2026-10-25T09:51:45Z",
+ "last_build_attempt": "2026-10-26T11:11:11Z",
  "last_build_ok": true,
  "problems": [],
- "last_good_build": "2026-10-25T09:51:45Z",
+ "last_good_build": "2026-10-26T11:11:11Z",
  "data_version": "e2bbccdf0bd1",
- "last_update_attempt": "2026-10-25T09:51:43Z",
+ "last_update_attempt": "2026-10-26T11:11:09Z",
  "fetch": {
   "openfootball": {
    "status": "unchanged",
-   "at": "2026-10-25T09:51:43Z"
+   "at": "2026-10-26T11:11:09Z"
   },
   "football_data": {
-   "status": "fresh",
-   "at": "2026-10-25T09:51:43Z"
+   "status": "unchanged",
+   "at": "2026-10-26T11:11:09Z"
   }
  },
- "last_good_export": "2026-10-25T09:53:06Z",
+ "last_good_export": "2026-10-26T11:11:38Z",
  "last_update": {
-  "started": "2026-10-25T09:51:43Z",
+  "started": "2026-10-26T11:11:09Z",
   "steps": {
    "fetch": {
     "openfootball": {
@@ -25,9 +25,8 @@
      "path": "/home/runner/work/alasem/alasem/data/raw/openfootball/es1_2026-27.json"
     },
     "football_data": {
-     "status": "fresh",
-     "path": "/home/runner/work/alasem/alasem/data/raw/football-data/SP1_2627.csv",
-     "bytes": 42704
+     "status": "unchanged",
+     "path": "/home/runner/work/alasem/alasem/data/raw/football-data/SP1_2627.csv"
     }
    },
    "api_football": {
@@ -42,6 +41,6 @@
     "status": "ok"
    }
   },
-  "finished": "2026-10-25T09:53:06Z"
+  "finished": "2026-10-26T11:11:38Z"
  }
 }
