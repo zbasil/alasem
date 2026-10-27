@@ -92,7 +92,7 @@ ESP1-2026-LEV-ATH,6,2026-10-21,20:00,Levante,Ath Bilbao,2026-10-21T18:00:00Z,spo
 ESP1-2026-RVC-ELC,10,2026-10-25,,Vallecano,Elche,2026-10-24T12:00:00Z,sportradar,sr:sport_event:72478658,scheduled,result_pending,
 ESP1-2026-ALA-MCF,10,2026-10-25,,Alaves,Malaga,2026-10-23T19:00:00Z,sportradar,sr:sport_event:72478646,final,played,2026-10-23
 ESP1-2026-ATH-GET,10,2026-10-25,,Ath Bilbao,Getafe,2026-10-25T13:00:00Z,sportradar,sr:sport_event:72478648,scheduled,result_pending,
-ESP1-2026-SEV-OSA,10,2026-10-25,,Sevilla,Osasuna,2026-10-26T20:00:00Z,sportradar,sr:sport_event:72478662,scheduled,scheduled,
+ESP1-2026-SEV-OSA,10,2026-10-25,,Sevilla,Osasuna,2026-10-26T20:00:00Z,sportradar,sr:sport_event:72478662,scheduled,result_pending,
 ESP1-2026-VCF-VIL,10,2026-10-25,,Valencia,Villarreal,2026-10-24T16:30:00Z,sportradar,sr:sport_event:72478664,scheduled,result_pending,
 ESP1-2026-BAR-RMA,10,2026-10-25,,Barcelona,Real Madrid,2026-10-25T20:00:00Z,sportradar,sr:sport_event:72478654,scheduled,result_pending,
 ESP1-2026-ATM-DEP,10,2026-10-25,,Ath Madrid,La Coruna,2026-10-24T19:00:00Z,sportradar,sr:sport_event:72478650,scheduled,result_pending,
