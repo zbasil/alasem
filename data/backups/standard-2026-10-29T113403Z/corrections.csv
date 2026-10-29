@@ -1,0 +1,5 @@
+date,home,away,field,value,reason
+2026-08-21,Betis,Sociedad,odds_o25,1.8,first full read gave 2.14/3.60 (impossible: margin below 0); settled by a targeted third read in version 1
+2026-08-21,Betis,Sociedad,odds_u25,2.0,first full read gave 2.14/3.60 (impossible: margin below 0); settled by a targeted third read in version 1
+2018-10-06,Alaves,Real Madrid,odds_o25+odds_u25,blank (was 1.53/1.59),impossible over/under margin in the raw source; treated as unknown
+2018-11-24,Eibar,Real Madrid,odds_o25+odds_u25,blank (was 1.45/1.69),impossible over/under margin in the raw source; treated as unknown

@@ -1,14 +1,14 @@
 {
  "Matches.csv": {
   "url": "https://raw.githubusercontent.com/xgabora/Club-Football-Match-Data-2000-2025/main/data/Matches.csv",
-  "fetched_at": "2026-10-28T11:24:17Z",
+  "fetched_at": "2026-10-29T11:34:55Z",
   "sha256": "ef224cf2c252f07a842b3bcfd4ba5c718c25cedd8937ffa174a74b86b5ba4221",
   "bytes": 45370018,
   "note": "unchanged"
  },
  "EloRatings.csv": {
   "url": "https://raw.githubusercontent.com/xgabora/Club-Football-Match-Data-2000-2025/main/data/EloRatings.csv",
-  "fetched_at": "2026-10-28T11:24:17Z",
+  "fetched_at": "2026-10-29T11:34:56Z",
   "sha256": "1bbd3f8b171407483cf6e0a5a37fa983b9e9bf53a62a92f537bbe40d7dbb36f1",
   "bytes": 11057235,
   "note": "unchanged"
