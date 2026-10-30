@@ -12772,24 +12772,24 @@ ESP1-2026-GET-MCF,ESP1,2026,2026-09-20,GET,MCF,Getafe,Malaga,1,0,0.0,0.0,7.0,4.0
 ESP1-2026-DEP-RBB,ESP1,2026,2026-09-20,DEP,RBB,La Coruna,Betis,1,1,0.0,1.0,7.0,4.0,3.4,3.75,2.05,1.8,2.0,openfootball,openfootball,football_data,football_data
 ESP1-2026-VCF-RSO,ESP1,2026,2026-09-20,VCF,RSO,Valencia,Sociedad,2,3,0.0,1.0,5.0,6.0,2.7,3.4,2.6,1.93,1.93,openfootball,openfootball,football_data,football_data
 ESP1-2026-VIL-LEV,ESP1,2026,2026-09-20,VIL,LEV,Villarreal,Levante,3,1,1.0,1.0,7.0,1.0,1.5,4.75,5.5,1.5,2.63,openfootball,openfootball,football_data,football_data
-ESP1-2026-MCF-ESP,ESP1,2026,2026-10-09,MCF,ESP,Malaga,Espanol,1,1,,,7.0,4.0,2.9,3.2,2.55,2.0,1.8,manual: footballwebpages.co.uk (date page + October results page),,football_data,football_data
-ESP1-2026-ALA-ATM,ESP1,2026,2026-10-10,ALA,ATM,Alaves,Ath Madrid,1,2,,,3.0,7.0,4.1,3.8,1.8,1.91,1.91,manual: footballwebpages.co.uk (date page + October results page),,football_data,football_data
-ESP1-2026-BAR-GET,ESP1,2026,2026-10-10,BAR,GET,Barcelona,Getafe,3,0,,,8.0,1.0,1.08,12.0,23.0,1.25,4.0,manual: footballwebpages.co.uk (date page + October results page),,football_data,football_data
-ESP1-2026-RMA-VIL,ESP1,2026,2026-10-10,RMA,VIL,Real Madrid,Villarreal,1,0,,,4.0,4.0,1.38,6.0,6.25,1.29,3.75,manual: footballwebpages.co.uk (date page + October results page),,football_data,football_data
-ESP1-2026-RBB-OSA,ESP1,2026,2026-10-11,RBB,OSA,Betis,Osasuna,5,2,2.0,0.0,9.0,5.0,,,,,,manual: footballwebpages.co.uk (date page + October results page),sportradar,sportradar,
-ESP1-2026-ELC-RCC,ESP1,2026,2026-10-11,ELC,RCC,Elche,Celta,0,0,,,2.0,0.0,2.8,3.2,2.63,2.0,1.8,manual: footballwebpages.co.uk (date page + October results page),,football_data,football_data
-ESP1-2026-RAC-VCF,ESP1,2026,2026-10-11,RAC,VCF,Santander,Valencia,2,2,1.0,1.0,11.0,3.0,,,,,,manual: footballwebpages.co.uk (date page + October results page),sportradar,sportradar,
-ESP1-2026-RSO-DEP,ESP1,2026,2026-10-11,RSO,DEP,Sociedad,La Coruna,3,2,2.0,0.0,4.0,10.0,,,,,,manual: footballwebpages.co.uk (date page + October results page),sportradar,sportradar,
-ESP1-2026-LEV-SEV,ESP1,2026,2026-10-12,LEV,SEV,Levante,Sevilla,3,3,0.0,1.0,6.0,3.0,,,,,,manual: footballwebpages.co.uk (date page + October results page),sportradar,sportradar,
-ESP1-2026-DEP-LEV,ESP1,2026,2026-10-16,DEP,LEV,La Coruna,Levante,1,1,0.0,0.0,5.0,4.0,,,,,,manual: footballwebpages.co.uk (date page + October results page),sportradar,sportradar,
-ESP1-2026-RBB-BAR,ESP1,2026,2026-10-17,RBB,BAR,Betis,Barcelona,2,5,1.0,2.0,5.0,10.0,,,,,,manual: footballwebpages.co.uk (date page + October results page),sportradar,sportradar,
-ESP1-2026-ESP-ATM,ESP1,2026,2026-10-17,ESP,ATM,Espanol,Ath Madrid,0,1,0.0,0.0,2.0,6.0,,,,,,manual: footballwebpages.co.uk (date page + October results page),sportradar,sportradar,
-ESP1-2026-VCF-ATH,ESP1,2026,2026-10-17,VCF,ATH,Valencia,Ath Bilbao,0,0,0.0,0.0,4.0,2.0,,,,,,manual: footballwebpages.co.uk (date page + October results page),sportradar,sportradar,
-ESP1-2026-VIL-ELC,ESP1,2026,2026-10-17,VIL,ELC,Villarreal,Elche,0,0,0.0,0.0,5.0,1.0,,,,,,manual: footballwebpages.co.uk (date page + October results page),sportradar,sportradar,
-ESP1-2026-RCC-ALA,ESP1,2026,2026-10-18,RCC,ALA,Celta,Alaves,2,1,0.0,0.0,3.0,9.0,,,,,,manual: laliga.com match page + footballwebpages.co.uk October results page,sportradar,sportradar,
-ESP1-2026-MCF-RSO,ESP1,2026,2026-10-18,MCF,RSO,Malaga,Sociedad,2,5,0.0,2.0,5.0,10.0,,,,,,manual: footballwebpages.co.uk October results page + table residual,sportradar,sportradar,
-ESP1-2026-OSA-RAC,ESP1,2026,2026-10-18,OSA,RAC,Osasuna,Santander,2,0,1.0,0.0,4.0,2.0,,,,,,manual: footballwebpages.co.uk October results page + table residual,sportradar,sportradar,
-ESP1-2026-RMA-SEV,ESP1,2026,2026-10-18,RMA,SEV,Real Madrid,Sevilla,4,1,2.0,0.0,8.0,5.0,,,,,,manual: footballwebpages.co.uk (October results page + video section),sportradar,sportradar,
-ESP1-2026-GET-RVC,ESP1,2026,2026-10-19,GET,RVC,Getafe,Vallecano,1,1,0.0,1.0,3.0,5.0,,,,,,manual: footballwebpages.co.uk (date page + October results page),sportradar,sportradar,
-ESP1-2026-LEV-ATH,ESP1,2026,2026-10-21,LEV,ATH,Levante,Ath Bilbao,3,1,2.0,0.0,6.0,4.0,,,,,,manual: footballwebpages.co.uk (date page + October results page),sportradar,sportradar,
-ESP1-2026-ALA-MCF,ESP1,2026,2026-10-23,ALA,MCF,Alaves,Malaga,1,1,0.0,1.0,4.0,4.0,,,,,,"manual: SportRadar final (goals 44' Malaga, 89' Alaves); consistent with sportytrader live snapshot (0-0 at 40')",sportradar,sportradar,
+ESP1-2026-MCF-ESP,ESP1,2026,2026-10-09,MCF,ESP,Malaga,Espanol,1,1,0.0,1.0,7.0,4.0,2.9,3.2,2.55,2.0,1.8,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-ALA-ATM,ESP1,2026,2026-10-10,ALA,ATM,Alaves,Ath Madrid,1,2,1.0,1.0,3.0,7.0,4.1,3.8,1.8,1.91,1.91,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-BAR-GET,ESP1,2026,2026-10-10,BAR,GET,Barcelona,Getafe,3,0,2.0,0.0,8.0,1.0,1.08,12.0,23.0,1.25,4.0,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-RMA-VIL,ESP1,2026,2026-10-10,RMA,VIL,Real Madrid,Villarreal,1,0,0.0,0.0,4.0,4.0,1.38,6.0,6.25,1.29,3.75,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-RBB-OSA,ESP1,2026,2026-10-11,RBB,OSA,Betis,Osasuna,5,2,2.0,0.0,7.0,5.0,1.57,4.0,6.0,1.73,2.1,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-ELC-RCC,ESP1,2026,2026-10-11,ELC,RCC,Elche,Celta,0,0,0.0,0.0,2.0,0.0,2.8,3.2,2.63,2.0,1.8,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-RAC-VCF,ESP1,2026,2026-10-11,RAC,VCF,Santander,Valencia,2,2,1.0,1.0,11.0,2.0,2.3,3.6,3.0,1.67,2.2,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-RSO-DEP,ESP1,2026,2026-10-11,RSO,DEP,Sociedad,La Coruna,3,2,2.0,0.0,4.0,7.0,1.62,3.9,5.5,1.73,2.1,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-LEV-SEV,ESP1,2026,2026-10-12,LEV,SEV,Levante,Sevilla,3,3,0.0,1.0,8.0,5.0,2.75,3.25,2.63,2.0,1.8,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-DEP-LEV,ESP1,2026,2026-10-16,DEP,LEV,La Coruna,Levante,1,1,0.0,0.0,5.0,4.0,2.05,3.5,3.6,1.93,1.93,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-RBB-BAR,ESP1,2026,2026-10-17,RBB,BAR,Betis,Barcelona,2,5,1.0,2.0,5.0,10.0,5.75,5.75,1.42,1.25,4.0,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-ESP-ATM,ESP1,2026,2026-10-17,ESP,ATM,Espanol,Ath Madrid,0,1,0.0,0.0,2.0,6.0,5.0,4.0,1.7,1.83,2.03,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-VCF-ATH,ESP1,2026,2026-10-17,VCF,ATH,Valencia,Ath Bilbao,0,0,0.0,0.0,3.0,2.0,3.4,3.3,2.2,2.1,1.73,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-VIL-ELC,ESP1,2026,2026-10-17,VIL,ELC,Villarreal,Elche,0,0,0.0,0.0,7.0,1.0,1.45,5.0,6.0,1.44,2.75,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-RCC-ALA,ESP1,2026,2026-10-18,RCC,ALA,Celta,Alaves,2,1,0.0,0.0,3.0,9.0,2.1,3.4,3.5,2.2,1.67,manual: laliga.com match page + footballwebpages.co.uk October results page,football_data,football_data,football_data
+ESP1-2026-MCF-RSO,ESP1,2026,2026-10-18,MCF,RSO,Malaga,Sociedad,2,5,0.0,2.0,6.0,9.0,3.3,3.5,2.15,1.8,2.0,manual: footballwebpages.co.uk October results page + table residual,football_data,football_data,football_data
+ESP1-2026-OSA-RAC,ESP1,2026,2026-10-18,OSA,RAC,Osasuna,Santander,2,0,1.0,0.0,7.0,1.0,2.0,3.6,3.7,1.67,2.2,manual: footballwebpages.co.uk October results page + table residual,football_data,football_data,football_data
+ESP1-2026-RMA-SEV,ESP1,2026,2026-10-18,RMA,SEV,Real Madrid,Sevilla,4,1,2.0,0.0,8.0,5.0,1.25,7.0,9.5,1.4,3.0,manual: footballwebpages.co.uk (October results page + video section),football_data,football_data,football_data
+ESP1-2026-GET-RVC,ESP1,2026,2026-10-19,GET,RVC,Getafe,Vallecano,1,1,0.0,1.0,4.0,5.0,2.9,3.0,2.7,2.63,1.5,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-LEV-ATH,ESP1,2026,2026-10-21,LEV,ATH,Levante,Ath Bilbao,3,1,2.0,0.0,7.0,4.0,3.4,3.5,2.15,1.98,1.88,manual: footballwebpages.co.uk (date page + October results page),football_data,football_data,football_data
+ESP1-2026-ALA-MCF,ESP1,2026,2026-10-23,ALA,MCF,Alaves,Malaga,1,1,0.0,1.0,4.0,3.0,1.6,3.7,6.25,2.05,1.8,"manual: SportRadar final (goals 44' Malaga, 89' Alaves); consistent with sportytrader live snapshot (0-0 at 40')",football_data,football_data,football_data

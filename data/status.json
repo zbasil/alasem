@@ -1,23 +1,23 @@
 {
- "last_build_attempt": "2026-10-29T11:34:03Z",
+ "last_build_attempt": "2026-10-30T11:26:34Z",
  "last_build_ok": true,
  "problems": [],
- "last_good_build": "2026-10-29T11:34:03Z",
+ "last_good_build": "2026-10-30T11:26:34Z",
  "data_version": "edccae650f17",
- "last_update_attempt": "2026-10-29T11:34:01Z",
+ "last_update_attempt": "2026-10-30T11:26:32Z",
  "fetch": {
   "openfootball": {
    "status": "unchanged",
-   "at": "2026-10-29T11:34:01Z"
+   "at": "2026-10-30T11:26:32Z"
   },
   "football_data": {
    "status": "unchanged",
-   "at": "2026-10-29T11:34:01Z"
+   "at": "2026-10-30T11:26:32Z"
   }
  },
- "last_good_export": "2026-10-29T11:34:52Z",
+ "last_good_export": "2026-10-30T11:27:24Z",
  "last_update": {
-  "started": "2026-10-29T11:34:01Z",
+  "started": "2026-10-30T11:26:32Z",
   "steps": {
    "fetch": {
     "openfootball": {
@@ -41,6 +41,6 @@
     "status": "ok"
    }
   },
-  "finished": "2026-10-29T11:34:52Z"
+  "finished": "2026-10-30T11:27:24Z"
  }
 }
