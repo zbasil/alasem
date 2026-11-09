@@ -1,9 +1,8 @@
 {
  "SP1_2627.csv": {
   "url": "https://www.football-data.co.uk/mmz4281/2627/SP1.csv",
-  "fetched_at": "2026-11-08T11:58:03Z",
-  "sha256": "a382f00d78d85eae814e8b06a4a0d5ba0dd70905156f20b02f8c0e6c28b7c7d6",
-  "bytes": 52117,
-  "note": "unchanged"
+  "fetched_at": "2026-11-09T13:57:23Z",
+  "sha256": "b4c9a5cc1139f30dbd1026679c360de4626ce97fe64ae62ff1ff8ba3af0b7828",
+  "bytes": 56854
  }
 }
